@@ -1,0 +1,45 @@
+#include<cstdio>
+#define M 12
+#define RC 4
+#define CC 3
+int row[M][M+1],col[M][M+1],code[M][M+1];
+int g[M][M];
+void d();
+int d_max=1;
+void dfs(int k){
+    if(k==M*M){
+        d();
+        ++d_max;
+        return ;
+    }
+    int r = k/M,c = k%M,co = r/(M/RC)*CC+c/(M/CC);
+    if(g[r][c])dfs(k+1);
+    else for(int x=1;x<=M;x++){
+        if(row[r][x]||col[c][x]||code[co][x])continue;
+        g[r][c] = x;
+        row[r][x]=col[c][x]=code[co][x]=1;
+        dfs(k+1);
+        row[r][x]=col[c][x]=code[co][x]=0;
+    }
+}
+int main(){
+    freopen("in.txt","r",stdin);
+    freopen("out.txt","w",stdout);
+    for(int i=0,co;i<M;i++)
+        for(int j=0;j<M;j++){
+            scanf("%d",g[i]+j);
+            co = i/(M/RC)*CC+j/(M/CC);
+            row[i][g[i][j]] = col[j][g[i][j]] = code[co][g[i][j]] = 1;
+        }
+    dfs(0);
+    return 0;
+}
+void d(){
+    printf("½â·¨%d:\n",d_max);
+    for(int i=0;i<M;i++){
+        for(int j=0;j<M;j++)
+            printf("%-4d",g[i][j]);
+        printf("\n");
+    }
+    printf("=========================END=========================\n");
+}

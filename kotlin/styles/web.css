@@ -1,0 +1,4 @@
+@import url("com.css");
+.line-numbers-rows>span {
+    line-height: 1.758;
+}

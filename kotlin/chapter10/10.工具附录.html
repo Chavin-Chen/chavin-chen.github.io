@@ -1,0 +1,949 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>10. 工具附录 · Kotlin进阶手册</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Chavin">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/web.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="10.工具附录.html" />
+    
+    
+    <link rel="prev" href="../chapter9/9.并发支持.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1. Kotlin简介
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../">
+            
+                <a href="../#11-概述">
+            
+                    
+                    1.1 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../">
+            
+                <a href="../#12-部署运行">
+            
+                    
+                    1.2 部署运行
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter2/2.基础语法.html">
+            
+                <a href="../chapter2/2.基础语法.html">
+            
+                    
+                    2. 基础语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter2/2.基础语法.html">
+            
+                <a href="../chapter2/2.基础语法.html#21-数据类型">
+            
+                    
+                    2.1 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter2/2.基础语法.html">
+            
+                <a href="../chapter2/2.基础语法.html#22-常量变量">
+            
+                    
+                    2.2 常量变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter2/2.基础语法.html">
+            
+                <a href="../chapter2/2.基础语法.html#23-语句结构">
+            
+                    
+                    2.3 语句结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter2/2.基础语法.html">
+            
+                <a href="../chapter2/2.基础语法.html#24-包结构">
+            
+                    
+                    2.4 包结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../chapter2/2.基础语法.html">
+            
+                <a href="../chapter2/2.基础语法.html#25-异常捕获">
+            
+                    
+                    2.5 异常捕获
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html">
+            
+                    
+                    3. 面向对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html#31-类">
+            
+                    
+                    3.1 类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html#32-特殊类">
+            
+                    
+                    3.2 特殊类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html#33-继承">
+            
+                    
+                    3.3 继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html#34-拓展">
+            
+                    
+                    3.4 拓展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html#35-object">
+            
+                    
+                    3.5 Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html#36-委托">
+            
+                    
+                    3.6 委托
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter4/4.泛型.html">
+            
+                <a href="../chapter4/4.泛型.html">
+            
+                    
+                    4. 泛型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter4/4.泛型.html">
+            
+                <a href="../chapter4/4.泛型.html#41-java型变支持">
+            
+                    
+                    4.1 Java型变支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter4/4.泛型.html">
+            
+                <a href="../chapter4/4.泛型.html#42-kotlin型变支持">
+            
+                    
+                    4.2 Kotlin型变支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter5/5.运算符重载.html">
+            
+                <a href="../chapter5/5.运算符重载.html">
+            
+                    
+                    5. 运算符重载
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter5/5.运算符重载.html">
+            
+                <a href="../chapter5/5.运算符重载.html#51-运算符和优先级">
+            
+                    
+                    5.1 运算符和优先级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter5/5.运算符重载.html">
+            
+                <a href="../chapter5/5.运算符重载.html#52-运算符重载">
+            
+                    
+                    5.2 运算符重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter6/6.集合类.html">
+            
+                <a href="../chapter6/6.集合类.html">
+            
+                    
+                    6. 集合类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter6/6.集合类.html">
+            
+                <a href="../chapter6/6.集合类.html#61-list">
+            
+                    
+                    6.1 List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter6/6.集合类.html">
+            
+                <a href="../chapter6/6.集合类.html#62-set">
+            
+                    
+                    6.2 Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter6/6.集合类.html">
+            
+                <a href="../chapter6/6.集合类.html#63-map">
+            
+                    
+                    6.3 Map
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter7/7.面向函数.html">
+            
+                <a href="../chapter7/7.面向函数.html">
+            
+                    
+                    7. 面向函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter7/7.面向函数.html">
+            
+                <a href="../chapter7/7.面向函数.html#71-函数使用">
+            
+                    
+                    7.1 函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter7/7.面向函数.html">
+            
+                <a href="../chapter7/7.面向函数.html#72-函数特性">
+            
+                    
+                    7.2 函数特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../chapter7/7.面向函数.html">
+            
+                <a href="../chapter7/7.面向函数.html#73-高阶函数">
+            
+                    
+                    7.3 高阶函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../chapter7/7.面向函数.html">
+            
+                <a href="../chapter7/7.面向函数.html#74-dsl支持">
+            
+                    
+                    7.4 DSL支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter8/8.与Java互操作.html">
+            
+                <a href="../chapter8/8.与Java互操作.html">
+            
+                    
+                    8. 与Java互操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chapter8/8.与Java互操作.html">
+            
+                <a href="../chapter8/8.与Java互操作.html#81-kotlin调java">
+            
+                    
+                    8.1 Kotlin调Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../chapter8/8.与Java互操作.html">
+            
+                <a href="../chapter8/8.与Java互操作.html#82-java调kotlin">
+            
+                    
+                    8.2 Java调Kotlin
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter9/9.并发支持.html">
+            
+                <a href="../chapter9/9.并发支持.html">
+            
+                    
+                    9. 并发支持
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chapter9/9.并发支持.html">
+            
+                <a href="../chapter9/9.并发支持.html#91-调用java线程库">
+            
+                    
+                    9.1 调用Java并发库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chapter9/9.并发支持.html">
+            
+                <a href="../chapter9/9.并发支持.html#92-使用协程库">
+            
+                    
+                    9.2 使用协程库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="10.工具附录.html">
+            
+                <a href="10.工具附录.html">
+            
+                    
+                    10. 工具附录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="10.工具附录.html">
+            
+                <a href="10.工具附录.html#101-作用域函数">
+            
+                    
+                    10.1 作用域函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="10.工具附录.html">
+            
+                <a href="10.工具附录.html#102-正则表达式">
+            
+                    
+                    10.2 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="10.工具附录.html">
+            
+                <a href="10.工具附录.html#103-文件io">
+            
+                    
+                    10.3 文件IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >10. 工具附录</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#10-&#x5DE5;&#x5177;&#x9644;&#x5F55;"><b></b>10. &#x5DE5;&#x5177;&#x9644;&#x5F55;</a></li><li><span class="title-icon "></span><a href="#101-&#x4F5C;&#x7528;&#x57DF;&#x51FD;&#x6570;"><b></b>10.1 &#x4F5C;&#x7528;&#x57DF;&#x51FD;&#x6570;</a></li><li><span class="title-icon "></span><a href="#102-&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;"><b></b>10.2 &#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#103-&#x6587;&#x4EF6;io"><b></b>10.3 &#x6587;&#x4EF6;IO</a></li><ul><li><span class="title-icon "></span><a href="#&#x6807;&#x51C6;io"><b></b>&#x6807;&#x51C6;IO</a></li><li><span class="title-icon "></span><a href="#&#x6587;&#x4EF6;&#x64CD;&#x4F5C;"><b></b>&#x6587;&#x4EF6;&#x64CD;&#x4F5C;</a></li><li><span class="title-icon "></span><a href="#&#x7F51;&#x7EDC;io"><b></b>&#x7F51;&#x7EDC;IO</a></li><li><span class="title-icon "></span><a href="#&#x62D3;&#x5C55;&#x6267;&#x884C;shell&#x547D;&#x4EE4;"><b></b>&#x62D3;&#x5C55;&#x6267;&#x884C;Shell&#x547D;&#x4EE4;</a></li></ul></ul></div><a href="#10-&#x5DE5;&#x5177;&#x9644;&#x5F55;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="10-&#x5DE5;&#x5177;&#x9644;&#x5F55;"><a name="10-&#x5DE5;&#x5177;&#x9644;&#x5F55;" class="anchor-navigation-ex-anchor" href="#10-&#x5DE5;&#x5177;&#x9644;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>10. &#x5DE5;&#x5177;&#x9644;&#x5F55;</h1>
+<h1 id="101-&#x4F5C;&#x7528;&#x57DF;&#x51FD;&#x6570;"><a name="101-&#x4F5C;&#x7528;&#x57DF;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#101-&#x4F5C;&#x7528;&#x57DF;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>10.1 &#x4F5C;&#x7528;&#x57DF;&#x51FD;&#x6570;</h1>
+<ol>
+<li>&#x8FD4;&#x56DE;&#x8C03;&#x7528;&#x5BF9;&#x8C61;:<ul>
+<li><code>apply()</code>: &#x8F93;&#x5165;&#x5BF9;&#x8C61;&#x5728;&#x5757;&#x4E2D;&#x901A;&#x8FC7;<code>this</code>&#x5F15;&#x7528;&#xFF0C;&#x591A;&#x7528;&#x4E8E;&#x5728;&#x521D;&#x59CB;&#x5316;&#x5B9E;&#x4F8B;&#x65F6;&#xFF0C;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x5E76;&#x6700;&#x7EC8;&#x8FD4;&#x56DE;&#x8BE5;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>also()</code>: &#x8F93;&#x5165;&#x5BF9;&#x8C61;&#x5728;&#x5757;&#x4E2D;&#x901A;&#x8FC7;<code>it</code>&#x5F15;&#x7528;&#xFF0C;&#x5E38;&#x7528;&#x4E8E;&#x94FE;&#x5F0F;&#x8C03;&#x7528;</li>
+</ul>
+</li>
+<li>&#x8FD4;&#x56DE;&#x533F;&#x540D;&#x51FD;&#x6570;&#x7684;&#x503C;:<ul>
+<li><code>run()</code>: &#x8F93;&#x5165;&#x5BF9;&#x8C61;&#x5728;&#x5757;&#x4E2D;&#x901A;&#x8FC7;<code>this</code>&#x5F15;&#x7528;</li>
+<li><code>let()</code>: &#x8F93;&#x5165;&#x5BF9;&#x8C61;&#x5728;&#x5757;&#x4E2D;&#x901A;&#x8FC7;<code>it</code>&#x5F15;&#x7528;&#xFF0C;&#x591A;&#x7528;&#x4E8E;&#x7EDF;&#x4E00;&#x5904;&#x7406;&#x5BF9;&#x8C61;&#x4E0D;&#x4E3A;&#x7A7A;&#x7684;&#x60C5;&#x51B5;</li>
+</ul>
+</li>
+<li><code>with(obj){ }</code>: &#x8F93;&#x5165;&#x5BF9;&#x8C61;&#x5728;&#x5757;&#x4E2D;&#x901A;&#x8FC7;<code>this</code>&#x5F15;&#x7528;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684;&#x591A;&#x4E2A;&#x51FD;&#x6570;</li>
+</ol>
+<pre class="language-"><code class="lang-kotlin"><span class="token keyword">val</span> obj <span class="token operator">=</span> <span class="token function">Any</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// &#x4ECD;&#x7136;&#x8FD4;&#x56DE;&#x8F93;&#x5165;&#x5BF9;&#x8C61;</span>
+obj<span class="token punctuation">.</span><span class="token function">apply</span> <span class="token punctuation">{</span> <span class="token function">hashCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">.</span><span class="token function">apply</span> <span class="token punctuation">{</span> <span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+obj<span class="token punctuation">.</span><span class="token function">also</span> <span class="token punctuation">{</span> it<span class="token punctuation">.</span><span class="token function">hashCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">.</span><span class="token function">also</span> <span class="token punctuation">{</span> it<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+
+<span class="token comment">// &#x8FD4;&#x56DE;&#x533F;&#x540D;&#x51FD;&#x6570;&#x7684;&#x503C;</span>
+obj<span class="token punctuation">.</span><span class="token function">run</span> <span class="token punctuation">{</span> <span class="token function">hashCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+obj<span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">let</span> <span class="token punctuation">{</span> it<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+
+<span class="token comment">// with&#x4E0D;&#x662F;&#x62D3;&#x5C55;&#x51FD;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;&#x533F;&#x540D;&#x51FD;&#x6570;&#x7684;&#x503C;</span>
+<span class="token function">with</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    obj<span class="token punctuation">.</span><span class="token function">hashCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    obj<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h1 id="102-&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;"><a name="102-&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#102-&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>10.2 &#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</h1>
+<p>Kotlin&#x4E2D;&#x9664;&#x53EF;&#x4F7F;&#x7528;Java&#x7684;Pattern&#x3001;Matcher&#x5916;&#xFF0C;&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;Regex&#x7C7B;&#xFF1A;</p>
+<ol>
+<li>&#x6784;&#x9020;: <ul>
+<li><code>regex = Regex(&quot;[a-z]+&quot;, RegexOption.IGNORE_CASE)</code></li>
+<li><code>regex = &quot;[a-z]+&quot;.toRegex()</code></li>
+</ul>
+</li>
+<li>&#x5339;&#x914D;&#xFF1A;<ul>
+<li>&#x662F;&#x5426;&#x5168;&#x90E8;&#x5339;&#x914D;: <code>regex.matches(inputStr)</code></li>
+<li>&#x662F;&#x5426;&#x81F3;&#x5C11;&#x6709;&#x4E00;&#x4E2A;&#x5339;&#x914D;: <code>regex.containsMatchIn(inputStr)</code></li>
+<li>&#x5168;&#x90E8;&#x5339;&#x914D;&#x7ED3;&#x679C;: <code>regex.matchEntire(inputStr)</code>,&#x82E5;&#x4E0D;&#x5339;&#x914D;&#x8FD4;&#x56DE;null</li>
+</ul>
+</li>
+<li>&#x66FF;&#x6362;&#xFF1A;<ul>
+<li>&#x66FF;&#x6362;&#x5339;&#x914D;&#x90E8;&#x5206;: <code>val replaced = regex.replace(input, replacement)</code></li>
+<li>&#x5339;&#x914D;&#x8F6C;&#x6362;: <code>val replaced = regex.replace(input, transform)</code></li>
+</ul>
+</li>
+<li>&#x67E5;&#x627E;&#xFF1A;<ul>
+<li>&#x67E5;&#x627E;&#x9996;&#x4E2A;&#x5339;&#x914D;: <code>val result = regex.find(input)</code></li>
+<li>&#x67E5;&#x627E;&#x6240;&#x6709;&#x5339;&#x914D;: <code>val resultSequence = regex.findAll(input)</code></li>
+</ul>
+</li>
+<li>&#x8F6C;&#x6362;&#x4E3A;Java&#x6B63;&#x5219;API: <ul>
+<li>Pattern: <code>val pattern = regex.toPattern()</code></li>
+<li>Matcher: <code>val matcher = pattern.matcher(input)</code></li>
+</ul>
+</li>
+</ol>
+<h1 id="103-&#x6587;&#x4EF6;io"><a name="103-&#x6587;&#x4EF6;io" class="anchor-navigation-ex-anchor" href="#103-&#x6587;&#x4EF6;io"><i class="fa fa-link" aria-hidden="true"></i></a>10.3 &#x6587;&#x4EF6;IO</h1>
+<h2 id="&#x6807;&#x51C6;io"><a name="&#x6807;&#x51C6;io" class="anchor-navigation-ex-anchor" href="#&#x6807;&#x51C6;io"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6807;&#x51C6;IO</h2>
+<ol>
+<li>&#x8BFB;&#x53D6;<code>readLine()</code>&#x5F97;&#x5230;String&#xFF0C;&#x8FDB;&#x800C;&#x53EF;&#x901A;&#x8FC7;<code>toXx()</code>&#x8F6C;&#x6362;&#x3002;</li>
+<li>&#x8F93;&#x51FA;<code>print()</code></li>
+</ol>
+<h2 id="&#x6587;&#x4EF6;&#x64CD;&#x4F5C;"><a name="&#x6587;&#x4EF6;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x6587;&#x4EF6;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6587;&#x4EF6;&#x64CD;&#x4F5C;</h2>
+<ol>
+<li>&#x8BFB;: <ul>
+<li><code>file.readText()/readLines()/readBytes()</code></li>
+<li><code>file.reader()/bufferedReader/inputStream()</code></li>
+</ul>
+</li>
+<li>&#x5199;: <ul>
+<li><code>file.writeText()/appendText()/writeBytes()</code></li>
+<li><code>file.writer()/bufferedWriter()/outputStream()</code></li>
+</ul>
+</li>
+<li>&#x904D;&#x5386;&#x6587;&#x4EF6;&#x6811;: <code>file.walk().iterator()</code></li>
+<li>&#x6587;&#x4EF6;/&#x76EE;&#x5F55;&#x590D;&#x5236;: <code>file.copyRecursively()</code></li>
+</ol>
+<h2 id="&#x7F51;&#x7EDC;io"><a name="&#x7F51;&#x7EDC;io" class="anchor-navigation-ex-anchor" href="#&#x7F51;&#x7EDC;io"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F51;&#x7EDC;IO</h2>
+<ol>
+<li>&#x8BFB;: <code>url.readText()/readBytes()</code></li>
+<li>&#x5199;: <code>url.openConnection().getOutputStream()</code></li>
+</ol>
+<h2 id="&#x62D3;&#x5C55;&#x6267;&#x884C;shell&#x547D;&#x4EE4;"><a name="&#x62D3;&#x5C55;&#x6267;&#x884C;shell&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x62D3;&#x5C55;&#x6267;&#x884C;shell&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x62D3;&#x5C55;&#x6267;&#x884C;Shell&#x547D;&#x4EE4;</h2>
+<p>Shell&#x547D;&#x4EE4;&#x5728;Java&#x4E2D;&#x4F7F;&#x7528;<code>Runtime.getRuntime().exec(cmdStr)</code>&#x6267;&#x884C;&#x3002;</p>
+<pre class="language-"><code class="lang-kotlin"><span class="token keyword">fun</span> String<span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Process <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> Runtime<span class="token punctuation">.</span><span class="token function">getRuntime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">fun</span> Process<span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> String <span class="token punctuation">{</span>
+    <span class="token keyword">val</span> input <span class="token operator">=</span> <span class="token function">BufferedReader</span><span class="token punctuation">(</span><span class="token function">InputStreamReader</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>inputStream<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">val</span> output <span class="token operator">=</span> <span class="token function">StringBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">var</span> line<span class="token operator">:</span> String<span class="token operator">?</span>
+    <span class="token keyword">do</span> <span class="token punctuation">{</span>
+        line <span class="token operator">=</span> input<span class="token punctuation">.</span><span class="token function">readLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">also</span> <span class="token punctuation">{</span> output<span class="token punctuation">.</span><span class="token function">appendLine</span><span class="token punctuation">(</span>it<span class="token punctuation">)</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span>line <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> output<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">fun</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token function">runBlocking</span><span class="token punctuation">(</span>Dispatchers<span class="token punctuation">.</span>IO<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">val</span> p <span class="token operator">=</span> <span class="token string-literal singleline"><span class="token string">&quot;ls -al&quot;</span></span><span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">println</span><span class="token punctuation">(</span><span class="token string-literal singleline"><span class="token string">&quot;exitCode:</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token expression">p<span class="token punctuation">.</span><span class="token function">waitFor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">, text:</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token expression">p<span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../chapter9/9.并发支持.html#92-使用协程库" class="navigation navigation-prev " aria-label="Previous page: 9.2 使用协程库">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="10.工具附录.html#101-作用域函数" class="navigation navigation-next " aria-label="Next page: 10.1 作用域函数">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"10. 工具附录","level":"1.10","depth":1,"next":{"title":"10.1 作用域函数","level":"1.10.1","depth":2,"anchor":"#101-作用域函数","path":"chapter10/10.工具附录.md","ref":"chapter10/10.工具附录.md#101-作用域函数","articles":[]},"previous":{"title":"9.2 使用协程库","level":"1.9.2","depth":2,"anchor":"#92-使用协程库","path":"chapter9/9.并发支持.md","ref":"chapter9/9.并发支持.md#92-使用协程库","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","-back-to-top-button","chapter-fold","splitter","katex","-highlight","code","prism","-tbfed-pagefooter","hide-element","-lunr","-search","-search-pro","search-plus","-sharing","-anchor-navigation-ex","ancre-navigation","-chart","-sharing-plus","-summary"],"styles":{"website":"styles/web.css","ebook":"styles/ebk.css","pdf":"styles/pdf.css","mobi":"styles/mob.css","epub":"styles/epb.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"©2022 Chavin","modify_label":"上次修订: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"plugins":["line-numbers"],"cssClasses":"line-numbers"},"splitter":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link","a.navigation",".book-header"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"Chavin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":56,"left":56,"top":56,"bottom":56},"pageSize":"a4"},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kotlin进阶手册","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter10/10.工具附录.md","mtime":"2022-07-22T11:03:56.882Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-01-15T11:41:25.452Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

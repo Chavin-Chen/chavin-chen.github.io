@@ -1,0 +1,36 @@
+#include<cstdio>
+#include<algorithm>
+int n=5,a[10];
+void subset(int n,int s){
+    int out=0;
+    for(int i=0;i<(1<<n);i++)
+    if(s&(1<<i)){
+        if(!out){out=1;printf("%d",a[i]);}
+        else printf(" %d",a[i]);
+    }
+    if(!out)printf("null");
+    printf("\n");
+}
+int main(){
+    scanf("%d",&n);
+    for(int i=0;i<n;i++)
+        scanf("%d",a+i);
+    for(int i=0;i<(1<<n);i++)
+        subset(n,i);
+    return 0;
+}
+/*
+input:
+3
+4 5 7
+output:
+null
+4
+5
+4 5
+7
+4 7
+5 7
+4 5 7
+
+*/

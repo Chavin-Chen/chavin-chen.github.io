@@ -1,0 +1,60 @@
+#include<cstdio>
+#include<algorithm>
+int a[20], n,ans[20];
+void subset(int k){
+    if(k==n){
+        int flag=0;
+        for(int i=0;i<n;i++)if(ans[i]){
+            if(!flag){flag=1;printf("%d",a[i]);}
+            else printf(" %d",a[i]);
+        }
+        if(flag==0)printf("null");
+        printf("\n");
+    }else{
+        ans[k]=0;
+        subset(k+1);
+        ans[k]=1;
+        subset(k+1);
+    }
+}
+void adj(int*a,int l,int r){
+    int x=a[l];
+    for(int j=2*l;j<=r;j*=2){
+        if(j<r && a[j]>a[j+1])j++;
+        if(x<=a[j])break;
+        a[l]=a[j];
+        l=j;
+    }
+    a[l]=x;
+}
+void hsort(int*a,int n){
+    for(int i=n/2;i>0;i--)
+        adj(a,i,n);
+    for(int i=n,x;i>0;i--){
+        x=a[1];a[1]=a[i];a[i]=x;
+        adj(a,1,i-1);
+    }
+}
+int main(){
+    scanf("%d",&n);
+    for(int i=0;i<n;i++)
+        scanf("%d",a+i);
+    hsort(a-1,n);
+    subset(0);
+    return 0;
+}
+/*
+input:
+3
+1 9 7
+output:
+null
+1
+7
+7 1
+9
+9 1
+9 7
+9 7 1
+
+*/

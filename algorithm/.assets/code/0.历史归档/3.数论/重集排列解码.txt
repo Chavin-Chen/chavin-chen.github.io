@@ -1,0 +1,53 @@
+#include<cstdio>
+#include<cstring>
+#include<algorithm>
+char s[100],vis[100];
+int len,n,cnt;
+long long f(int k){
+    int n=strlen(s+k+1);
+    long long ans=1;
+    for(int i=2;i<=n;i++)ans*=i;
+    memset(vis,0,sizeof(vis));
+    for(int i=k+1,t;i<len;i++)if(!vis[i]){
+        t=1;
+        for(int j=i+1;j<len;j++)if(s[i]==s[j]){
+            ++t;ans/=t;
+            vis[j]=1;
+        }
+    }
+    return ans;
+}
+long long t;
+void d(int k){
+    if(k==len)return ;
+    t=f(k);
+    if(cnt+t>=n)d(k+1);
+    else {
+        cnt+=t;
+        for(int i=k+1;i<len;i++)
+            if(s[i]>s[k]){
+            char ch=s[k];
+            s[k]=s[i];
+            s[i]=ch;
+            d(k);
+            break;
+        }
+    }
+}
+int main(){
+    scanf("%s%d",s,&n);
+    len=strlen(s);
+    std::sort(s,s+len);
+    //printf("%lld\n",f(-1));
+    d(0);
+    printf("%s\n",s);
+    return 0;
+}
+/*
+input:
+aabc
+5
+output:
+acab
+
+*/

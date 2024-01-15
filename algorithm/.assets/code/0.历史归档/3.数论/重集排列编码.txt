@@ -1,0 +1,45 @@
+#include<cstdio>
+#include<cstring>
+char s[101],vis[101];
+int len,cnt;
+long long f(int k){//重集排列数
+    int n=strlen(s+k);
+    long long ans=1;
+    for(int i=1;i<=n;i++)ans*=i;
+    memset(vis,0,sizeof(vis));
+    for(int i=k,t;i<len;i++)if(!vis[i]){
+        t=1;
+        for(int j=i+1;j<len;j++)if(s[j]==s[i]){
+            vis[j]=1;
+            ++t;
+            ans/=t;
+        }
+    }
+    return ans;
+}
+char ds[101],t;
+void d(int k){
+    if(k==len)return ;
+    for(int i=k+1;i<len;i++)if(s[i]<s[k]&&!ds[i]){
+        t=s[k];s[k]=s[i];s[i]=t;
+        cnt+=f(k+1);
+        t=s[k];s[k]=s[i];s[i]=t;
+        for(int j=i;j<len;j++)if(s[j]==s[i])ds[j]=1;
+    }
+    memset(ds,0,len);
+    d(k+1);
+}
+int main(){
+    scanf("%s",s);
+    len=strlen(s);
+    d(0);
+    printf("%d\n",cnt+1);
+    return 0;
+}
+/*
+input:
+cbaa
+output:
+12
+
+*/

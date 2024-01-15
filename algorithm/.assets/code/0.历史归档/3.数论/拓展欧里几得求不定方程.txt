@@ -1,0 +1,33 @@
+#include<cstdio>//ax+by+c=0
+void gcd(int a,int b,int&g,int &x,int &y){//g最大公约,x,y为一组ax+by==g的解
+    if(!b){g=a;x=1;y=0;}
+    else {
+        gcd(b,a%b,g,y,x);
+        y-=x*(a/b);
+    }
+}
+int main(){
+    int a,b,c,g,x,y,x1,y1,x2,y2;
+    int cnt=0;
+    scanf("%d%d%d",&a,&b,&c);
+    scanf("%d%d%d%d",&x1,&x2,&y1,&y2);
+    gcd(a,b,g,x,y);
+    if(c%g==0){//g==0 =>a,b=0
+        x*=c/g;y*=c/g; //等比扩大
+        int aa=a/g,bb=b/g;//xi=x0+k*bb yi=y0-k*aa; a'=a/g , b'=b/g
+        for(int i=x1;i<=x2;i++)
+            for(int j=y1;j<=y2;j++)
+                if((i-x)%bb==0&&(j-y)%aa==0)cnt++;
+    }
+    printf("%d\n",cnt);
+    return 0;
+}
+/*
+x2-x1,y2-y1<=10^4 1<=a,b,c<=100
+input:
+6 15 9
+1123 2234 3345 4456
+output:
+123988
+
+*/

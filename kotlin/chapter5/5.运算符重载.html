@@ -1,0 +1,900 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>5. 运算符重载 · Kotlin进阶手册</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Chavin">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/web.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="5.运算符重载.html" />
+    
+    
+    <link rel="prev" href="../chapter4/4.泛型.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1. Kotlin简介
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../">
+            
+                <a href="../#11-概述">
+            
+                    
+                    1.1 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../">
+            
+                <a href="../#12-部署运行">
+            
+                    
+                    1.2 部署运行
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter2/2.基础语法.html">
+            
+                <a href="../chapter2/2.基础语法.html">
+            
+                    
+                    2. 基础语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter2/2.基础语法.html">
+            
+                <a href="../chapter2/2.基础语法.html#21-数据类型">
+            
+                    
+                    2.1 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter2/2.基础语法.html">
+            
+                <a href="../chapter2/2.基础语法.html#22-常量变量">
+            
+                    
+                    2.2 常量变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter2/2.基础语法.html">
+            
+                <a href="../chapter2/2.基础语法.html#23-语句结构">
+            
+                    
+                    2.3 语句结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter2/2.基础语法.html">
+            
+                <a href="../chapter2/2.基础语法.html#24-包结构">
+            
+                    
+                    2.4 包结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../chapter2/2.基础语法.html">
+            
+                <a href="../chapter2/2.基础语法.html#25-异常捕获">
+            
+                    
+                    2.5 异常捕获
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html">
+            
+                    
+                    3. 面向对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html#31-类">
+            
+                    
+                    3.1 类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html#32-特殊类">
+            
+                    
+                    3.2 特殊类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html#33-继承">
+            
+                    
+                    3.3 继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html#34-拓展">
+            
+                    
+                    3.4 拓展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html#35-object">
+            
+                    
+                    3.5 Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html#36-委托">
+            
+                    
+                    3.6 委托
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter4/4.泛型.html">
+            
+                <a href="../chapter4/4.泛型.html">
+            
+                    
+                    4. 泛型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter4/4.泛型.html">
+            
+                <a href="../chapter4/4.泛型.html#41-java型变支持">
+            
+                    
+                    4.1 Java型变支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter4/4.泛型.html">
+            
+                <a href="../chapter4/4.泛型.html#42-kotlin型变支持">
+            
+                    
+                    4.2 Kotlin型变支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="5.运算符重载.html">
+            
+                <a href="5.运算符重载.html">
+            
+                    
+                    5. 运算符重载
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="5.运算符重载.html">
+            
+                <a href="5.运算符重载.html#51-运算符和优先级">
+            
+                    
+                    5.1 运算符和优先级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="5.运算符重载.html">
+            
+                <a href="5.运算符重载.html#52-运算符重载">
+            
+                    
+                    5.2 运算符重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter6/6.集合类.html">
+            
+                <a href="../chapter6/6.集合类.html">
+            
+                    
+                    6. 集合类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter6/6.集合类.html">
+            
+                <a href="../chapter6/6.集合类.html#61-list">
+            
+                    
+                    6.1 List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter6/6.集合类.html">
+            
+                <a href="../chapter6/6.集合类.html#62-set">
+            
+                    
+                    6.2 Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter6/6.集合类.html">
+            
+                <a href="../chapter6/6.集合类.html#63-map">
+            
+                    
+                    6.3 Map
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter7/7.面向函数.html">
+            
+                <a href="../chapter7/7.面向函数.html">
+            
+                    
+                    7. 面向函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter7/7.面向函数.html">
+            
+                <a href="../chapter7/7.面向函数.html#71-函数使用">
+            
+                    
+                    7.1 函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter7/7.面向函数.html">
+            
+                <a href="../chapter7/7.面向函数.html#72-函数特性">
+            
+                    
+                    7.2 函数特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../chapter7/7.面向函数.html">
+            
+                <a href="../chapter7/7.面向函数.html#73-高阶函数">
+            
+                    
+                    7.3 高阶函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../chapter7/7.面向函数.html">
+            
+                <a href="../chapter7/7.面向函数.html#74-dsl支持">
+            
+                    
+                    7.4 DSL支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter8/8.与Java互操作.html">
+            
+                <a href="../chapter8/8.与Java互操作.html">
+            
+                    
+                    8. 与Java互操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chapter8/8.与Java互操作.html">
+            
+                <a href="../chapter8/8.与Java互操作.html#81-kotlin调java">
+            
+                    
+                    8.1 Kotlin调Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../chapter8/8.与Java互操作.html">
+            
+                <a href="../chapter8/8.与Java互操作.html#82-java调kotlin">
+            
+                    
+                    8.2 Java调Kotlin
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter9/9.并发支持.html">
+            
+                <a href="../chapter9/9.并发支持.html">
+            
+                    
+                    9. 并发支持
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chapter9/9.并发支持.html">
+            
+                <a href="../chapter9/9.并发支持.html#91-调用java线程库">
+            
+                    
+                    9.1 调用Java并发库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chapter9/9.并发支持.html">
+            
+                <a href="../chapter9/9.并发支持.html#92-使用协程库">
+            
+                    
+                    9.2 使用协程库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapter10/10.工具附录.html">
+            
+                <a href="../chapter10/10.工具附录.html">
+            
+                    
+                    10. 工具附录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../chapter10/10.工具附录.html">
+            
+                <a href="../chapter10/10.工具附录.html#101-作用域函数">
+            
+                    
+                    10.1 作用域函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../chapter10/10.工具附录.html">
+            
+                <a href="../chapter10/10.工具附录.html#102-正则表达式">
+            
+                    
+                    10.2 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../chapter10/10.工具附录.html">
+            
+                <a href="../chapter10/10.工具附录.html#103-文件io">
+            
+                    
+                    10.3 文件IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >5. 运算符重载</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#5-&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;"><b></b>5. &#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;</a></li><li><span class="title-icon "></span><a href="#51-&#x8FD0;&#x7B97;&#x7B26;&#x548C;&#x4F18;&#x5148;&#x7EA7;"><b></b>5.1 &#x8FD0;&#x7B97;&#x7B26;&#x548C;&#x4F18;&#x5148;&#x7EA7;</a></li><li><span class="title-icon "></span><a href="#52-&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;"><b></b>5.2 &#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;</a></li></ul></div><a href="#5-&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="5-&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;"><a name="5-&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#5-&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;</h1>
+<h1 id="51-&#x8FD0;&#x7B97;&#x7B26;&#x548C;&#x4F18;&#x5148;&#x7EA7;"><a name="51-&#x8FD0;&#x7B97;&#x7B26;&#x548C;&#x4F18;&#x5148;&#x7EA7;" class="anchor-navigation-ex-anchor" href="#51-&#x8FD0;&#x7B97;&#x7B26;&#x548C;&#x4F18;&#x5148;&#x7EA7;"><i class="fa fa-link" aria-hidden="true"></i></a>5.1 &#x8FD0;&#x7B97;&#x7B26;&#x548C;&#x4F18;&#x5148;&#x7EA7;</h1>
+<ol>
+<li>&#x540E;&#x7F00;Postfix: <code>++</code>&#x3001;<code>--</code>&#x3001;<code>.</code>&#x3001;<code>?.</code>&#x3001;<code>?</code></li>
+<li>&#x524D;&#x7F00;Prefix: <code>-</code>&#x3001;<code>+</code>&#x3001;<code>++</code>&#x3001;<code>--</code>&#x3001;<code>!</code>&#x3001;&#x6807;&#x7B7E;&#x5B9A;&#x4E49;<code>@</code>:</li>
+<li>RHS(right-hand side class type): <code>:</code>&#x3001;<code>as</code>&#x3001;<code>as?</code></li>
+<li>&#x4E58;&#x9664;Multiplicative: <code>*</code>&#x3001;<code>/</code>&#x3001;<code>%</code></li>
+<li>&#x52A0;&#x51CF;Additive: <code>+</code>&#x3001;<code>-</code></li>
+<li>&#x533A;&#x95F4;Range: <code>..</code></li>
+<li>&#x4E2D;&#x7F00;&#x51FD;&#x6570;Infix fun: &#x5982;<code>infix fun Int.shl(x:Int):Int {}</code> &#x5F53; <code>1 shl 2</code>&#x7B49;&#x540C;<code>1.shl(2)</code><ul>
+<li>&#x5DE6;&#x79FB;&#xFF1A;<code>val res = 1 shl 2</code></li>
+<li>&#x53F3;&#x79FB;: <code>-4 shr 1 == -2</code></li>
+<li>&#x65E0;&#x7B26;&#x53F7;&#x53F3;&#x79FB;: <code>-2 ushr 1 == 2147483646</code> </li>
+<li>&#x4F4D;&#x8FD0;&#x7B97;: <code>and or xor</code>&#xFF0C;&#x53D6;&#x53CD;&#x662F;<code>inv()</code>&#x65B9;&#x6CD5;</li>
+</ul>
+</li>
+<li>Elvis: <code>?:</code> &#x540C;<code>if(x!==null) x else 0</code></li>
+<li>Named checks: <code>in</code>&#x3001;<code>!in</code>&#x3001;<code>is</code>&#x3001;<code>!is</code></li>
+<li>Comparison: <code>&lt;</code>&#x3001;<code>&gt;</code>&#x3001;<code>&lt;=</code>&#x3001;<code>&gt;=</code></li>
+<li>Equality: <code>==</code>&#x3001;<code>!=</code>&#x3001;&#x5F15;&#x7528;&#x76F8;&#x7B49;&#x7B26;&#x4EC5;&#x5224;&#x65AD;&#x5F15;&#x7528;&#x662F;&#x5426;&#x76F8;&#x540C;<code>===</code>&#x3001;<code>!==</code>&#xFF0C;&#x5224;&#x7A7A;&#x65F6;&#x4F1A;&#x81EA;&#x52A8;&#x4F7F;&#x7528;&#x5F15;&#x7528;&#x76F8;&#x7B49;</li>
+<li>Conjunction: <code>&amp;&amp;</code></li>
+<li>Disjunction: <code>||</code></li>
+<li>Assignment: <code>=</code>&#x3001;<code>+=</code>&#x3001;<code>-=</code>&#x3001;<code>*=</code>&#x3001;<code>/=</code>&#x3001;<code>%=</code></li>
+</ol>
+<p><em>&#x6CE8;</em>: </p>
+<ul>
+<li>&#x7F16;&#x8BD1;&#x5668;&#x9488;&#x5BF9;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x7684;&#x8FD0;&#x7B97;&#x505A;&#x4E86;&#x4F18;&#x5316;&#xFF0C;&#x4E0D;&#x4F1A;&#x989D;&#x5916;&#x589E;&#x52A0;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x7684;&#x5F00;&#x9500;&#x3002;</li>
+<li>&#x4F4D;&#x4E0E;&#x79FB;&#x4F4D;&#x8FD0;&#x7B97;&#x6CA1;&#x6709;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#xFF0C;&#x53EA;&#x80FD;&#x7528;&#x4E2D;&#x7F00;&#x65B9;&#x5F0F;&#x8C03;&#x7528;&#x5177;&#x540D;&#x51FD;&#x6570;</li>
+</ul>
+<h1 id="52-&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;"><a name="52-&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#52-&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>5.2 &#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;</h1>
+<p>&#x91CD;&#x8F7D;&#x64CD;&#x4F5C;&#x7B26;&#x7684;&#x51FD;&#x6570;&#x9700;&#x8981;&#x7528;<code>operator</code> &#x4FEE;&#x9970;&#x7B26;&#x6807;&#x8BB0;&#xFF0C;&#x4E2D;&#x7F00;&#x64CD;&#x4F5C;&#x7B26;&#x7684;&#x51FD;&#x6570;&#x4F7F; &#x7528;<code>infix</code>&#x547D;&#x540D;&#x51FD;&#x6570;&#x4FEE;&#x9970;&#x3002;</p>
+<ol>
+<li>&#x4E00;&#x5143;&#x64CD;&#x4F5C;&#x7B26;: <ul>
+<li>+a: <code>a.unaryPlus()</code></li>
+<li>-a: <code>a.unaryMinus()</code></li>
+<li>!a: <code>a.not()</code></li>
+<li>a++&#x3001;++a: <code>a.inc()</code> &#x4E0E;C++&#x4E0D;&#x540C;&#xFF0C;Kotlin&#x4F1A;&#x81EA;&#x52A8;&#x533A;&#x5206;&#x524D;&#x540E;&#x7F00;&#x8C03;&#x7528;</li>
+<li>a--&#x3001;--a: <code>a.dec()</code></li>
+</ul>
+</li>
+<li>&#x4E8C;&#x5143;&#x64CD;&#x4F5C;&#x7B26;: <code>a#b =&gt; a.func(b)</code><ul>
+<li>&#x7B97;&#x672F;<code>+ - * / % ..</code>: <code>plus() minus() times() div() rem/mod() rangeTo()</code></li>
+<li>&#x5305;&#x542B;<code>in !in</code>: <code>contains()</code></li>
+<li>&#x7D22;&#x5F15;<code>a[i]=a[j]</code>: <code>get() set()</code></li>
+<li>&#x8C03;&#x7528;<code>a(b)</code>: <code>a.invoke(b)</code></li>
+<li>&#x590D;&#x5408;&#x8D4B;&#x503C;: <code>a.xxxAssign(b)</code> &#x5176;&#x4E2D;xxx&#x4E3A;&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;&#x51FD;&#x6570;</li>
+<li>&#x76F8;&#x7B49;<code>== !=</code>: <code>equals()</code></li>
+<li>&#x6BD4;&#x8F83;: <code>a.compareTo(b) # 0</code> &#x5176;&#x4E2D;#&#x4E3A; <code>&lt; &gt; &lt;= &gt;=</code></li>
+</ul>
+</li>
+</ol>
+<p><em>&#x6CE8;</em>&#xFF1A;&#x5728;IDE&#x4E2D; <code>CTRL/CMD + ML</code>&#x70B9;&#x51FB;&#x8FD0;&#x7B97;&#x7B26;&#x53EF;&#x8DF3;&#x8F6C;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5F53;&#x7F16;&#x8BD1;&#x5668;&#x5904;&#x7406;&#x8868;&#x8FBE;&#x5F0F;<code>+a</code>&#x65F6;&#xFF0C;&#x5B83;&#x5C06;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x6B65;&#x9AA4;:</p>
+<ol>
+<li>&#x786E;&#x5B9A;a&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x4EE4;&#x5176;&#x4E3A;T&#x3002;</li>
+<li>&#x4E3A;&#x63A5;&#x6536;&#x8005;T&#x67E5;&#x627E;&#x4E00;&#x4E2A;&#x5E26;&#x6709;<code>operator</code>&#x4FEE;&#x9970;&#x7B26;&#x7684;&#x65E0;&#x53C2;&#x51FD;&#x6570;<code>unaryPlus()</code>&#xFF0C;&#x5373;&#x6210;&#x5458;&#x51FD;&#x6570;&#x6216;&#x6269;&#x5C55;&#x51FD;&#x6570;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x51FD;&#x6570;&#x4E0D;&#x5B58;&#x5728;&#x6216;&#x4E0D;&#x660E;&#x786E;&#xFF0C;&#x5219;&#x5BFC;&#x81F4;&#x7F16;&#x8BD1;&#x9519;&#x8BEF;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x51FD;&#x6570;&#x5B58;&#x5728;&#x4E14;&#x5176;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x4E3A;R&#xFF0C;&#x5219;&#x8868;&#x8FBE;&#x5F0F;<code>+a</code>&#x7684;&#x503C;&#x7C7B;&#x578B;&#x4E3A;R&#x3002;</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../chapter4/4.泛型.html#42-kotlin型变支持" class="navigation navigation-prev " aria-label="Previous page: 4.2 Kotlin型变支持">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="5.运算符重载.html#51-运算符和优先级" class="navigation navigation-next " aria-label="Next page: 5.1 运算符和优先级">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5. 运算符重载","level":"1.5","depth":1,"next":{"title":"5.1 运算符和优先级","level":"1.5.1","depth":2,"anchor":"#51-运算符和优先级","path":"chapter5/5.运算符重载.md","ref":"chapter5/5.运算符重载.md#51-运算符和优先级","articles":[]},"previous":{"title":"4.2 Kotlin型变支持","level":"1.4.2","depth":2,"anchor":"#42-kotlin型变支持","path":"chapter4/4.泛型.md","ref":"chapter4/4.泛型.md#42-kotlin型变支持","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","-back-to-top-button","chapter-fold","splitter","katex","-highlight","code","prism","-tbfed-pagefooter","hide-element","-lunr","-search","-search-pro","search-plus","-sharing","-anchor-navigation-ex","ancre-navigation","-chart","-sharing-plus","-summary"],"styles":{"website":"styles/web.css","ebook":"styles/ebk.css","pdf":"styles/pdf.css","mobi":"styles/mob.css","epub":"styles/epb.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"©2022 Chavin","modify_label":"上次修订: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"plugins":["line-numbers"],"cssClasses":"line-numbers"},"splitter":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link","a.navigation",".book-header"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"Chavin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":56,"left":56,"top":56,"bottom":56},"pageSize":"a4"},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kotlin进阶手册","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter5/5.运算符重载.md","mtime":"2022-07-22T10:49:47.732Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-01-15T11:41:25.452Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

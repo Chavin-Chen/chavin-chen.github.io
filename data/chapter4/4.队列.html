@@ -1,0 +1,1059 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4. 队列 · 数据结构进阶手册(草稿)</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Chavin">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/web.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="4.队列.html" />
+    
+    
+    <link rel="prev" href="../chapter3/3.栈.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1. 集合
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../">
+            
+                <a href="../#11并查集">
+            
+                    
+                    1.1 并查集
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter2/2.线性表.html">
+            
+                <a href="../chapter2/2.线性表.html">
+            
+                    
+                    2. 线性表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter2/2.线性表.html">
+            
+                <a href="../chapter2/2.线性表.html#21-动态数组">
+            
+                    
+                    2.1 动态数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter2/2.线性表.html">
+            
+                <a href="../chapter2/2.线性表.html#22-链表">
+            
+                    
+                    2.2 链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter2/2.线性表.html">
+            
+                <a href="../chapter2/2.线性表.html#23-kmp匹配">
+            
+                    
+                    2.3 KMP匹配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter2/2.线性表.html">
+            
+                <a href="../chapter2/2.线性表.html#24-字典树">
+            
+                    
+                    2.4 字典树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../chapter2/2.线性表.html">
+            
+                <a href="../chapter2/2.线性表.html#25-ac自动机">
+            
+                    
+                    2.5 AC自动机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../chapter2/2.线性表.html">
+            
+                <a href="../chapter2/2.线性表.html#26-线段树">
+            
+                    
+                    2.6 线段树
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter3/3.栈.html">
+            
+                <a href="../chapter3/3.栈.html">
+            
+                    
+                    3. 栈
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter3/3.栈.html">
+            
+                <a href="../chapter3/3.栈.html#31-出站序列判断">
+            
+                    
+                    3.1 出站序列判断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter3/3.栈.html">
+            
+                <a href="../chapter3/3.栈.html#32-十进制转r进制">
+            
+                    
+                    3.2 十进制转R进制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter3/3.栈.html">
+            
+                <a href="../chapter3/3.栈.html#33-双栈求表达式">
+            
+                    
+                    3.3 双栈求表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="4.队列.html">
+            
+                <a href="4.队列.html">
+            
+                    
+                    4. 队列
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="4.队列.html">
+            
+                <a href="4.队列.html#41-循环队列">
+            
+                    
+                    4.1 循环队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="4.队列.html">
+            
+                <a href="4.队列.html#42-优先队列">
+            
+                    
+                    4.2 优先队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter5/5.树.html">
+            
+                <a href="../chapter5/5.树.html">
+            
+                    
+                    5. 树
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter5/5.树.html">
+            
+                <a href="../chapter5/5.树.html#51-二叉树遍历">
+            
+                    
+                    5.1 二叉树遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter5/5.树.html">
+            
+                <a href="../chapter5/5.树.html#52-二叉树重建">
+            
+                    
+                    5.2 二叉树重建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter5/5.树.html">
+            
+                <a href="../chapter5/5.树.html#53-线索二叉树">
+            
+                    
+                    5.3 线索二叉树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter5/5.树.html">
+            
+                <a href="../chapter5/5.树.html#54-haffman树">
+            
+                    
+                    5.4 Haffman树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../chapter5/5.树.html">
+            
+                <a href="../chapter5/5.树.html#55-中缀表达式树">
+            
+                    
+                    5.5 中缀表达式树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../chapter5/5.树.html">
+            
+                <a href="../chapter5/5.树.html#56-平衡树">
+            
+                    
+                    5.6 平衡树
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter6/6.图.html">
+            
+                <a href="../chapter6/6.图.html">
+            
+                    
+                    6. 图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter6/6.图.html">
+            
+                <a href="../chapter6/6.图.html#61-图存储和遍历">
+            
+                    
+                    6.1 图存储和遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter6/6.图.html">
+            
+                <a href="../chapter6/6.图.html#62-拓扑序">
+            
+                    
+                    6.2 拓扑序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter6/6.图.html">
+            
+                <a href="../chapter6/6.图.html#63-最小生成树">
+            
+                    
+                    6.3 最小生成树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter6/6.图.html">
+            
+                <a href="../chapter6/6.图.html#64-dijkstra">
+            
+                    
+                    6.4 Dijkstra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../chapter6/6.图.html">
+            
+                <a href="../chapter6/6.图.html#65-floyd">
+            
+                    
+                    6.5 Floyd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../chapter6/6.图.html">
+            
+                <a href="../chapter6/6.图.html#66-关键路径">
+            
+                    
+                    6.6 关键路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter7/7.查找.html">
+            
+                <a href="../chapter7/7.查找.html">
+            
+                    
+                    7. 查找
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter7/7.查找.html">
+            
+                <a href="../chapter7/7.查找.html#71-二分法">
+            
+                    
+                    7.1 二分法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter7/7.查找.html">
+            
+                <a href="../chapter7/7.查找.html#72-哈希">
+            
+                    
+                    7.2 哈希
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../chapter7/7.查找.html">
+            
+                <a href="../chapter7/7.查找.html#73-平衡树">
+            
+                    
+                    7.3 平衡树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../chapter7/7.查找.html">
+            
+                <a href="../chapter7/7.查找.html#74-b树">
+            
+                    
+                    7.4 B树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../chapter7/7.查找.html">
+            
+                <a href="../chapter7/7.查找.html#75-红黑树">
+            
+                    
+                    7.5 红黑树
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter8/8.排序.html">
+            
+                <a href="../chapter8/8.排序.html">
+            
+                    
+                    8. 排序
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chapter8/8.排序.html">
+            
+                <a href="../chapter8/8.排序.html#81-插入类排序">
+            
+                    
+                    8.1 插入类排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../chapter8/8.排序.html">
+            
+                <a href="../chapter8/8.排序.html#82-选择类排序">
+            
+                    
+                    8.2 选择类排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../chapter8/8.排序.html">
+            
+                <a href="../chapter8/8.排序.html#83-交换类排序">
+            
+                    
+                    8.3 交换类排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../chapter8/8.排序.html">
+            
+                <a href="../chapter8/8.排序.html#84-统计类排序">
+            
+                    
+                    8.4 统计类排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../chapter8/8.排序.html">
+            
+                <a href="../chapter8/8.排序.html#85-归并排序">
+            
+                    
+                    8.5 归并排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter9/9.二进制.html">
+            
+                <a href="../chapter9/9.二进制.html">
+            
+                    
+                    9. 二进制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chapter9/9.二进制.html">
+            
+                <a href="../chapter9/9.二进制.html#91-二进制编码和运算符">
+            
+                    
+                    9.1 二进制编码和运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chapter9/9.二进制.html">
+            
+                <a href="../chapter9/9.二进制.html#92-掩码与状态">
+            
+                    
+                    9.2 掩码与状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../chapter9/9.二进制.html">
+            
+                <a href="../chapter9/9.二进制.html#93-二的整数幂">
+            
+                    
+                    9.3 二的整数幂
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../chapter9/9.二进制.html">
+            
+                <a href="../chapter9/9.二进制.html#94-正负和绝对值">
+            
+                    
+                    9.4 正负和绝对值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../chapter9/9.二进制.html">
+            
+                <a href="../chapter9/9.二进制.html#95-两数交换">
+            
+                    
+                    9.5 两数交换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../chapter9/9.二进制.html">
+            
+                <a href="../chapter9/9.二进制.html#96-比较大小">
+            
+                    
+                    9.6 比较大小
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../chapter9/9.二进制.html">
+            
+                <a href="../chapter9/9.二进制.html#97-位运算实现四则运算">
+            
+                    
+                    9.7 位运算实现四则运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../chapter9/9.二进制.html">
+            
+                <a href="../chapter9/9.二进制.html#98-二进制应用">
+            
+                    
+                    9.8 二进制应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4. 队列</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#4-&#x961F;&#x5217;"><b></b>4. &#x961F;&#x5217;</a></li><li><span class="title-icon "></span><a href="#41-&#x5FAA;&#x73AF;&#x961F;&#x5217;"><b></b>4.1 &#x5FAA;&#x73AF;&#x961F;&#x5217;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7EA6;&#x745F;&#x592B;&#x73AF;&#x95EE;&#x9898;"><b></b>&#x7EA6;&#x745F;&#x592B;&#x73AF;&#x95EE;&#x9898;</a></li></ul><li><span class="title-icon "></span><a href="#42-&#x4F18;&#x5148;&#x961F;&#x5217;"><b></b>4.2 &#x4F18;&#x5148;&#x961F;&#x5217;</a></li></ul></div><a href="#4-&#x961F;&#x5217;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="4-&#x961F;&#x5217;"><a name="4-&#x961F;&#x5217;" class="anchor-navigation-ex-anchor" href="#4-&#x961F;&#x5217;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x961F;&#x5217;</h1>
+<p>&#x961F;&#x5217;&#x662F;<code>FIFO</code>&#x7684;&#x7EBF;&#x6027;&#x7ED3;&#x6784;&#x3002;</p>
+<h1 id="41-&#x5FAA;&#x73AF;&#x961F;&#x5217;"><a name="41-&#x5FAA;&#x73AF;&#x961F;&#x5217;" class="anchor-navigation-ex-anchor" href="#41-&#x5FAA;&#x73AF;&#x961F;&#x5217;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1 &#x5FAA;&#x73AF;&#x961F;&#x5217;</h1>
+<p>&#x5BB9;&#x91CF;&#x4E3A;m&#xFF0C;<code>hp</code>&#x6307;&#x5411;&#x961F;&#x5934;&#x5143;&#x7D20;&#xFF0C;<code>tp</code>&#x6307;&#x5411;&#x961F;&#x5C3E;&#x540E;&#x4E00;&#x4F4D;&#x7684;&#x7A7A;&#x4F4D;&#x7F6E;&#xFF08;&#x5982;<code>[0, hp=1&apos;, 2&apos;, 3&apos;, tp=4, 5]</code>&#xFF09;&#xFF1A;</p>
+<ul>
+<li>&#x961F;&#x5217;&#x4E3A;&#x7A7A;&#xFF1A;<code>hp == tp</code></li>
+<li>&#x961F;&#x5217;&#x5DF2;&#x6EE1;&#xFF1A;<code>(tp + 1) % m == hp</code></li>
+<li>&#x961F;&#x5217;&#x957F;&#x5EA6;&#xFF1A;<code>(tp - hp + M) % M</code></li>
+<li>&#x53F3;&#x79FB;&#xFF1A;<code>(i + 1) % M</code></li>
+<li>&#x5DE6;&#x79FB;&#xFF1A;<code>(i - 1 + M) % M</code></li>
+</ul>
+<h2 id="&#x7EA6;&#x745F;&#x592B;&#x73AF;&#x95EE;&#x9898;"><a name="&#x7EA6;&#x745F;&#x592B;&#x73AF;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x7EA6;&#x745F;&#x592B;&#x73AF;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EA6;&#x745F;&#x592B;&#x73AF;&#x95EE;&#x9898;</h2>
+<p>&#x9898;&#x76EE;&#x5927;&#x610F;: N&#x4E2A;&#x4EBA;&#x7F16;&#x53F7;1~N&#x56F4;&#x6210;&#x4E00;&#x5708;&#xFF0C;&#x4ECE;1&#x53F7;&#x5F00;&#x59CB;&#x6570;&#x6BCF;&#x6570;&#x5230;X&#x51FA;&#x5217;&#xFF0C;&#x4E4B;&#x540E;&#x4ECE;X+1&#x7EE7;&#x7EED;&#x6570;&#x3002;&#x6C42;&#x6700;&#x540E;&#x7559;&#x5728;&#x961F;&#x5217;&#x4E2D;&#x7684;&#x4EBA;&#x7684;&#x7F16;&#x53F7;&#x3002;</p>
+<ol>
+<li>&#x5148;&#x628A;N&#x4E2A;&#x5143;&#x7D20;&#x7F16;&#x53F7;&#x5E76;&#x4F9D;&#x6B21;&#x8FDB;&#x5165;&#x961F;&#x5217;</li>
+<li>&#x5FAA;&#x73AF;&#x904D;&#x5386;&#x6A21;&#x62DF;&#xFF0C;&#x76F4;&#x5230;&#x961F;&#x5217;&#x4E2D;&#x53EA;&#x5269;&#x4E0B;&#x4E00;&#x4E2A;&#x4EBA;&#x3002;</li>
+</ol>
+<pre class="language-"><code class="lang-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> N<span class="token punctuation">,</span> x<span class="token punctuation">,</span> <span class="token operator">*</span>queue<span class="token punctuation">,</span> ap<span class="token punctuation">,</span> cnt<span class="token punctuation">,</span> c<span class="token punctuation">;</span>
+    cin <span class="token operator">&gt;&gt;</span> N <span class="token operator">&gt;&gt;</span> x<span class="token punctuation">;</span>
+    <span class="token comment">// &#x7ED9;M&#x7ED9;&#x4EBA;&#x7F16;&#x53F7;1~N</span>
+    queue <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>N <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> N<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> queue<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    ap <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    cnt <span class="token operator">=</span> N<span class="token punctuation">;</span>
+    <span class="token comment">// &#x4ECE;1&#x53F7;&#x5F00;&#x59CB;&#x5F80;&#x4E0B;&#x6570;&#xFF0C;&#x6BCF;&#x6570;&#x5230;X&#x51FA;&#x5217;&#xFF0C;&#x76F4;&#x5230;&#x53EA;&#x5269;&#x4E0B;1&#x4E2A;&#x4EBA;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>c <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> cnt <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">;</span> ap <span class="token operator">=</span> <span class="token punctuation">(</span>ap <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">%</span> N<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>queue<span class="token punctuation">[</span>ap<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">continue</span><span class="token punctuation">;</span> <span class="token comment">// &#x5FFD;&#x7565;&#x5DF2;&#x7ECF;&#x79FB;&#x9664;&#x7684;</span>
+        <span class="token comment">// &#x6570;&#x5230;X&#x4E86;&#xFF0C;&#x8BE5;&#x6210;&#x5458;&#x51FA;&#x5217;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">++</span>c <span class="token operator">==</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            queue<span class="token punctuation">[</span>ap<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            cnt<span class="token operator">--</span><span class="token punctuation">;</span>
+            c <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// &#x627E;&#x5230;&#x961F;&#x5217;&#x4E2D;&#x6CA1;&#x88AB;&#x5254;&#x9664;&#x7684;&#x7F16;&#x53F7;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> N<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>queue<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">continue</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        cout <span class="token operator">&lt;&lt;</span> queue<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h1 id="42-&#x4F18;&#x5148;&#x961F;&#x5217;"><a name="42-&#x4F18;&#x5148;&#x961F;&#x5217;" class="anchor-navigation-ex-anchor" href="#42-&#x4F18;&#x5148;&#x961F;&#x5217;"><i class="fa fa-link" aria-hidden="true"></i></a>4.2 &#x4F18;&#x5148;&#x961F;&#x5217;</h1>
+<p>&#x57FA;&#x4E8E;&#x5806;&#x7ED3;&#x6784;(&#x4E00;&#x68F5;&#x5B8C;&#x5168;&#x4E8C;&#x53C9;&#x6811;)&#x6765;&#x5B9E;&#x73B0;&#x4F18;&#x5148;&#x7EA7;&#x961F;&#x5217;&#x6700;&#x76F4;&#x63A5;&#x3001;&#x9AD8;&#x6548;&#x3002;
+&#x4F18;&#x5148;&#x7EA7;&#x961F;&#x5217;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x9AD8;&#x6027;&#x80FD;&#x7684;&#x591A;&#x4EFB;&#x52A1;&#x5B9A;&#x65F6;&#x8C03;&#x5EA6;&#x5668;&#x3002;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;queue&gt;</span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">desc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> n<span class="token punctuation">,</span> i <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">,</span> e<span class="token punctuation">;</span>
+    cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> <span class="token operator">*</span>arr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>n <span class="token operator">+</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token function">make_heap</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> arr <span class="token operator">+</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token generic-function"><span class="token function">greater</span><span class="token generic class-name"><span class="token operator">&lt;</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x521D;&#x59CB;&#x5316;&#x5C0F;&#x6839;&#x5806;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>n<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cin <span class="token operator">&gt;&gt;</span> e<span class="token punctuation">;</span>
+        arr<span class="token punctuation">[</span>i<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> e<span class="token punctuation">;</span>
+        <span class="token function">push_heap</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> arr <span class="token operator">+</span> i<span class="token punctuation">,</span> <span class="token generic-function"><span class="token function">greater</span><span class="token generic class-name"><span class="token operator">&lt;</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x63D2;&#x5165;&#x5143;&#x7D20;&#x540E;&#x8C03;&#x6574;&#x5806;:&#x5C3E;&#x5143;&#x7D20;&#x4E0A;&#x6D6E;</span>
+    <span class="token punctuation">}</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;is heap:&quot;</span> <span class="token operator">&lt;&lt;</span> <span class="token function">is_heap</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> arr <span class="token operator">+</span> i<span class="token punctuation">,</span> <span class="token generic-function"><span class="token function">greater</span><span class="token generic class-name"><span class="token operator">&lt;</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&gt;=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">pop_heap</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> arr <span class="token operator">+</span> i<span class="token punctuation">,</span> <span class="token generic-function"><span class="token function">greater</span><span class="token generic class-name"><span class="token operator">&lt;</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x79FB;&#x9664;&#x5143;&#x7D20;&#x540E;&#x8C03;&#x6574;&#x5806;: &#x6839;&#x5143;&#x7D20;&#x4E0B;&#x6C89;</span>
+        cout <span class="token operator">&lt;&lt;</span> arr<span class="token punctuation">[</span><span class="token operator">--</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// &#x4E0A;&#x8FF0;&#x5FAA;&#x73AF;&#x90E8;&#x5206;&#x7B49;&#x540C;&#x4E8E;</span>
+<span class="token comment">//    sort_heap(arr, arr + i, greater&lt;&gt;());</span>
+<span class="token comment">//    while (i &gt; 0) cout &lt;&lt; arr[--i] &lt;&lt; endl;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">desc</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// STL&#x5728;&#x5934;&#x6587;&#x4EF6;&lt;queue&gt;&#x4E2D;&#x5C01;&#x88C5;&#x6709;priority_queue&lt;T&gt;&#x5806;&#x9002;&#x914D;&#x5668;</span>
+    priority_queue<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">,</span> vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token punctuation">,</span> less<span class="token operator">&lt;</span><span class="token operator">&gt;&gt;</span> q<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> n<span class="token punctuation">,</span> e<span class="token punctuation">;</span>
+    cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>n<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cin <span class="token operator">&gt;&gt;</span> e<span class="token punctuation">;</span>
+        q<span class="token punctuation">.</span><span class="token function">emplace</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>q<span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> q<span class="token punctuation">.</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        q<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../chapter3/3.栈.html#33-双栈求表达式" class="navigation navigation-prev " aria-label="Previous page: 3.3 双栈求表达式">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="4.队列.html#41-循环队列" class="navigation navigation-next " aria-label="Next page: 4.1 循环队列">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4. 队列","level":"1.4","depth":1,"next":{"title":"4.1 循环队列","level":"1.4.1","depth":2,"anchor":"#41-循环队列","path":"chapter4/4.队列.md","ref":"chapter4/4.队列.md#41-循环队列","articles":[]},"previous":{"title":"3.3 双栈求表达式","level":"1.3.3","depth":2,"anchor":"#33-双栈求表达式","path":"chapter3/3.栈.md","ref":"chapter3/3.栈.md#33-双栈求表达式","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","chapter-fold","splitter","katex","code","prism","hide-element","search-plus","ancre-navigation","-sharing-plus","-summary","-back-to-top-button","-highlight","-tbfed-pagefooter","-lunr","-search","-search-pro","-sharing","-anchor-navigation-ex","-chart"],"styles":{"website":"styles/web.css","ebook":"styles/ebk.css","pdf":"styles/pdf.css","mobi":"styles/mob.css","epub":"styles/epb.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"©2022 Chavin","modify_label":"上次修订: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"plugins":["line-numbers"],"cssClasses":"line-numbers"},"splitter":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link","a.navigation",".book-header"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"Chavin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":56,"left":56,"top":56,"bottom":56},"pageSize":"a4"},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"数据结构进阶手册(草稿)","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter4/4.队列.md","mtime":"2022-08-06T15:53:13.457Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-01-15T11:39:32.405Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

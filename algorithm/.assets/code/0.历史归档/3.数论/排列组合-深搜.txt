@@ -1,0 +1,28 @@
+#include<iostream>
+#include<map>
+using namespace std;
+int n,k,a[22],t;
+map<int,int>m;
+int vis[22]={0};
+void dfs(int p,int d,int s){
+    if(d==k){
+        t++;
+        return ;
+    }
+    for(int i=0;i<n;i++)//排列数量的叶节点 P(n,k)=n!/k!
+    if(!vis[i]){
+        vis[i]=1;
+        dfs(i+1,d+1,s+a[i]);
+        vis[i]=0;
+    }
+    for(int i= p ;i<n;i++)//组合数量的叶节点 C(n,k)=n!/(k!(n-k)!)
+        dfs(i+1,d+1,s+a[i])
+}
+int main(){
+    cin>>n>>k;
+    for(int i=0;i<n;i++)
+        cin>>a[i];
+    dfs(0,0,0);
+    cout<<t<<endl;
+    return 0;
+}

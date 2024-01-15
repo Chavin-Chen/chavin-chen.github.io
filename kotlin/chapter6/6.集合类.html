@@ -1,0 +1,1100 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6. 集合类 · Kotlin进阶手册</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Chavin">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/web.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="6.集合类.html" />
+    
+    
+    <link rel="prev" href="../chapter5/5.运算符重载.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1. Kotlin简介
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../">
+            
+                <a href="../#11-概述">
+            
+                    
+                    1.1 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../">
+            
+                <a href="../#12-部署运行">
+            
+                    
+                    1.2 部署运行
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter2/2.基础语法.html">
+            
+                <a href="../chapter2/2.基础语法.html">
+            
+                    
+                    2. 基础语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter2/2.基础语法.html">
+            
+                <a href="../chapter2/2.基础语法.html#21-数据类型">
+            
+                    
+                    2.1 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter2/2.基础语法.html">
+            
+                <a href="../chapter2/2.基础语法.html#22-常量变量">
+            
+                    
+                    2.2 常量变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter2/2.基础语法.html">
+            
+                <a href="../chapter2/2.基础语法.html#23-语句结构">
+            
+                    
+                    2.3 语句结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter2/2.基础语法.html">
+            
+                <a href="../chapter2/2.基础语法.html#24-包结构">
+            
+                    
+                    2.4 包结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../chapter2/2.基础语法.html">
+            
+                <a href="../chapter2/2.基础语法.html#25-异常捕获">
+            
+                    
+                    2.5 异常捕获
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html">
+            
+                    
+                    3. 面向对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html#31-类">
+            
+                    
+                    3.1 类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html#32-特殊类">
+            
+                    
+                    3.2 特殊类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html#33-继承">
+            
+                    
+                    3.3 继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html#34-拓展">
+            
+                    
+                    3.4 拓展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html#35-object">
+            
+                    
+                    3.5 Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../chapter3/3.面向对象.html">
+            
+                <a href="../chapter3/3.面向对象.html#36-委托">
+            
+                    
+                    3.6 委托
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter4/4.泛型.html">
+            
+                <a href="../chapter4/4.泛型.html">
+            
+                    
+                    4. 泛型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter4/4.泛型.html">
+            
+                <a href="../chapter4/4.泛型.html#41-java型变支持">
+            
+                    
+                    4.1 Java型变支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter4/4.泛型.html">
+            
+                <a href="../chapter4/4.泛型.html#42-kotlin型变支持">
+            
+                    
+                    4.2 Kotlin型变支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter5/5.运算符重载.html">
+            
+                <a href="../chapter5/5.运算符重载.html">
+            
+                    
+                    5. 运算符重载
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter5/5.运算符重载.html">
+            
+                <a href="../chapter5/5.运算符重载.html#51-运算符和优先级">
+            
+                    
+                    5.1 运算符和优先级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter5/5.运算符重载.html">
+            
+                <a href="../chapter5/5.运算符重载.html#52-运算符重载">
+            
+                    
+                    5.2 运算符重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="6.集合类.html">
+            
+                <a href="6.集合类.html">
+            
+                    
+                    6. 集合类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="6.集合类.html">
+            
+                <a href="6.集合类.html#61-list">
+            
+                    
+                    6.1 List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="6.集合类.html">
+            
+                <a href="6.集合类.html#62-set">
+            
+                    
+                    6.2 Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="6.集合类.html">
+            
+                <a href="6.集合类.html#63-map">
+            
+                    
+                    6.3 Map
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter7/7.面向函数.html">
+            
+                <a href="../chapter7/7.面向函数.html">
+            
+                    
+                    7. 面向函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter7/7.面向函数.html">
+            
+                <a href="../chapter7/7.面向函数.html#71-函数使用">
+            
+                    
+                    7.1 函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter7/7.面向函数.html">
+            
+                <a href="../chapter7/7.面向函数.html#72-函数特性">
+            
+                    
+                    7.2 函数特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../chapter7/7.面向函数.html">
+            
+                <a href="../chapter7/7.面向函数.html#73-高阶函数">
+            
+                    
+                    7.3 高阶函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../chapter7/7.面向函数.html">
+            
+                <a href="../chapter7/7.面向函数.html#74-dsl支持">
+            
+                    
+                    7.4 DSL支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter8/8.与Java互操作.html">
+            
+                <a href="../chapter8/8.与Java互操作.html">
+            
+                    
+                    8. 与Java互操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chapter8/8.与Java互操作.html">
+            
+                <a href="../chapter8/8.与Java互操作.html#81-kotlin调java">
+            
+                    
+                    8.1 Kotlin调Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../chapter8/8.与Java互操作.html">
+            
+                <a href="../chapter8/8.与Java互操作.html#82-java调kotlin">
+            
+                    
+                    8.2 Java调Kotlin
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter9/9.并发支持.html">
+            
+                <a href="../chapter9/9.并发支持.html">
+            
+                    
+                    9. 并发支持
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chapter9/9.并发支持.html">
+            
+                <a href="../chapter9/9.并发支持.html#91-调用java线程库">
+            
+                    
+                    9.1 调用Java并发库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chapter9/9.并发支持.html">
+            
+                <a href="../chapter9/9.并发支持.html#92-使用协程库">
+            
+                    
+                    9.2 使用协程库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapter10/10.工具附录.html">
+            
+                <a href="../chapter10/10.工具附录.html">
+            
+                    
+                    10. 工具附录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../chapter10/10.工具附录.html">
+            
+                <a href="../chapter10/10.工具附录.html#101-作用域函数">
+            
+                    
+                    10.1 作用域函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../chapter10/10.工具附录.html">
+            
+                <a href="../chapter10/10.工具附录.html#102-正则表达式">
+            
+                    
+                    10.2 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../chapter10/10.工具附录.html">
+            
+                <a href="../chapter10/10.工具附录.html#103-文件io">
+            
+                    
+                    10.3 文件IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >6. 集合类</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#6-&#x96C6;&#x5408;&#x7C7B;"><b></b>6. &#x96C6;&#x5408;&#x7C7B;</a></li><li><span class="title-icon "></span><a href="#61-list"><b></b>6.1 List</a></li><li><span class="title-icon "></span><a href="#62-set"><b></b>6.2 Set</a></li><li><span class="title-icon "></span><a href="#63-map"><b></b>6.3 Map</a></li></ul></div><a href="#6-&#x96C6;&#x5408;&#x7C7B;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="6-&#x96C6;&#x5408;&#x7C7B;"><a name="6-&#x96C6;&#x5408;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#6-&#x96C6;&#x5408;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>6. &#x96C6;&#x5408;&#x7C7B;</h1>
+<p>Kotlin&#x7684;&#x96C6;&#x5408;&#x7C7B;&#x5206;&#x4E3A;&#x53EF;&#x53D8;&#x96C6;&#x5408;&#x7C7B;(Mutable)&#x4E0E;&#x4E0D;&#x53EF;&#x53D8;&#x96C6;&#x5408;&#x7C7B;(Immutable:&#x53EA;&#x8BFB;&#x3001;&#x53EF;&#x5E8F;&#x5217;&#x5316;)&#x3002;
+&#x4E3B;&#x8981;&#x6709;3&#x79CD;: list&#x3001;set &#x548C; map&#x3002;&#x7279;&#x522B;&#x7684;&#x7A7A;&#x96C6;&#x5408;&#x5BF9;&#x8C61;&#x662F;&#x5168;&#x5C40;&#x5355;&#x4F8B;&#x7684;&#x3002;</p>
+<p><img src="../.asset/kt-list-set-map.png" alt="collections"></p>
+<h1 id="61-list"><a name="61-list" class="anchor-navigation-ex-anchor" href="#61-list"><i class="fa fa-link" aria-hidden="true"></i></a>6.1 List</h1>
+<ol>
+<li>&#x521B;&#x5EFA;&#x4E0E;&#x8F6C;&#x6362;: <ul>
+<li><code>listOf()&#x3001;mutableListOf()&#x3001;arrayListOf()</code></li>
+<li><code>toMutableList()&#x3001;toList()</code></li>
+</ul>
+</li>
+<li>&#x904D;&#x5386;: <ul>
+<li>&#x8FED;&#x4EE3;&#x5668; <code>it = list.listIterator(); for(e in list)</code></li>
+<li>ForEach <code>l.forEach(::println)&#x3001;l.forEachIndexed {i,e-&gt; println(&quot;$i-&gt;$e&quot;)}</code></li>
+<li>&#x6C42;&#x548C; <code>list.sum() &#x3001;list.sumOf {e-&gt; 2*e}</code>&#x540E;&#x8005;&#x6C42; sum(f(x)) &#x5176;&#x4E2D; f(x)=2*x</li>
+<li>&#x904D;&#x5386;&#x7D2F;&#x8BA1; <code>reduce() fold() foldRight()</code></li>
+</ul>
+</li>
+<li>CURD: <ul>
+<li>&#x589E;: <code>add()</code>&#x3001;<code>plus()</code></li>
+<li>&#x5220;: <code>remove()</code>&#x3001;<code>clear()</code></li>
+<li>&#x6539;: set&#x65B9;&#x6CD5;<code>list[0]=e</code> </li>
+<li>&#x67E5;: <code>getOrNull()&#x3001;elementAt()</code></li>
+</ul>
+</li>
+<li>&#x6392;&#x5E8F;: <code>sorted() sortedDescending() reversed() sortedWith(cmp) sortedBy(f)</code></li>
+<li>&#x6309;&#x6761;&#x4EF6;&#x53D6;&#x5143;&#x7D20;: <ul>
+<li>&#x4ECE;&#x5DE6;&#x5411;&#x53F3;&#x67E5;&#x627E;<code>firstOrNull(predicate)</code></li>
+<li>&#x4ECE;&#x53F3;&#x5411;&#x5DE6;&#x67E5;&#x627E;<code>lastOrNull(predicate)</code></li>
+<li>&#x67E5;&#x627E;&#x552F;&#x4E00;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x5143;&#x7D20;<code>singleOrNull(predicate)</code></li>
+</ul>
+</li>
+<li>&#x67E5;&#x8BE2;&#x5143;&#x7D20;&#x4E0B;&#x6807;: <code>indexOfFirst() &#x3001;indexOfLast()</code></li>
+<li>&#x7EDF;&#x8BA1;&#x5224;&#x65AD;: <ul>
+<li>&#x662F;&#x5426;&#x6240;&#x6709;&#x5143;&#x7D20;&#x90FD;&#x4E0D;&#x6EE1;&#x8DB3; <code>list.none(predicate)</code></li>
+<li>&#x662F;&#x5426;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x6EE1;&#x8DB3; <code>list.any(predicate)</code></li>
+<li>&#x662F;&#x5426;&#x6240;&#x6709;&#x5143;&#x7D20;&#x90FD;&#x6EE1;&#x8DB3; <code>list.all(predicate)</code></li>
+<li>&#x7EDF;&#x8BA1;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x5143;&#x7D20;&#x6570; <code>list.count(predicate)</code></li>
+<li>&#x5224;&#x65AD;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5728;&#x5217;&#x8868;&#x4E2D; <code>list.contains(ele)</code></li>
+</ul>
+</li>
+<li>&#x6700;&#x503C;: <code>min/max() minWith(cmp) minOf(f) minBy(f)</code> &#x5176;&#x4E2D;minBy(f)&#x8FD4;&#x56DE;f(x)&#x503C;&#x6700;&#x5C0F;&#x65F6;&#x7684;x&#x503C;</li>
+<li>&#x8FC7;&#x6EE4;: <ul>
+<li>&#x53D6;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x4E00;&#x7CFB;&#x5217; <code>take(N) takeWhile(predicate) takeLast(N)</code></li>
+<li>&#x53BB;&#x6389;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x53D6;&#x8865; <code>drop(N) dropLastWhile(predicate)</code></li>
+<li>&#x6839;&#x636E;&#x4E0B;&#x6807;&#x6311;&#x9009; <code>slice(idxs)</code></li>
+<li>&#x6839;&#x636E;&#x6761;&#x4EF6;&#x8FC7;&#x6EE4; <code>filterTo()</code></li>
+</ul>
+</li>
+<li>&#x6620;&#x5C04;: <ul>
+<li>&#x6839;&#x636E;&#x6620;&#x5C04;&#x5173;&#x7CFB;&#x53D6;&#x65B0;&#x96C6; <code>map() &#x3001;mapNotNull()</code></li>
+<li>&#x6241;&#x5E73;&#x5316;&#x6620;&#x5C04; <code>flatMap()</code></li>
+</ul>
+</li>
+<li>&#x5206;&#x7EC4;: <code>groupBy(keyGen, valGen)</code></li>
+<li>&#x538B;&#x89E3;: <code>cL=aL.zip(bL) cL.unzip().also{ aL=it.first; bL=it.second}</code></li>
+<li>&#x62C6;&#x5206;: <code>partition(predicate)</code> &#x4F9D;&#x636E;&#x6EE1;&#x8DB3;&#x4E0E;&#x5426;&#x5206;&#x6210;2&#x7EC4;</li>
+<li>&#x4EA4;&#x96C6;: <code>aL.retainAll{ bL.contains(it) }</code></li>
+</ol>
+<pre class="language-"><code class="lang-kotlin"><span class="token comment">// &#x53EA;&#x8BFB;&#x3001;&#x53EF;&#x5199;List&#x521B;&#x5EFA;&#x4E0E;&#x8F6C;&#x6362;</span>
+<span class="token keyword">val</span> iList <span class="token operator">=</span> <span class="token function">listOf</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span>
+<span class="token keyword">val</span> mList <span class="token operator">=</span> <span class="token function">mutableListOf</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span>
+<span class="token keyword">val</span> list <span class="token operator">=</span> <span class="token function">listOf</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toMutableList</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">val</span> iL <span class="token operator">=</span> <span class="token function">mutableListOf</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toList</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// &#x53D6;&#x8FED;&#x4EE3;&#x5668;&#x904D;&#x5386; &#x548C; forEach&#x904D;&#x5386;</span>
+<span class="token keyword">val</span> it <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">listIterator</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+iList<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token operator">::</span>println<span class="token punctuation">)</span>
+<span class="token comment">// &#x904D;&#x5386;&#x6C42;&#x503C;: sum reduce fold forEach</span>
+<span class="token keyword">var</span> sum <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">sum</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment">// &#x5143;&#x7D20;&#x7D2F;&#x52A0;&#x548C;</span>
+sum <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">sumOf</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> <span class="token number">2</span> <span class="token operator">*</span> e <span class="token punctuation">}</span> <span class="token comment">// y=f(x)=2*x&#x7684;&#x7D2F;&#x52A0;&#x548C;&#xFF0C;&#x5373; 2 * list.sum()</span>
+sum <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">reduce</span> <span class="token punctuation">{</span> acc<span class="token punctuation">,</span> e <span class="token operator">-&gt;</span> acc <span class="token operator">+</span> e <span class="token punctuation">}</span> <span class="token comment">// &#x4ECE;&#x5DE6;&#x5411;&#x53F3;&#x7D2F;&#x52A0;&#xFF0C;&#x7A7A;&#x96C6;&#x4E0D;&#x629B;&#x5F02;&#x5E38;&#x7528; reduceOrNull</span>
+sum <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">reduceRight</span> <span class="token punctuation">{</span> e<span class="token punctuation">,</span> acc <span class="token operator">-&gt;</span> acc <span class="token operator">+</span> e <span class="token punctuation">}</span> <span class="token comment">// &#x4ECE;&#x53F3;&#x5411;&#x5DE6;&#x7D2F;&#x52A0;</span>
+<span class="token keyword">var</span> mul <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">fold</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> acc<span class="token operator">:</span> Int<span class="token punctuation">,</span> e<span class="token operator">:</span> Int <span class="token operator">-&gt;</span> acc <span class="token operator">*</span> e <span class="token punctuation">}</span> <span class="token comment">// &#x4ECE;&#x5DE6;&#x5411;&#x53F3;&#x7D2F;&#x4E58;</span>
+mul <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">foldRight</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> e<span class="token punctuation">,</span> acc <span class="token operator">-&gt;</span> acc <span class="token operator">*</span> e <span class="token punctuation">}</span> <span class="token comment">// &#x4ECE;&#x53F3;&#x5411;&#x5DE6;&#x7D2F;&#x4E58;</span>
+list<span class="token punctuation">.</span><span class="token function">forEachIndexed</span> <span class="token punctuation">{</span> index<span class="token punctuation">,</span> e <span class="token operator">-&gt;</span> <span class="token function">println</span><span class="token punctuation">(</span><span class="token string-literal singleline"><span class="token string">&quot;list[</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$</span><span class="token expression">index</span></span><span class="token string">]=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$</span><span class="token expression">e</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span> <span class="token punctuation">}</span> <span class="token comment">// &#x5E26;&#x7D22;&#x5F15;&#x904D;&#x5386;</span>
+
+<span class="token comment">// &#x589E;&#x5220;&#x6539;&#x67E5;: add/plus remove/clear set get</span>
+list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+list <span class="token operator">+=</span> <span class="token number">8</span> <span class="token comment">// list.plus(e)</span>
+list <span class="token operator">+=</span> <span class="token number">9</span><span class="token operator">..</span><span class="token number">20</span> <span class="token comment">// list.plus(otherList)</span>
+list<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// return false: no ele==1</span>
+list<span class="token punctuation">.</span><span class="token function">removeAt</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span>
+list<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+list<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token comment">// set(i, e)</span>
+<span class="token comment">// &#x6839;&#x636E;&#x4E0B;&#x6807;&#x8FD4;&#x56DE;&#x5143;&#x7D20; elementAt() &#x548C; get() &#x7C7B;&#x4F3C;</span>
+list<span class="token punctuation">.</span><span class="token function">elementAt</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment">// &#x8D8A;&#x754C;&#x629B;&#x51FA; IndexOutOfBoundsException</span>
+list<span class="token punctuation">.</span><span class="token function">elementAtOrNull</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// &#x8D8A;&#x754C;&#x8FD4;&#x56DE; null</span>
+list<span class="token punctuation">.</span><span class="token function">elementAtOrElse</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> Integer<span class="token operator">::</span>valueOf<span class="token punctuation">)</span> <span class="token comment">// &#x8D8A;&#x754C;&#x8FD4;&#x56DE; def &#x503C;, &#x5373;&#x4E0B;&#x6807;&#x503C;</span>
+
+<span class="token comment">// &#x6392;&#x5E8F;: sorted sortedDescending reversed</span>
+<span class="token keyword">var</span> sortedList <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">sortedDescending</span><span class="token punctuation">(</span><span class="token punctuation">)</span>     <span class="token comment">// &#x6392;&#x964D;&#x5E8F;</span>
+sortedList <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">sortedWith</span><span class="token punctuation">(</span>Int<span class="token operator">::</span>compareTo<span class="token punctuation">)</span> <span class="token comment">// &#x81EA;&#x5B9A;&#x4E49;&#x6BD4;&#x8F83;&#x5668;&#x6392;&#x5E8F;</span>
+sortedList <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">sortedBy</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">*</span> e <span class="token punctuation">}</span>    <span class="token comment">// &#x6BD4;&#x8F83; f(x)=x^2 &#x5BF9;x&#x6392;&#x5347;&#x5E8F;, f(x)=null&#x65F6;x&#x6392;&#x5728;&#x6700;&#x524D;</span>
+sortedList <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">reversed</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// &#x5217;&#x8868;&#x5012;&#x5E8F;</span>
+
+<span class="token comment">// &#x53D6;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x9996;&#x5143;&#x7D20;&#xFF0C;NoSuchElementException</span>
+<span class="token keyword">var</span> target<span class="token operator">:</span> Int<span class="token operator">?</span> <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">first</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">&gt;</span> <span class="token number">100</span> <span class="token punctuation">}</span>
+target <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">firstOrNull</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// &#x53D6;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x5C3E;&#x5143;&#x7D20;&#xFF0C;NoSuchElementException</span>
+target <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">last</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">&gt;</span> <span class="token number">100</span> <span class="token punctuation">}</span>
+target <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">lastOrNull</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">&gt;</span> <span class="token number">100</span> <span class="token punctuation">}</span>
+<span class="token comment">// &#x8FD4;&#x56DE;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x552F;&#x4E00;&#x5143;&#x7D20;&#xFF0C;&#x6CA1;&#x6709;&#x6216;&#x975E;&#x552F;&#x4E00;&#x5219;&#x629B;&#x5F02;&#x5E38;</span>
+target <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">single</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token punctuation">}</span>
+target <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">singleOrNull</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// &#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x4E0B;&#x6807;&#xFF0C;&#x6CA1;&#x6709;&#x8FD4;&#x56DE; -1</span>
+<span class="token keyword">var</span> idx <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+idx <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">indexOfFirst</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">and</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">}</span>
+idx <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+idx <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">indexOfLast</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">and</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">}</span>
+
+<span class="token comment">// &#x7EDF;&#x8BA1;&#x5224;&#x65AD;: any all none count contains</span>
+res <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">all</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">and</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">}</span> <span class="token comment">// &#x662F;&#x5426;&#x6240;&#x6709;&#x5143;&#x7D20;&#x90FD;&#x662F;&#x5076;&#x6570;</span>
+res <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">any</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">and</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">}</span> <span class="token comment">// &#x662F;&#x5426;&#x6709;&#x5143;&#x7D20;&#x662F;&#x5076;&#x6570;</span>
+res <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">none</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">and</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">}</span> <span class="token comment">// &#x662F;&#x5426;&#x6CA1;&#x6709;&#x5143;&#x7D20;&#x662F;&#x5076;&#x6570;</span>
+<span class="token keyword">var</span> cnt <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">count</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">and</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">}</span> <span class="token comment">// &#x7EDF;&#x8BA1;&#x5076;&#x6570;&#x4E2A;&#x6570;</span>
+<span class="token keyword">var</span> res <span class="token operator">=</span> <span class="token function">listOf</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token comment">// &#x5224;&#x65AD;&#x662F;&#x5426;&#x5305;&#x542B;&#x67D0;&#x5143;&#x7D20;</span>
+
+<span class="token comment">// &#x6C42;&#x6700;&#x503C;: min max</span>
+<span class="token keyword">var</span> minX <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">minWith</span><span class="token punctuation">(</span>Comparable<span class="token operator">&lt;</span>Int<span class="token operator">&gt;</span><span class="token operator">::</span>compareTo<span class="token punctuation">)</span> <span class="token comment">// &#x6BD4;&#x8F83;&#x7B97;&#x6CD5;&#x540C;list.min()&#xFF0C;&#x4F46;&#x7A7A;&#x96C6;&#x4F1A;&#x629B;&#x5F02;&#x5E38;</span>
+<span class="token keyword">var</span> minY <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">minOf</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">*</span> e <span class="token punctuation">}</span>  <span class="token comment">// y = f(x) = x^2&#xFF0C;&#x652F;&#x6301;&#x81EA;&#x5B9A;&#x4E49;f(x)&#x6BD4;&#x8F83;&#x5668; minOfWith(cmp, slc)</span>
+minX <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">minBy</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">*</span> e <span class="token punctuation">}</span>  <span class="token comment">// &#x6BD4;&#x8F83;y=f(x)&#x8FD4;&#x56DE;x&#xFF0C;&#x5373;&#x6C42;x&#x4EE4;f(x)&#x503C;&#x6700;&#x5C0F;</span>
+list<span class="token punctuation">.</span><span class="token function">maxWithOrNull</span><span class="token punctuation">(</span>Int<span class="token operator">::</span>compareTo<span class="token punctuation">)</span>
+list<span class="token punctuation">.</span><span class="token function">maxOfWithOrNull</span><span class="token punctuation">(</span>Int<span class="token operator">::</span>compareTo<span class="token punctuation">)</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">*</span> e <span class="token punctuation">}</span>
+list<span class="token punctuation">.</span><span class="token function">maxByOrNull</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">*</span> e <span class="token punctuation">}</span>
+
+<span class="token comment">// &#x8FC7;&#x6EE4;: take drop slice filter</span>
+<span class="token keyword">val</span> topN <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">take</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token comment">// &#x53D6;&#x51FA;&#x524D;N&#x4E2A; list.takeLast(n)</span>
+list<span class="token punctuation">.</span><span class="token function">takeWhile</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">and</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">}</span> <span class="token comment">// &#x4ECE;&#x524D;&#x5411;&#x540E;&#x53D6;&#xFF0C;&#x9047;&#x5230;&#x4E0D;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x5143;&#x7D20;&#x5C31;&#x505C;&#x6B62; list.takeLastWhile()</span>
+<span class="token keyword">var</span> bottom <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">drop</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token comment">// &#x53BB;&#x6389;&#x524D;N&#x4E2A; list.dropLast(n)</span>
+bottom <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">dropWhile</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">and</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">}</span> <span class="token comment">// &#x4ECE;&#x524D;&#x5411;&#x540E;&#x4E22;&#x5F03;&#x76F4;&#x5230;&#x9047;&#x5230;&#x4E0D;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x5143;&#x7D20; list.dropLastWhile()</span>
+<span class="token keyword">val</span> evenEleList <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token operator">..</span>list<span class="token punctuation">.</span>size step <span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment">// &#x83B7;&#x53D6;&#x5076;&#x6570;&#x4E0B;&#x6807;&#x5143;&#x7D20;</span>
+<span class="token keyword">val</span> filtered <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">filterIsInstanceTo</span><span class="token punctuation">(</span>mutableListOf<span class="token operator">&lt;</span>Int<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+list<span class="token punctuation">.</span><span class="token function">filterTo</span><span class="token punctuation">(</span>filtered<span class="token punctuation">)</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">and</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">}</span>
+<span class="token keyword">val</span> notNullFilter <span class="token operator">=</span> listOf<span class="token operator">&lt;</span>String<span class="token operator">?</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token string-literal singleline"><span class="token string">&quot;1&quot;</span></span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string-literal singleline"><span class="token string">&quot;2&quot;</span></span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">filterNotNull</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// &#x53BB;&#x9664;&#x7ED3;&#x679C;&#x4E2D;&#x7684;Null&#x5143;&#x7D20;</span>
+
+<span class="token comment">// &#x6620;&#x5C04;: map flatMap</span>
+<span class="token keyword">var</span> mapList <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">map</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> <span class="token string-literal singleline"><span class="token string">&quot;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$</span><span class="token expression">e</span></span><span class="token string">&quot;</span></span> <span class="token punctuation">}</span> <span class="token comment">// &#x505A;&#x4E00;&#x6B21;&#x6620;&#x5C04;&#x8F6C;&#x6362;&#xFF0C;&#x5F97;&#x5230;&#x65B0;&#x7684;List</span>
+mapList <span class="token operator">=</span> mapList<span class="token punctuation">.</span><span class="token function">mapIndexedNotNull</span> <span class="token punctuation">{</span> i<span class="token punctuation">,</span> e <span class="token operator">-&gt;</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>e<span class="token punctuation">.</span><span class="token function">isBlank</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">null</span> <span class="token keyword">else</span> <span class="token string-literal singleline"><span class="token string">&quot;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$</span><span class="token expression">i</span></span><span class="token string">-&gt;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$</span><span class="token expression">e</span></span><span class="token string">&quot;</span></span> <span class="token punctuation">}</span> <span class="token comment">// &#x53BB;&#x6389;&#x6620;&#x5C04;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;null&#x7ED3;&#x679C;</span>
+list<span class="token punctuation">.</span><span class="token function">mapNotNull</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> <span class="token function">listOf</span><span class="token punctuation">(</span>e <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> e<span class="token punctuation">)</span> <span class="token punctuation">}</span> <span class="token comment">// [1,2,3] -&gt; [[0,1], [1,2], [2,3]]</span>
+list<span class="token punctuation">.</span><span class="token function">flatMap</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> <span class="token function">listOf</span><span class="token punctuation">(</span>e <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> e<span class="token punctuation">)</span> <span class="token punctuation">}</span> <span class="token comment">// [1,2,3] -&gt; [0,1, 1,2, 2,3] &#x6241;&#x5E73;&#x5316;&#x7ED3;&#x679C;</span>
+
+<span class="token comment">// &#x5206;&#x7EC4;: groupBy</span>
+<span class="token keyword">val</span> groups <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">groupBy</span><span class="token punctuation">(</span><span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e<span class="token punctuation">.</span><span class="token function">hashCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> <span class="token string-literal singleline"><span class="token string">&quot;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$</span><span class="token expression">e</span></span><span class="token string">&quot;</span></span> <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token comment">// &#x5206;&#x7EC4;&#x540E;&#x5F97;&#x5230; Map&lt;K, List&lt;E&gt;&gt;</span>
+<span class="token keyword">val</span> gCnt <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">groupingBy</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">%</span> <span class="token number">5</span> <span class="token punctuation">}</span><span class="token punctuation">.</span><span class="token function">eachCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// &#x5F97;&#x5230;&#x5404;&#x7EC4;&#x7684;&#x7EDF;&#x8BA1;&#x6570; Map&lt;K, Int&gt;</span>
+
+<span class="token comment">// &#x538B;&#x7F29;/&#x89E3;&#x538B;&#x3001;&#x62C6;&#x5206;: zip unzip partition</span>
+<span class="token keyword">var</span> xList <span class="token operator">=</span> <span class="token function">listOf</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span>
+<span class="token keyword">var</span> yList <span class="token operator">=</span> <span class="token function">listOf</span><span class="token punctuation">(</span><span class="token string-literal singleline"><span class="token string">&quot;a&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal singleline"><span class="token string">&quot;b&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal singleline"><span class="token string">&quot;c&quot;</span></span><span class="token punctuation">)</span>
+<span class="token keyword">val</span> xy<span class="token operator">:</span> List<span class="token operator">&lt;</span>Pair<span class="token operator">&lt;</span>Int<span class="token punctuation">,</span> String<span class="token operator">&gt;</span><span class="token operator">&gt;</span> <span class="token operator">=</span> xList<span class="token punctuation">.</span><span class="token function">zip</span><span class="token punctuation">(</span>yList<span class="token punctuation">)</span> <span class="token comment">// &#x538B;&#x7F29; eX to eY &#x6784;&#x6210;&#x65B0;&#x7684;List, len=min(lenA, lenB)</span>
+xy<span class="token punctuation">.</span><span class="token function">unzip</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">also</span> <span class="token punctuation">{</span> xList <span class="token operator">=</span> it<span class="token punctuation">.</span>first<span class="token punctuation">;</span> yList <span class="token operator">=</span> it<span class="token punctuation">.</span>second <span class="token punctuation">}</span> <span class="token comment">// &#x89E3;&#x538B;&#x7F29;&#x53D6;&#x65B0;&#x7684;List</span>
+<span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">..</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">partition</span> <span class="token punctuation">{</span> e <span class="token operator">-&gt;</span> e <span class="token operator">and</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">.</span><span class="token function">also</span> <span class="token punctuation">{</span> <span class="token comment">//partition&#x62C6;&#x5206;List</span>
+    it<span class="token punctuation">.</span>first<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token operator">::</span>println<span class="token punctuation">)</span> <span class="token comment">// true: even list</span>
+    it<span class="token punctuation">.</span>second<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token operator">::</span>println<span class="token punctuation">)</span> <span class="token comment">// false: odd list</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// &#x53D6;&#x96C6;&#x5408;&#x4EA4;&#x96C6;</span>
+<span class="token keyword">val</span> aList <span class="token operator">=</span> <span class="token function">mutableListOf</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span>
+<span class="token keyword">val</span> bList <span class="token operator">=</span> <span class="token function">mutableListOf</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">)</span>
+aList<span class="token punctuation">.</span><span class="token function">retainAll</span> <span class="token punctuation">{</span> <span class="token keyword">return</span><span class="token label symbol">@retainAll</span> bList<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span>it<span class="token punctuation">)</span> <span class="token punctuation">}</span>
+aList<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token operator">::</span>println<span class="token punctuation">)</span>
+</code></pre>
+<h1 id="62-set"><a name="62-set" class="anchor-navigation-ex-anchor" href="#62-set"><i class="fa fa-link" aria-hidden="true"></i></a>6.2 Set</h1>
+<p>Set&#x548C;List&#x4E00;&#x6837;&#x90FD;&#x7EE7;&#x627F;&#x81EA;Collection&#xFF0C;List&#x4E2D;&#x7EE7;&#x627F;&#x81EA;Collection&#x7684;&#x51FD;&#x6570;&#x540C;&#x6837;&#x9002;&#x7528;&#x4E8E;Set&#x3002;</p>
+<ol>
+<li>&#x521B;&#x5EFA;: <ul>
+<li>&#x4E0D;&#x53EF;&#x53D8;&#x96C6;: <code>setOf()</code></li>
+<li>LinkedHashSet: <code>mutableSetOf() &#x3001;linkedSetOf()</code></li>
+<li>HashSet: <code>hashSetOf()</code></li>
+<li>TreeSet: <code>sortedSetOf()</code></li>
+<li>Set&#x4F1A;&#x81EA;&#x52A8;&#x53BB;&#x91CD;: <code>Iterable<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>.toSet()</code></li>
+</ul>
+</li>
+<li>&#x8FD0;&#x7B97;: <ul>
+<li>&#x5408;&#x5E76;: <code>plus()</code> &#x5373; <code>set + set2/ele</code></li>
+<li>&#x79FB;&#x9664;: <code>minus()</code> &#x5373; <code>set - set2/ele</code></li>
+</ul>
+</li>
+</ol>
+<pre class="language-"><code class="lang-kotlin"><span class="token keyword">val</span> iSet <span class="token operator">=</span> <span class="token function">setOf</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span>
+<span class="token keyword">val</span> mSet <span class="token operator">=</span> <span class="token function">mutableSetOf</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span>
+mSet <span class="token operator">+=</span> iSet <span class="token operator">+</span> <span class="token number">9</span> <span class="token operator">-</span> <span class="token number">4</span>
+</code></pre>
+<h1 id="63-map"><a name="63-map" class="anchor-navigation-ex-anchor" href="#63-map"><i class="fa fa-link" aria-hidden="true"></i></a>6.3 Map</h1>
+<p>Map&#x6CA1;&#x6709;&#x7EE7;&#x627F;Collection&#xFF0C;&#x4EC5;&#x5BF9;Java&#x7684;Map&#x505A;&#x4E86;&#x4E00;&#x4E9B;&#x62D3;&#x5C55;&#x3002;</p>
+<p><em>&#x6CE8;</em>: HashMap&#x5141;&#x8BB8;Null&#x503C;Null&#x952E;&#xFF1B;LinkedHashMa&#x7684;Entry&#x4FDD;&#x6301;&#x7740;&#x6DFB;&#x52A0;&#x65F6;&#x7684;&#x987A;&#x5E8F;</p>
+<ol>
+<li>&#x521B;&#x5EFA;&#x4E0E;&#x8F6C;&#x6362;: <ul>
+<li>&#x4E0D;&#x53EF;&#x53D8;: <code>mapOf()</code></li>
+<li>LinkedHashMap: <code>mutableMapOf() &#x3001;linkedMapOf()</code></li>
+<li>HashMap: <code>hashMapOf()</code></li>
+<li>TreeMap: <code>sortedMapOf()</code></li>
+<li>&#x53EF;&#x5199;&#x6027;&#x8F6C;&#x6362;: <code>iMap.toMutableMap() &#x3001;map.toMap()</code></li>
+<li>Pair&#x96C6;&#x5408;&#x8F6C;Map: <code>Iterable&lt;Pair<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>K,</span> <span class="token attr-name">V</span><span class="token punctuation">&gt;</span></span>&gt;.toMap()</code></li>
+</ul>
+</li>
+<li>&#x904D;&#x5386;: <ul>
+<li>&#x8FED;&#x4EE3;&#x5668;: <code>for(entry in map.entries)</code></li>
+<li>Entry.component&#x64CD;&#x4F5C;&#x7B26;: <code>for((k,v) in map)</code></li>
+</ul>
+</li>
+<li>&#x8BFB;&#x53D6;: <ul>
+<li>&#x662F;&#x5426;&#x5305;&#x542B;: <code>map.contians(k)</code></li>
+<li>get&#x65B9;&#x6CD5;: <code>map[k]</code> &#x4E0D;&#x5B58;&#x5728;&#x65F6;&#x8FD4;&#x56DE;Null</li>
+<li><code>map.getValue(k)</code> &#x4E0D;&#x5B58;&#x5728;&#x65F6;&#x629B;&#x5F02;&#x5E38;</li>
+<li>&#x5E26;&#x9ED8;&#x8BA4;&#x503C;: <code>getOrDefault()  getOrElse()  getOrPut()</code></li>
+</ul>
+</li>
+<li>&#x5199;&#x5165;: <ul>
+<li>set/put&#x65B9;&#x6CD5;: <code>map[k] = v</code> put&#x65B9;&#x6CD5;&#x4F1A;&#x989D;&#x5916;&#x8FD4;&#x56DE;&#x5F53;&#x524D;k&#x7684;&#x5386;&#x53F2;&#x503C;</li>
+<li>plus&#x65B9;&#x6CD5;: <code>map + (k to v)</code></li>
+<li>minus&#x65B9;&#x6CD5;: <code>map - k</code></li>
+<li>&#x6E05;&#x7406;: <code>map.remove(k) map.clear()</code></li>
+</ul>
+</li>
+<li>&#x8FC7;&#x6EE4;&#xFF1A;<code>map.filter(predicate)</code></li>
+<li>&#x6620;&#x5C04;&#xFF1A;&#x4FEE;&#x6539;&#x952E;/&#x503C;<ul>
+<li>&#x4FEE;&#x6539;&#x952E;: <code>map.mapKeys()</code></li>
+<li>&#x4FEE;&#x6539;&#x503C;: <code>map.mapValues()</code></li>
+</ul>
+</li>
+</ol>
+<pre class="language-"><code class="lang-kotlin"><span class="token keyword">val</span> imap <span class="token operator">=</span> <span class="token function">mapOf</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token keyword">to</span> <span class="token string-literal singleline"><span class="token string">&quot;a&quot;</span></span><span class="token punctuation">,</span> <span class="token number">2</span> <span class="token keyword">to</span> <span class="token string-literal singleline"><span class="token string">&quot;b&quot;</span></span><span class="token punctuation">)</span>
+<span class="token keyword">val</span> map <span class="token operator">=</span> imap<span class="token punctuation">.</span><span class="token function">toMutableMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token function">listOf</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token keyword">to</span> <span class="token char">&apos;A&apos;</span><span class="token punctuation">,</span> <span class="token number">2</span> <span class="token keyword">to</span> <span class="token char">&apos;B&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// Pair&lt;K, V&gt;&#x96C6;&#x5408;&#x8F6C;Map</span>
+
+<span class="token comment">// &#x904D;&#x5386;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span>e <span class="token keyword">in</span> map<span class="token punctuation">.</span>entries<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// map.entries &#x540C; map.keys.zip(map.values)</span>
+    <span class="token function">println</span><span class="token punctuation">(</span><span class="token string-literal singleline"><span class="token string">&quot;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token expression">e<span class="token punctuation">.</span><span class="token function">toPair</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span> <span class="token comment">// Entry -&gt; Pair</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// Map.Entry&lt;K, V&gt;&#x652F;&#x6301;&#x64CD;&#x4F5C;&#x7B26; component1()&#x3001;component2()&#xFF0C;&#x5373;&#x652F;&#x6301;&#x952E;&#x503C;&#x5BF9;&#x904D;&#x5386;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>k<span class="token punctuation">,</span> v<span class="token punctuation">)</span> <span class="token keyword">in</span> map<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// &#x5224;&#x65AD;&#x662F;&#x5426;&#x5305;&#x542B;</span>
+<span class="token keyword">val</span> isContain <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+<span class="token comment">// &#x83B7;&#x53D6;</span>
+map<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token comment">// map.get(k) &#x5143;&#x7D20;&#x4E0D;&#x5B58;&#x5728;&#x8FD4;&#x56DE;null</span>
+map<span class="token punctuation">.</span><span class="token function">getValue</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// &#x5143;&#x7D20;&#x4E0D;&#x5B58;&#x5728;&#x629B;&#x51FA; NoSuchElementException</span>
+map<span class="token punctuation">.</span><span class="token function">getOrDefault</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token string-literal singleline"><span class="token string">&quot;nil&quot;</span></span><span class="token punctuation">)</span>
+map<span class="token punctuation">.</span><span class="token function">getOrElse</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token string-literal singleline"><span class="token string">&quot;nil&quot;</span></span> <span class="token punctuation">}</span>
+map<span class="token punctuation">.</span><span class="token function">getOrPut</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token string-literal singleline"><span class="token string">&quot;c&quot;</span></span> <span class="token punctuation">}</span>
+
+<span class="token comment">// &#x6DFB;&#x52A0;</span>
+map<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string-literal singleline"><span class="token string">&quot;0&quot;</span></span> <span class="token comment">// map.set(k, v) &#x4EA6; map.put(k, v)</span>
+<span class="token keyword">val</span> v <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">putIfAbsent</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token string-literal singleline"><span class="token string">&quot;0&quot;</span></span><span class="token punctuation">)</span> <span class="token comment">// &#x5143;&#x7D20;&#x4E0D;&#x5B58;&#x5728;&#x65F6;put</span>
+map <span class="token operator">+=</span> <span class="token function">Pair</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string-literal singleline"><span class="token string">&quot;C&quot;</span></span><span class="token punctuation">)</span> <span class="token comment">// map.plus() &#x6DFB;&#x52A0;&#x5143;&#x7D20;</span>
+<span class="token comment">// &#x79FB;&#x9664;</span>
+map <span class="token operator">-=</span> <span class="token number">3</span> <span class="token comment">// map.minus() &#x79FB;&#x9664;&#x5143;&#x7D20;</span>
+<span class="token keyword">val</span> lastVal <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+map<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// &#x6E05;&#x7A7A;Map</span>
+
+<span class="token comment">// &#x8FC7;&#x6EE4;</span>
+<span class="token keyword">var</span> filtered <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">filter</span> <span class="token punctuation">{</span> it<span class="token punctuation">.</span>value<span class="token punctuation">.</span><span class="token function">isNotBlank</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+filtered <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">filterValues</span> <span class="token punctuation">{</span> it<span class="token punctuation">.</span><span class="token function">isNotBlank</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+<span class="token comment">// &#x6620;&#x5C04;(&#x4FEE;&#x6539;key&#x6216;value)</span>
+<span class="token keyword">var</span> mapped <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">mapKeys</span> <span class="token punctuation">{</span> it<span class="token punctuation">.</span>key <span class="token operator">*</span> <span class="token number">2</span> <span class="token punctuation">}</span>
+mapped <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">mapValues</span> <span class="token punctuation">{</span> <span class="token string-literal singleline"><span class="token string">&quot;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token expression">it<span class="token punctuation">.</span>key</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">#</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token expression">it<span class="token punctuation">.</span>value</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&quot;</span></span> <span class="token punctuation">}</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../chapter5/5.运算符重载.html#52-运算符重载" class="navigation navigation-prev " aria-label="Previous page: 5.2 运算符重载">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="6.集合类.html#61-list" class="navigation navigation-next " aria-label="Next page: 6.1 List">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6. 集合类","level":"1.6","depth":1,"next":{"title":"6.1 List","level":"1.6.1","depth":2,"anchor":"#61-list","path":"chapter6/6.集合类.md","ref":"chapter6/6.集合类.md#61-list","articles":[]},"previous":{"title":"5.2 运算符重载","level":"1.5.2","depth":2,"anchor":"#52-运算符重载","path":"chapter5/5.运算符重载.md","ref":"chapter5/5.运算符重载.md#52-运算符重载","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","-back-to-top-button","chapter-fold","splitter","katex","-highlight","code","prism","-tbfed-pagefooter","hide-element","-lunr","-search","-search-pro","search-plus","-sharing","-anchor-navigation-ex","ancre-navigation","-chart","-sharing-plus","-summary"],"styles":{"website":"styles/web.css","ebook":"styles/ebk.css","pdf":"styles/pdf.css","mobi":"styles/mob.css","epub":"styles/epb.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"©2022 Chavin","modify_label":"上次修订: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"plugins":["line-numbers"],"cssClasses":"line-numbers"},"splitter":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link","a.navigation",".book-header"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"Chavin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":56,"left":56,"top":56,"bottom":56},"pageSize":"a4"},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kotlin进阶手册","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter6/6.集合类.md","mtime":"2022-08-03T13:53:36.262Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-01-15T11:41:25.452Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
