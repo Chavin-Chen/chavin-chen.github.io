@@ -1,0 +1,3517 @@
+<!DOCTYPE html>
+<!-- saved from url=(0107)file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>English4Engineer</title>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      
+      <link rel="stylesheet" href="./English4Engineer_files/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview pre[data-line]{position:relative;padding:1em 0 1em 3em!important}.markdown-preview pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}.markdown-preview pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:var(--line-highlight-background,linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0)));pointer-events:none;line-height:inherit;white-space:pre}.markdown-preview pre[data-line] .line-highlight:before,.markdown-preview pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none}.markdown-preview pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-details{margin:0;padding:0;border:none}.markdown-preview .md-toc ol.md-toc-ol{margin:0;padding-left:1.6em}.markdown-preview .md-toc summary.md-toc-link-wrapper{cursor:pointer;list-style-position:outside}.markdown-preview .md-toc summary.md-toc-link-wrapper::marker{font-size:.85em}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='0']{margin-left:12px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='1']{margin-left:28px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='2']{margin-left:44px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='3']{margin-left:60px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='4']{margin-left:76px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='5']{margin-left:80px}.markdown-preview a.tag,.markdown-preview a.tag:active,.markdown-preview a.tag:link,.markdown-preview a.tag:visited,.markdown-preview span.tag:not(.token){display:inline-block;background-color:var(--vscode-badge-background,rgba(127,127,127,.18));color:var(--vscode-badge-foreground,currentColor);border-radius:2em;font-size:.85em;font-weight:500;padding:.05em .55em;line-height:1.5;white-space:nowrap;text-decoration:none;text-shadow:none;box-shadow:none;transition:background-color .12s ease,opacity .12s ease}.markdown-preview a.tag{cursor:pointer}.markdown-preview a.tag:focus,.markdown-preview a.tag:hover{background-color:var(--vscode-badge-background,rgba(127,127,127,.32));color:var(--vscode-badge-foreground,currentColor);opacity:.85;text-decoration:none;outline:0}.markdown-preview .wikilink-embed-content{border-left:3px solid var(--vscode-textBlockQuote-border,rgba(128,128,128,.3));background:var(--vscode-textBlockQuote-background,rgba(128,128,128,.05));margin:.5em 0;padding:.5em .75em;border-radius:0 3px 3px 0}.markdown-preview .wikilink-embed-content.wikilink-embed-error{border-left-color:var(--vscode-errorForeground,#cf222e);color:var(--vscode-errorForeground,#cf222e);font-style:italic;opacity:.8}.markdown-preview .wikilink-embed-content h1:first-child,.markdown-preview .wikilink-embed-content h2:first-child,.markdown-preview .wikilink-embed-content h3:first-child,.markdown-preview .wikilink-embed-content h4:first-child,.markdown-preview .wikilink-embed-content h5:first-child,.markdown-preview .wikilink-embed-content h6:first-child{margin-top:.25em}.markdown-preview .wikilink-embed-content .wikilink-embed-content{margin:.25em 0;padding:.25em .5em}.markdown-preview .block-id{display:none}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:var(--vscode-scrollbarSlider-background,rgba(150,150,150,.66));border:4px solid var(--vscode-scrollbarSlider-background,rgba(150,150,150,.66));background-clip:content-box}.scrollbar-style::-webkit-scrollbar-thumb:hover{background-color:var(--vscode-scrollbarSlider-hoverBackground,rgba(120,120,120,.66))}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:var(--vscode-scrollbarSlider-background,rgba(150,150,150,.66));border:4px solid var(--vscode-scrollbarSlider-background,rgba(150,150,150,.66));background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb:hover{background-color:var(--vscode-scrollbarSlider-hoverBackground,rgba(120,120,120,.66))}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-details{margin:0;padding:0;border:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc ol.md-toc-ol{margin:0;padding-left:1.6em}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='0']{padding-left:0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='1']{padding-left:16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='2']{padding-left:32px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='3']{padding-left:48px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='4']{padding-left:64px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='5']{padding-left:80px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. -->
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="english4engineer工程师的工作-生活与旅行英语"><code>English4Engineer</code>｜工程师的工作、生活与旅行英语 </h1>
+<blockquote>
+<p><strong>核心词汇量：约 1000 词，整理为 360 组词语与搭配。</strong> 先读英文故事，需要时展开注解；词汇按场景查阅，再用自己的工作或生活经历替换练习。听读材料中的数字、时间和条件，尝试复述并写成短消息。</p>
+</blockquote>
+<p><a id="guide"></a></p>
+<h2 id="一-目录">一、目录 </h2>
+<ul>
+<li><a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#rescue">救场表达：先保证沟通不中断</a></li>
+<li><a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#story">连续故事：跟 <code>Leo</code> 完成一次出差和一次外派</a></li>
+<li><a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#vocabulary">双栏词库：按实际任务查词和学搭配</a></li>
+<li><a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#precision">表达纠错：近义词、语气、构词和英美差异</a></li>
+<li><a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#practice">听辨、口语与阅读练习</a></li>
+<li><a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#writing">写作模板：工作、生活与旅行</a></li>
+</ul>
+<p><a id="rescue"></a></p>
+<h2 id="二-先掌握这些救场表达">二、先掌握这些救场表达 </h2>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与使用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Sorry, I didn't catch the last part.</code></td>
+<td>抱歉，最后一部分我没听清。比笼统说“不懂”更容易让对方补充。</td>
+</tr>
+<tr>
+<td><code>Could you say that again a little more slowly?</code></td>
+<td>可以稍微慢一点再说一次吗？</td>
+</tr>
+<tr>
+<td><code>Could you spell that for me?</code></td>
+<td>可以拼一下吗？适合姓名、街道、预订编号。</td>
+</tr>
+<tr>
+<td><code>Was that fifteen or fifty?</code></td>
+<td>是十五还是五十？直接提出两个候选信息。</td>
+</tr>
+<tr>
+<td><code>Could you put that in the chat?</code></td>
+<td>可以发到聊天框里吗？适合视频会议。</td>
+</tr>
+<tr>
+<td><code>Could you write that down for me?</code></td>
+<td>可以帮我写下来吗？适合柜台、电话后的文字确认。</td>
+</tr>
+<tr>
+<td><code>What do you mean by “ready” here?</code></td>
+<td>这里的“准备好了”具体指什么？替换引号内的词。</td>
+</tr>
+<tr>
+<td><code>Could you give me an example?</code></td>
+<td>可以举个例子吗？</td>
+</tr>
+<tr>
+<td><code>Just to confirm, we're meeting on Thursday, right?</code></td>
+<td>确认一下，我们是周四见，对吗？</td>
+</tr>
+<tr>
+<td><code>Let me check that I've understood.</code></td>
+<td>我确认一下自己有没有理解对。</td>
+</tr>
+<tr>
+<td><code>I haven't checked that yet.</code></td>
+<td>我还没确认过。明确区分已知和未知。</td>
+</tr>
+<tr>
+<td><code>Let me check and get back to you by 3 p.m.</code></td>
+<td>我确认后下午三点前回复你。跨时区时补充时区。</td>
+</tr>
+<tr>
+<td><code>I'm trying to …, but …</code></td>
+<td>我想……，但是……。用来说明目标与障碍。</td>
+</tr>
+<tr>
+<td><code>Could you show me how to do that?</code></td>
+<td>可以演示一下怎么操作吗？</td>
+</tr>
+<tr>
+<td><code>What should I do next?</code></td>
+<td>我接下来应该怎么做？</td>
+</tr>
+<tr>
+<td><code>Is there another option?</code></td>
+<td>还有别的选择吗？</td>
+</tr>
+<tr>
+<td><code>Thanks for checking.</code></td>
+<td>谢谢你帮忙确认。</td>
+</tr>
+<tr>
+<td><code>That works for me.</code></td>
+<td>这个安排我可以。</td>
+</tr>
+</tbody>
+</table>
+<p><a id="story"></a></p>
+<h2 id="三-连续情景故事leo-的两次出发">三、连续情景故事：<code>Leo</code> 的两次出发 </h2>
+<p><code>Leo Chen</code> 是一名软件工程师。<code>Daniel</code> 是伦敦团队的工程师，<code>Sarah</code> 是产品经理，<code>Maya</code> 负责团队的行政协调。第一次短期出差后，<code>Leo</code> 回国远程协作；几个月后，他到伦敦外派一年，认识了邻居 <code>Alex</code>。</p>
+<table>
+<thead>
+<tr>
+<th>故事单元</th>
+<th>场景与章节</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一幕：第一次出差</td>
+<td><a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep01">01 机场与转机</a> · <a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep02">02 入住与维修</a> · <a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep03">03 站会与权限</a> · <a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep04">04 午饭与闲聊</a></td>
+</tr>
+<tr>
+<td>第二幕：把工作说清楚</td>
+<td><a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep05">05 需求与估时</a> · <a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep06">06 <code>Review</code> 与分歧</a> · <a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep07">07 发布与故障</a> · <a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep08">08 复盘与交接</a></td>
+</tr>
+<tr>
+<td>第三幕：远程协作与再出发</td>
+<td><a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep09">09 视频会议</a> · <a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep10">10 依赖与请假</a> · <a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep11">11 反馈与成长</a> · <a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep12">12 手机与银行</a></td>
+</tr>
+<tr>
+<td>第四幕：安顿生活</td>
+<td><a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep13">13 看房与合同</a> · <a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep14">14 搬家与购物</a> · <a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep15">15 快递与网络</a> · <a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep16">16 维修与邻里</a></td>
+</tr>
+<tr>
+<td>第五幕：自己处理问题</td>
+<td><a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep17">17 就诊与药房</a> · <a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep18">18 银行与办事</a> · <a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep19">19 周末交通</a> · <a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep20">20 餐厅与社交</a></td>
+</tr>
+<tr>
+<td>第六幕：走得更远</td>
+<td><a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep21">21 钱包遗失</a> · <a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep22">22 航班改签</a> · <a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep23">23 续租与退货</a> · <a href="file:///private/var/folders/62/jbyb_9wd7b11f5tsq4sfttvh0000gn/T/crossnote-f-291fb35d6eb7602b557984a9cd.html#ep24">24 一年以后</a></td>
+</tr>
+</tbody>
+</table>
+<p><a id="ep01"></a></p>
+<h3 id="01the-wrong-queue排错的队伍">01｜<code>The Wrong Queue</code>｜排错的队伍 </h3>
+<p><code>The queue moves forward. Leo tightens his grip on his passport. On his phone, the message from Daniel is still open: “See you in London tomorrow!”</code></p>
+<p><code>“Checking in?” a member of staff asks.</code></p>
+<p><code>“Yes. London, via Doha.”</code></p>
+<p><code>“You need the next desk. This one's for bag drop.”</code></p>
+<p><code>At the correct desk, Leo lifts his suitcase onto the scale.</code></p>
+<p><code>“Will I need to collect this in Doha?”</code></p>
+<p><code>The agent checks his ticket. “For this booking, it's checked through to London.”</code></p>
+<p><code>“So I collect it in London?”</code></p>
+<p><code>“That's right. Your first flight boards at six fifteen, Gate B7.”</code></p>
+<p><code>“Six fifty?”</code></p>
+<p><code>“Six fifteen. One-five.” She circles the time on his boarding pass.</code></p>
+<p><code>Leo thanks her and follows the signs. After the coffee shop, the corridor splits. He stops a passing employee.</code></p>
+<p><code>“Excuse me, how do I get to B7?”</code></p>
+<p><code>“Upstairs, then left.”</code></p>
+<p><code>This time, he repeats the directions before moving. His suitcase is gone, but his shoulders feel lighter.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bag drop</code></td>
+<td>行李托运柜台；故事中 <code>Leo</code> 还需要先办理值机。</td>
+</tr>
+<tr>
+<td><code>checked through to London</code></td>
+<td>行李直挂伦敦；具体到自己的行程仍需询问。</td>
+</tr>
+<tr>
+<td><code>boarding pass / boarding time</code></td>
+<td>登机牌／开始登机的时间；不要与起飞时间混淆。</td>
+</tr>
+<tr>
+<td><code>So I collect it in London?</code></td>
+<td>所以我在伦敦取行李，对吗？通过复述确认。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>听辨</strong>：留意 <code>fifteen / fifty</code>。没听清时让对方说成 <code>one-five</code>；重要时间再核对屏幕或票面。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>说</strong>：询问行李是否直挂，以及登机口在哪里。<strong>写</strong>：给接机同事发两句消息，说明到达时间和地点。</p>
+<p><strong>参考表达</strong>：<code>Will I need to collect my bag during the transfer? / I’m due to arrive at Terminal 2 at 9 a.m. local time. I’ll message you after I collect my bag.</code></p>
+</details>
+<p><a id="ep02"></a></p>
+<h3 id="02a-room-that-hums嗡嗡响的房间">02｜<code>A Room That Hums</code>｜嗡嗡响的房间 </h3>
+<p><code>Rain follows Leo into the hotel lobby. He puts his wet backpack beside the desk.</code></p>
+<p><code>“Hi, I have a reservation under the name Leo Chen.”</code></p>
+<p><code>The receptionist finds it. “Three nights. Breakfast is from seven to ten.”</code></p>
+<p><code>“Is that included in my booking?”</code></p>
+<p><code>“Yes. Check-out is at eleven.”</code></p>
+<p><code>Upstairs, Leo opens his laptop. The room is warm, and the air conditioner hums without producing any cool air. He waits, then calls reception.</code></p>
+<p><code>“Hi, I'm in room 812. The air conditioner doesn't seem to be working. Could someone take a look?”</code></p>
+<p><code>“We'll send someone up.”</code></p>
+<p><code>“Do you know roughly when?”</code></p>
+<p><code>“Within twenty minutes.”</code></p>
+<p><code>Half an hour later, his shirt is still sticking to his back.</code></p>
+<p><code>“Hi, I'm following up about room 812. Nobody's arrived yet. If it can't be fixed tonight, could I move to another room?”</code></p>
+<p><code>The receptionist checks. “Yes. We have a room on the floor below.”</code></p>
+<p><code>Leo closes his laptop. Tomorrow's meeting can wait until he's somewhere cooler.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>under the name …</code></td>
+<td>以……的名字预订。</td>
+</tr>
+<tr>
+<td><code>Is that included in my booking?</code></td>
+<td>我的预订包含这一项吗？</td>
+</tr>
+<tr>
+<td><code>roughly / within twenty minutes</code></td>
+<td>大约／二十分钟内。</td>
+</tr>
+<tr>
+<td><code>I’m following up about …</code></td>
+<td>我想跟进一下……；<code>follow up</code> 是动词短语。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>使用提醒</strong>：描述事实加上具体请求，比反复说 <code>sorry</code> 或 <code>no problem</code> 更有用。故事里的处理时限只是这家酒店给出的答复。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>说</strong>：你的房间没有热水，已经等了半小时，请提出解决要求。</p>
+<p><strong>参考表达</strong>：<code>There’s no hot water in room 812. I called thirty minutes ago, but nobody has arrived. Could you check when someone can come?</code></p>
+</details>
+<p><a id="ep03"></a></p>
+<h3 id="03one-sentence-at-a-time第一场站会">03｜<code>One Sentence at a Time</code>｜第一场站会 </h3>
+<p><code>Daniel waves from the kitchen. “Coffee before the stand-up?”</code></p>
+<p><code>Leo nods. Ten minutes later, everyone is facing a screen full of names.</code></p>
+<p><code>“Leo, want to go first?”</code></p>
+<p><code>He sets his cup down carefully. “Yesterday, I checked the login issue. It only happens in production. Today, I'll compare the logs and try to reproduce it locally.”</code></p>
+<p><code>“Any blockers?”</code></p>
+<p><code>“I don't have access to the test database yet.”</code></p>
+<p><code>“Maya can point you to the right person.”</code></p>
+<p><code>After the meeting, Leo drafts a message, deletes “Please give me permission,” and tries again.</code></p>
+<p><code>“Hi Maya, I'm investigating the login issue and need read-only access to the test database. Who should I contact?”</code></p>
+<p><code>She sends him the access request form. By lunchtime, the request is approved.</code></p>
+<p><code>“Could you try again?” Daniel asks.</code></p>
+<p><code>Leo runs the query. Rows appear on his screen.</code></p>
+<p><code>“It works now. Thanks.”</code></p>
+<p><code>His update was short. Nobody seemed to need a longer one.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>give a quick update</code></td>
+<td>简要同步进展。</td>
+</tr>
+<tr>
+<td><code>reproduce it locally</code></td>
+<td>在本地复现。</td>
+</tr>
+<tr>
+<td><code>a blocker / be blocked by …</code></td>
+<td>阻塞项／被……卡住。</td>
+</tr>
+<tr>
+<td><code>read-only access to …</code></td>
+<td>对……的只读访问权限。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>结构</strong>：已做什么 → 接下来做什么 → 需要什么帮助。<code>access</code> 通常不可数；说 <code>access to the database</code>。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>说</strong>：用三句做自己的站会更新。<strong>写</strong>：申请一种明确的权限，并说明用途。</p>
+<p><strong>参考表达</strong>：<code>Yesterday, I investigated the crash. Today, I’ll check the logs. I’m blocked by a missing test account; could someone help me get one?</code></p>
+</details>
+<p><a id="ep04"></a></p>
+<h3 id="04not-an-interview午餐桌上的聊天">04｜<code>Not an Interview</code>｜午餐桌上的聊天 </h3>
+<p><code>By one o'clock, Leo has forgotten about lunch. Daniel appears beside his desk.</code></p>
+<p><code>“Want to grab something to eat?”</code></p>
+<p><code>At the café, the server points to two sandwiches. Leo chooses the chicken one.</code></p>
+<p><code>“Eat in or takeaway?”</code></p>
+<p><code>“Sorry, could you say that again?”</code></p>
+<p><code>“Are you eating here?”</code></p>
+<p><code>“Oh, here, please.”</code></p>
+<p><code>They find a small table by the window. Daniel unwraps his sandwich.</code></p>
+<p><code>“How are you finding London so far?”</code></p>
+<p><code>Leo almost answers with the name of his map app. Then Daniel adds, “Enjoying it?”</code></p>
+<p><code>“Yes! Though I haven't seen much beyond the hotel and this office.”</code></p>
+<p><code>“What do you usually do on weekends?”</code></p>
+<p><code>“I like walking and taking photos. How about you?”</code></p>
+<p><code>“I cycle, when it isn't pouring.”</code></p>
+<p><code>Rain taps the window. They both look outside and laugh.</code></p>
+<p><code>“Any suggestions for a short walk after work?” Leo asks.</code></p>
+<p><code>Daniel turns over his receipt and draws a route to the river.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>grab something to eat</code></td>
+<td>去吃点东西；随意的口语。</td>
+</tr>
+<tr>
+<td><code>eat in / takeaway</code></td>
+<td>堂食／外带；这里使用英式表达。</td>
+</tr>
+<tr>
+<td><code>How are you finding …?</code></td>
+<td>你觉得……怎么样？不是问“怎么找到”。</td>
+</tr>
+<tr>
+<td><code>How about you?</code></td>
+<td>你呢？回答后自然把话题交还给对方。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>听辨</strong>：真实对话常省略主语，如 <code>Want to grab lunch?</code>。练习识别，正式写作中仍可使用完整句。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>说</strong>：用“回答＋一个细节＋反问”聊周末。</p>
+<p><strong>参考表达</strong>：<code>I usually go for a walk and take a few photos. I’m still exploring the neighborhood. What do you like doing on weekends?</code></p>
+</details>
+<p><a id="ep05"></a></p>
+<h3 id="05what-does-everything-mean把需求问具体">05｜<code>What Does “Everything” Mean?</code>｜把需求问具体 </h3>
+<p><code>Sarah shares a mock-up. There is one new button: Export.</code></p>
+<p><code>“Users should be able to download everything,” she says.</code></p>
+<p><code>Leo looks at the sample table. “By everything, do you mean all records or just the results after filtering?”</code></p>
+<p><code>“The filtered results.”</code></p>
+<p><code>“And which format do they need?”</code></p>
+<p><code>“Excel. Could we finish by Friday?”</code></p>
+<p><code>Leo pauses. The button looks small. The work behind it does not.</code></p>
+<p><code>“The API change should take about a day, assuming the data endpoint is ready. We'll also need time for review and validation. Friday is possible, but Monday gives us more room.”</code></p>
+<p><code>“What can we leave out?” Sarah asks.</code></p>
+<p><code>“Multiple sheets. We could start with one sheet and keep the selected filters.”</code></p>
+<p><code>They agree on Monday. Before the call ends, Leo reads back the decision.</code></p>
+<p><code>“One Excel file, filtered records only, one sheet. I'll confirm the endpoint schedule with the data team today.”</code></p>
+<p><code>Sarah nods. “Please add that to the ticket.”</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>filtered results</code></td>
+<td>筛选后的结果。</td>
+</tr>
+<tr>
+<td><code>assuming …</code></td>
+<td>假设……；说清估时的前提。</td>
+</tr>
+<tr>
+<td><code>leave something out</code></td>
+<td>暂不包含某项内容。</td>
+</tr>
+<tr>
+<td><code>read back the decision</code></td>
+<td>复述决定，供对方核对。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>理解重点</strong>：估时不是无条件承诺。把范围、依赖和目标日期一起说清。这里的 <code>validation</code> 泛指验证结果是否符合要求。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>写</strong>：整理一条需求确认消息，包含范围、暂不包含的内容、目标日期。</p>
+<p><strong>参考表达</strong>：<code>To confirm: we’ll export the filtered records to one Excel sheet. Multiple sheets are out of scope for this version. We’re targeting Monday, assuming the endpoint is ready.</code></p>
+</details>
+<p><a id="ep06"></a></p>
+<h3 id="06a-comment-in-the-marginreview-里的不同意见">06｜<code>A Comment in the Margin</code>｜<code>Review</code> 里的不同意见 </h3>
+<p><code>A comment appears on Leo's pull request: “Could we simplify this?”</code></p>
+<p><code>He reads it twice. Then he opens the function and sees how far he has to scroll.</code></p>
+<p><code>“Do you mean separating validation from file generation?” he replies.</code></p>
+<p><code>“Yes. That would make the error handling easier to follow.”</code></p>
+<p><code>Later, Daniel suggests putting the export feature in a new service.</code></p>
+<p><code>Leo hesitates. “I see the benefit, but I'm concerned about the extra operational work. Traffic is low at the moment. Could we keep it in the existing service for now?”</code></p>
+<p><code>Daniel leans back. “What if usage grows?”</code></p>
+<p><code>“We can track the request volume and revisit the decision.”</code></p>
+<p><code>“Fair point. Add that to the design notes.”</code></p>
+<p><code>Leo updates the code and leaves a short reply: “I've split the function and added the trade-off to the notes. Could you take another look?”</code></p>
+<p><code>This time, the response is only three words: “Looks good now.”</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Could we simplify this?</code></td>
+<td>能否简化这里？常见的协商语气。</td>
+</tr>
+<tr>
+<td><code>I’m concerned about …</code></td>
+<td>我担心……；后面接具体影响。</td>
+</tr>
+<tr>
+<td><code>revisit the decision</code></td>
+<td>在获得新信息后重新评估决定。</td>
+</tr>
+<tr>
+<td><code>a trade-off</code></td>
+<td>取舍；改善一个方面可能付出另一种代价。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>语气</strong>：<code>I see the benefit, but</code> … 先承认对方方案的价值，再说明担忧和替代方案。<code>LGTM</code> 是 <code>Looks good to me</code> 的常见缩写。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>写</strong>：提出一个有原因的 <code>Review</code> 建议，再回应一次建议。</p>
+<p><strong>参考表达</strong>：<code>Could we move validation into a separate function? That would make the failure cases easier to follow. / Good point. I’ve made that change and updated the PR.</code></p>
+</details>
+<p><a id="ep07"></a></p>
+<h3 id="07the-red-line发布后的红线">07｜<code>The Red Line</code>｜发布后的红线 </h3>
+<p><code>At four, Daniel starts the deployment. Leo watches the dashboard while Sarah prepares the announcement.</code></p>
+<p><code>For a minute, nothing happens. Then the error-rate line rises.</code></p>
+<p><code>“Hold the announcement,” Daniel says.</code></p>
+<p><code>Leo opens the logs. “Some users are being logged out after refreshing their session. It started just after the deployment.”</code></p>
+<p><code>“Do we know why?”</code></p>
+<p><code>“Not yet. The new validation logic is one possibility, but I haven't confirmed it.”</code></p>
+<p><code>The line keeps climbing.</code></p>
+<p><code>“I recommend rolling back,” Leo says. “We can investigate once the service is stable.”</code></p>
+<p><code>Daniel starts the rollback. Leo writes an update in the incident channel: “Some users are having trouble staying signed in. We're rolling back the latest release. Next update in fifteen minutes.”</code></p>
+<p><code>Soon, the line begins to fall.</code></p>
+<p><code>“Back to normal?” Sarah asks.</code></p>
+<p><code>“The error rate is back to its usual level. We're checking affected sessions before we call it resolved.”</code></p>
+<p><code>Leo realizes that he has stopped thinking about his accent.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hold the announcement</code></td>
+<td>先不要发公告。</td>
+</tr>
+<tr>
+<td><code>the error rate / affected users</code></td>
+<td>错误率／受影响的用户。</td>
+</tr>
+<tr>
+<td><code>roll back / a rollback</code></td>
+<td>回滚，动词短语／一次回滚，名词。</td>
+</tr>
+<tr>
+<td><code>call it resolved</code></td>
+<td>认定问题已解决。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>准确性</strong>：时间上紧接发布不等于已经证实根因。报告应区分影响、事实、推测、措施和下一次更新时间。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>写</strong>：写三句故障更新，暂时还不知道根因。</p>
+<p><strong>参考表达</strong>：<code>Some users can’t stay signed in. We’re investigating and rolling back the latest release. The cause is not yet confirmed; our next update will be at 4:30 p.m. London time.</code></p>
+</details>
+<p><a id="ep08"></a></p>
+<h3 id="08the-message-before-the-flight登机前的交接">08｜<code>The Message Before the Flight</code>｜登机前的交接 </h3>
+<p><code>On Friday morning, Sarah pulls up a chair.</code></p>
+<p><code>“Can you explain yesterday's issue without all the implementation details?”</code></p>
+<p><code>Leo turns his laptop away. “The new version rejected some valid sessions, so affected users were logged out. Rolling back restored the previous behavior.”</code></p>
+<p><code>“Did we lose any data?”</code></p>
+<p><code>“We haven't found evidence of data loss in the checks completed so far. The remaining checks are listed in the incident notes.”</code></p>
+<p><code>“And the next step?”</code></p>
+<p><code>“We've reproduced the failure. Daniel will review the fix, and I'll document the edge case before I leave.”</code></p>
+<p><code>At the airport, Leo reads his handover one last time. It has links to the ticket and logs, the current status, and a name beside each next step.</code></p>
+<p><code>Daniel replies: “Thanks. Safe travels!”</code></p>
+<p><code>Leo types, “See you online next week.”</code></p>
+<p><code>His boarding group is called. He closes the laptop before thinking of another sentence to add.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>valid sessions</code></td>
+<td>有效的会话；<code>valid</code> 不等于已经经过验证。</td>
+</tr>
+<tr>
+<td><code>evidence of data loss</code></td>
+<td>数据丢失的证据；<code>evidence</code> 通常不可数。</td>
+</tr>
+<tr>
+<td><code>handover / next steps</code></td>
+<td>交接／后续行动。</td>
+</tr>
+<tr>
+<td><code>an edge case</code></td>
+<td>边界情况；不常出现但需要考虑的输入或条件。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>使用提醒</strong>：没查出证据与证实不存在是两回事。对非技术同事，先说明用户影响和当前状态。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>说</strong>：用三句向产品经理说明一次故障。<strong>写</strong>：为未完成事项指定负责人。</p>
+<p><strong>参考表达</strong>：<code>The release caused some users to be logged out. We rolled back, and the service is stable. Daniel will review the fix; I’ll finish the incident notes today.</code></p>
+</details>
+<p><a id="ep09"></a></p>
+<h3 id="09youre-breaking-up断断续续的视频会议">09｜<code>You’re Breaking Up</code>｜断断续续的视频会议 </h3>
+<p><code>Back home, Leo joins a call with the London team. Daniel's picture freezes halfway through a sentence.</code></p>
+<p><code>“Sorry, you're breaking up. Could you repeat the deadline?”</code></p>
+<p><code>Daniel speaks again, but Leo catches only “Thursday.”</code></p>
+<p><code>“Could you put the date and time in the chat?”</code></p>
+<p><code>A message appears: “Thursday, 15 October, 09:00 London time.”</code></p>
+<p><code>Leo checks the calendar invitation. “That works for me.”</code></p>
+<p><code>Sarah starts speaking. Her microphone icon is crossed out.</code></p>
+<p><code>“I think you're on mute,” Leo says.</code></p>
+<p><code>She laughs and switches it on. They discuss the remaining work, but one detail needs a longer conversation.</code></p>
+<p><code>“Let's follow up separately,” Daniel says. “I'll send the context first.”</code></p>
+<p><code>Before leaving, Leo reads the action items aloud. This time, he confirms who is doing each task as well as when it is due.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>You’re breaking up.</code></td>
+<td>你的声音断断续续；常指连接问题。</td>
+</tr>
+<tr>
+<td><code>You’re on mute.</code></td>
+<td>你的麦克风处于静音状态。</td>
+</tr>
+<tr>
+<td><code>follow up separately</code></td>
+<td>会后另行跟进。</td>
+</tr>
+<tr>
+<td><code>action items / due date</code></td>
+<td>待办事项／应完成的日期。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>时间</strong>：跨时区约会写明日期和地点时区，通过日历换算；不要把伦敦与国内的时差全年固定为一个值。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>说</strong>：模拟网络不稳，请对方重复日期并发到聊天框。<strong>写</strong>：补一句会后确认。</p>
+<p><strong>参考表达</strong>：<code>You’re breaking up. Could you put the deadline in the chat? / To confirm, I’ll send the report before our next call.</code></p>
+</details>
+<p><a id="ep10"></a></p>
+<h3 id="10friday-off请假之前">10｜<code>Friday Off</code>｜请假之前 </h3>
+<p><code>The data endpoint is still unavailable on Tuesday. Leo reads the last update, then messages the owner.</code></p>
+<p><code>“Hi Priya, do you have an updated estimate for the export endpoint? We need it for integration. If it slips past Wednesday, Monday's release may be at risk.”</code></p>
+<p><code>Priya replies that a sample response is ready, but the endpoint needs another day.</code></p>
+<p><code>“Thanks. The sample will help us continue. Please let me know if the timeline changes.”</code></p>
+<p><code>Then Leo opens a different message to his manager.</code></p>
+<p><code>“I'd like to take Friday off. I'll finish the integration notes on Thursday, and Daniel has agreed to cover urgent questions.”</code></p>
+<p><code>“Fine with me. Please update the team calendar.”</code></p>
+<p><code>Leo adds the leave and schedules a short handover. Closing the laptop on Thursday feels easier when nobody has to guess where the work stands.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>an updated estimate</code></td>
+<td>更新后的预估。</td>
+</tr>
+<tr>
+<td><code>slip past Wednesday</code></td>
+<td>推迟到周三之后。</td>
+</tr>
+<tr>
+<td><code>take Friday off</code></td>
+<td>周五请一天假。</td>
+</tr>
+<tr>
+<td><code>cover urgent questions</code></td>
+<td>代为处理紧急问题。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>催进度</strong>：给出你依赖什么、何时需要、延期会影响什么。避免只发 <code>Any update?</code>，让对方猜上下文。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>写</strong>：给依赖团队写一条跟进消息，包含截止时间及延期影响。</p>
+<p><strong>参考表达</strong>：<code>Could you confirm when the test endpoint will be ready? We need it by Wednesday to finish integration. A later delivery would put Monday’s release at risk.</code></p>
+</details>
+<p><a id="ep11"></a></p>
+<h3 id="11one-useful-question一次反馈谈话">11｜<code>One Useful Question</code>｜一次反馈谈话 </h3>
+<p><code>During their monthly conversation, Leo's manager asks what has become easier.</code></p>
+<p><code>“Small meetings,” Leo says. “But in larger ones, I sometimes wait too long to speak.”</code></p>
+<p><code>“What makes you wait?”</code></p>
+<p><code>“I'm trying to make the sentence perfect. By the time it's ready, the topic has changed.”</code></p>
+<p><code>His manager nods. “Try coming in with one useful question. You don't need a speech.”</code></p>
+<p><code>“Could you give me feedback on whether my updates are clear?”</code></p>
+<p><code>“Of course. Your written handovers are already easy to follow.”</code></p>
+<p><code>A few months later, Leo joins another planning call. He has been offered a year with the London team.</code></p>
+<p><code>While people discuss the move, he notices something missing from the schedule.</code></p>
+<p><code>“Can I check one thing before we move on? Who's coordinating the first week's accommodation?”</code></p>
+<p><code>“Maya,” his manager says. “Good question.”</code></p>
+<p><code>This time, Leo did not wait.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>give feedback on …</code></td>
+<td>就……给反馈；<code>feedback</code> 通常不可数。</td>
+</tr>
+<tr>
+<td><code>By the time …</code></td>
+<td>等到……的时候。</td>
+</tr>
+<tr>
+<td><code>before we move on</code></td>
+<td>在进入下一个话题之前。</td>
+</tr>
+<tr>
+<td><code>coordinate accommodation</code></td>
+<td>协调住宿安排；<code>accommodation</code> 通常不可数。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>插话</strong>：<code>Can I check one thing?</code> 是自然的切入方式。先用一句短问句获得发言空间，再补充背景。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>说</strong>：向同事请求一个具体维度的反馈。</p>
+<p><strong>参考表达</strong>：<code>Could you give me feedback on my meeting updates? I’d like to know whether the main point and next steps are clear.</code></p>
+</details>
+<p><a id="ep12"></a></p>
+<h3 id="12a-number-and-an-address手机号与地址">12｜<code>A Number and an Address</code>｜手机号与地址 </h3>
+<p><code>On his second arrival in London, Leo buys a SIM card before leaving the airport.</code></p>
+<p><code>“Prepaid or a monthly plan?” the assistant asks.</code></p>
+<p><code>“Can I start with prepaid? I'm not sure how much data I'll need.”</code></p>
+<p><code>She shows him two plans. Leo points to the smaller one.</code></p>
+<p><code>“Does this renew automatically? And is roaming included?”</code></p>
+<p><code>They check the terms together. Leo chooses it and saves the confirmation.</code></p>
+<p><code>Two days later, he asks a bank employee about opening an account.</code></p>
+<p><code>“What documents would I need?”</code></p>
+<p><code>“Identification and an accepted proof of address for this account.”</code></p>
+<p><code>“I'm staying in temporary accommodation. What can I use?”</code></p>
+<p><code>The employee gives him a list rather than a yes-or-no answer.</code></p>
+<p><code>Leo takes a photo of it. “Thanks. I'll check what I have. Is there a monthly fee?”</code></p>
+<p><code>One question leads to another. For once, that feels like progress.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a prepaid SIM / a monthly plan</code></td>
+<td>预付费 <code>SIM</code> 卡／月度套餐。</td>
+</tr>
+<tr>
+<td><code>data allowance / roaming</code></td>
+<td>套餐流量额度／漫游。</td>
+</tr>
+<tr>
+<td><code>renew automatically</code></td>
+<td>自动续费或续订。</td>
+</tr>
+<tr>
+<td><code>proof of address</code></td>
+<td>地址证明；能接受哪些材料要向具体机构确认。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>阅读</strong>：在套餐中找费用、流量、续订方式和取消条件。这里练询问方式，不把故事当成开户材料清单。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>说</strong>：询问套餐是否自动续费，以及如何取消。</p>
+<p><strong>参考表达</strong>：<code>Does this plan renew automatically? How can I cancel it, and is there a cancellation fee?</code></p>
+</details>
+<p><a id="ep13"></a></p>
+<h3 id="13the-quiet-flat看房时多问一句">13｜<code>The Quiet Flat</code>｜看房时多问一句 </h3>
+<p><code>The flat looks brighter than the photos. Leo stands near the window and listens. No traffic, just someone closing a door downstairs.</code></p>
+<p><code>“It's furnished,” the agent says. “Available from Monday.”</code></p>
+<p><code>“Are utilities included in the rent?”</code></p>
+<p><code>“Water is. Electricity and internet are separate.”</code></p>
+<p><code>Leo writes that down. “How much is the deposit?”</code></p>
+<p><code>The agent shows him the figure. Later, at the kitchen table, they read the draft lease.</code></p>
+<p><code>“What does this notice period mean for me?” Leo asks.</code></p>
+<p><code>“It describes how much notice you need to give before ending the tenancy under these terms.”</code></p>
+<p><code>“And who should I contact if something needs repairing?”</code></p>
+<p><code>The agent points to the maintenance details.</code></p>
+<p><code>“Could you email me the draft and a list of all the charges? I'd like to read them before deciding.”</code></p>
+<p><code>Outside, Leo checks the journey to work. A quiet flat is useful. So is knowing what it will cost.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>furnished / unfurnished</code></td>
+<td>带家具的／不带家具的。</td>
+</tr>
+<tr>
+<td><code>utilities / deposit</code></td>
+<td>水电燃气等公用事业服务或费用／押金。</td>
+</tr>
+<tr>
+<td><code>lease / tenancy / notice period</code></td>
+<td>租约／租赁关系或租期／提前通知期限。</td>
+</tr>
+<tr>
+<td><code>a list of all the charges</code></td>
+<td>全部费用清单。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>阅读</strong>：先定位租金、押金、租期、费用、维修联系人和终止条款，再询问看不懂的地方。故事不预设任何地区的法定规则。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>写</strong>：向中介要合同草稿并询问费用。</p>
+<p><strong>参考表达</strong>：<code>Could you send me the draft lease and a breakdown of the charges? Please also confirm which utilities are included in the rent.</code></p>
+</details>
+<p><a id="ep14"></a></p>
+<h3 id="14a-lamp-in-a-box新家的第一盏灯">14｜<code>A Lamp in a Box</code>｜新家的第一盏灯 </h3>
+<p><code>By Saturday evening, Leo owns a key, a mattress, and almost nothing else. At the supermarket, he studies a shelf of cleaning products.</code></p>
+<p><code>“Excuse me, where can I find laundry detergent?”</code></p>
+<p><code>“Aisle twelve, near the washing-up liquid.”</code></p>
+<p><code>He buys towels, a blanket, and a small lamp. At the checkout, the cashier asks whether he wants a receipt.</code></p>
+<p><code>“Yes, please.”</code></p>
+<p><code>At home, the lamp flickers once and goes dark. Leo tries another socket. Still nothing.</code></p>
+<p><code>The next morning, he returns to the shop with the box.</code></p>
+<p><code>“I bought this yesterday, but it doesn't work. Could I exchange it?”</code></p>
+<p><code>The assistant checks the receipt. “We don't have another one in stock. Would you prefer a refund?”</code></p>
+<p><code>“Yes, please. How long should it take?”</code></p>
+<p><code>She explains the expected timing for this purchase. Leo writes it on the receipt before putting it safely in his wallet.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>laundry detergent / washing-up liquid</code></td>
+<td>洗衣液或洗衣粉／洗洁精，后者是英式表达。</td>
+</tr>
+<tr>
+<td><code>a socket / an aisle</code></td>
+<td>插座／货架之间的通道。</td>
+</tr>
+<tr>
+<td><code>in stock / out of stock</code></td>
+<td>有现货／缺货。</td>
+</tr>
+<tr>
+<td><code>exchange / refund</code></td>
+<td>换货／退款。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>词汇纠错</strong>：<code>washing machine</code>、<code>living room</code>、<code>customer service</code> 都是完整词组，不能为了凑词量拆散。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>说</strong>：退换一件有问题的商品，说明购买时间、问题和期望处理方式。</p>
+<p><strong>参考表达</strong>：<code>I bought this lamp yesterday, but it won’t turn on. I have the receipt. Could I get a replacement or a refund?</code></p>
+</details>
+<p><a id="ep15"></a></p>
+<h3 id="15delivered-apparently显示已送达">15｜<code>Delivered, Apparently</code>｜显示“已送达” </h3>
+<p><code>Leo's phone says his parcel has been delivered. The hallway says otherwise.</code></p>
+<p><code>He checks the entrance, then calls the courier.</code></p>
+<p><code>“I'm calling about a delivery marked as delivered, but I haven't received it. I have the tracking number.”</code></p>
+<p><code>The agent reads an address back to him. The building is right; the flat number is wrong.</code></p>
+<p><code>“It's flat thirteen, not thirty. One-three.”</code></p>
+<p><code>“I'll ask the driver to check.”</code></p>
+<p><code>While Leo waits, his video call disconnects. He restarts the router, but the internet stays down. Using mobile data, he opens the provider's support chat.</code></p>
+<p><code>“I've already restarted the router. Is there an outage in my area?”</code></p>
+<p><code>The reply confirms one, with no restoration time yet.</code></p>
+<p><code>Leo messages Daniel: “My home internet is down. I'll work from the office this afternoon.”</code></p>
+<p><code>As he reaches for his coat, the doorbell rings. The driver is holding his parcel.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>marked as delivered</code></td>
+<td>被标记为已送达。</td>
+</tr>
+<tr>
+<td><code>tracking number / courier</code></td>
+<td>物流追踪号／快递公司或快递员。</td>
+</tr>
+<tr>
+<td><code>an outage / restoration time</code></td>
+<td>服务中断／预计恢复时间。</td>
+</tr>
+<tr>
+<td><code>I’ve already restarted the router.</code></td>
+<td>我已经重启过路由器。避免重复无效排查。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>听辨</strong>：<code>thirteen / thirty</code> 也容易混淆。报号码时逐位读；复述地址时保留楼号和房号。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>写</strong>：向客服说明断网问题、已经做过的排查和想确认的信息。</p>
+<p><strong>参考表达</strong>：<code>My internet connection is down. I’ve restarted the router, but that hasn’t helped. Is there a known outage, and do you have an estimated restoration time?</code></p>
+</details>
+<p><a id="ep16"></a></p>
+<h3 id="16the-bowl-under-the-sink水槽下的碗">16｜<code>The Bowl Under the Sink</code>｜水槽下的碗 </h3>
+<p><code>A drop lands on Leo's foot as he brushes his teeth. He opens the cupboard beneath the sink. A pipe is dripping slowly.</code></p>
+<p><code>He puts a bowl underneath and sends the landlord a photo.</code></p>
+<p><code>“There seems to be a leak under the bathroom sink. Could you arrange for someone to take a look?”</code></p>
+<p><code>A plumber can come the following morning, between nine and eleven. Leo confirms that he will be home.</code></p>
+<p><code>In the hallway, a neighbor notices the bowl in his hand.</code></p>
+<p><code>“Everything all right?”</code></p>
+<p><code>“Small leak. I'm still figuring out how everything works here.”</code></p>
+<p><code>“I'm Alex. I live next door.”</code></p>
+<p><code>“Leo. I moved in last week.”</code></p>
+<p><code>Alex points toward the stairs. “The recycling bins are behind the building, if you haven't found them yet.”</code></p>
+<p><code>“I hadn't. Thanks.”</code></p>
+<p><code>The next morning, the plumber replaces the damaged pipe. That evening, Leo returns Alex's greeting without searching for the words.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a leak / a leaking pipe</code></td>
+<td>一处漏水／正在漏水的管道。</td>
+</tr>
+<tr>
+<td><code>arrange for someone to …</code></td>
+<td>安排某人做……。</td>
+</tr>
+<tr>
+<td><code>I’m still figuring out …</code></td>
+<td>我还在摸索……。</td>
+</tr>
+<tr>
+<td><code>recycling bins</code></td>
+<td>可回收物垃圾桶。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>口语</strong>：<code>I just moved in / I moved in last week</code> 都可以开启邻里聊天。报修时带上位置、现象和可上门时间。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>写</strong>：写一条报修消息，说明何时能在家等候。</p>
+<p><strong>参考表达</strong>：<code>There’s a leak under the bathroom sink. I’ve attached a photo. Could you arrange a repair? I’ll be home tomorrow between 9 and 11 a.m.</code></p>
+</details>
+<p><a id="ep17"></a></p>
+<h3 id="17could-you-write-that-down把重要信息写下来">17｜<code>Could You Write That Down?</code>｜把重要信息写下来 </h3>
+<p><code>After several nights of coughing, Leo calls a clinic.</code></p>
+<p><code>“I'd like to make an appointment. I've had a cough for about a week.”</code></p>
+<p><code>The receptionist offers a time the next morning.</code></p>
+<p><code>“Do I need to bring anything? And could you confirm the address?”</code></p>
+<p><code>At the appointment, Leo explains when the cough started and answers questions about other symptoms. When the clinician asks about medication and allergies, he checks the notes on his phone rather than relying on memory.</code></p>
+<p><code>Later, at the pharmacy, he hands over his prescription.</code></p>
+<p><code>“Could you explain how to take this?”</code></p>
+<p><code>The pharmacist goes through the label. Leo follows with his finger.</code></p>
+<p><code>“Should I take it with food? And are there any side effects I should watch for?”</code></p>
+<p><code>He still isn't sure he heard one instruction correctly.</code></p>
+<p><code>“Could you write that down for me?”</code></p>
+<p><code>The pharmacist points to the printed instructions and explains them again. Leo repeats back what he understands.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>make an appointment</code></td>
+<td>预约。</td>
+</tr>
+<tr>
+<td><code>I’ve had … for about a week.</code></td>
+<td>我……大约一周了；描述持续到现在的状态。</td>
+</tr>
+<tr>
+<td><code>prescription / medication</code></td>
+<td>处方／药物或药物治疗。</td>
+</tr>
+<tr>
+<td><code>side effects / allergies</code></td>
+<td>副作用／过敏情况。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>表达范围</strong>：这里练习描述和确认，不提供诊断或用药建议。遇到没听清的用法，向医生或药师核对，并请对方确认你的复述。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>说</strong>：说明症状持续时间；请求对方重复说明。</p>
+<p><strong>参考表达</strong>：<code>I’ve had a cough for about a week. / I’m not sure I understood the instructions. Could you explain them again and check that I’ve got them right?</code></p>
+</details>
+<p><a id="ep18"></a></p>
+<h3 id="18two-forms-two-questions银行和办事窗口">18｜<code>Two Forms, Two Questions</code>｜银行和办事窗口 </h3>
+<p><code>A transaction on Leo's statement catches his eye. He doesn't recognize the merchant name. He opens the bank's app and contacts support through it.</code></p>
+<p><code>“I don't recognize this transaction. Could you help me check what it is?”</code></p>
+<p><code>The agent asks him to confirm the date and amount. Leo checks both before answering. They discuss the next steps, and he asks for a reference number.</code></p>
+<p><code>That afternoon, he has an appointment to update his address with another office. At the counter, he takes out a rental agreement.</code></p>
+<p><code>“Is this acceptable as proof of address?”</code></p>
+<p><code>The clerk checks it against the requirements for his application.</code></p>
+<p><code>“Do you need the original or a copy?” Leo asks.</code></p>
+<p><code>“A copy for this application.”</code></p>
+<p><code>He writes the reference number on the folder. Two different problems, he thinks, but the same useful habit: check exactly what is needed before guessing.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bank statement / merchant</code></td>
+<td>银行对账单／商户。</td>
+</tr>
+<tr>
+<td><code>transaction / reference number</code></td>
+<td>交易／业务参考编号。</td>
+</tr>
+<tr>
+<td><code>acceptable as proof of address</code></td>
+<td>可以作为地址证明接受。</td>
+</tr>
+<tr>
+<td><code>the original / a copy</code></td>
+<td>原件／副本或复印件。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>阅读</strong>：区分收款方名称、交易日期和入账日期。不同机构的材料要求不同，语言上用 <code>Is this acceptable</code> …? 逐项确认。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>写</strong>：向办事机构询问所需材料及是否接受复印件。</p>
+<p><strong>参考表达</strong>：<code>Could you confirm which documents I need for my appointment? Do I need to bring the originals, or are copies acceptable?</code></p>
+</details>
+<p><a id="ep19"></a></p>
+<h3 id="19the-platform-changes临时换站台">19｜<code>The Platform Changes</code>｜临时换站台 </h3>
+<p><code>On Saturday, Leo reaches the station early. His ticket says 10:30, but the platform is still blank.</code></p>
+<p><code>A speaker crackles overhead. He catches “ten thirty,” then loses the rest in the noise.</code></p>
+<p><code>“Excuse me, which platform does the 10:30 train leave from?”</code></p>
+<p><code>“It was six. It's now four, and it's running fifteen minutes late.”</code></p>
+<p><code>Leo shows his ticket. “Is this valid for that service? And do I need to change trains?”</code></p>
+<p><code>The employee checks. “Yes, it is. No changes.”</code></p>
+<p><code>After the journey, rain replaces his planned walk with a taxi ride.</code></p>
+<p><code>“Could you take me to this address?” he asks, showing the driver his screen.</code></p>
+<p><code>Near the destination, he recognizes the café Alex recommended.</code></p>
+<p><code>“Could you drop me off at the corner instead, if it's safe to stop there?”</code></p>
+<p><code>The driver pulls over a little farther along. Leo pays by card and steps directly into the smell of coffee.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a platform change</code></td>
+<td>站台变更。</td>
+</tr>
+<tr>
+<td><code>running fifteen minutes late</code></td>
+<td>晚点十五分钟。</td>
+</tr>
+<tr>
+<td><code>valid for that service</code></td>
+<td>适用于那班车；<code>service</code> 在这里指班次。</td>
+</tr>
+<tr>
+<td><code>drop me off at …</code></td>
+<td>让我在……下车。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>听辨</strong>：公共广播先抓班次、目的地、站台、时间和变更。没听全时核对电子屏或询问工作人员。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>说</strong>：询问这张票能否乘坐下一班车，并确认是否需要换乘。</p>
+<p><strong>参考表达</strong>：<code>Is this ticket valid for the next train? Do I need to change trains, or is it direct?</code></p>
+</details>
+<p><a id="ep20"></a></p>
+<h3 id="20one-more-chair晚餐多加一把椅子">20｜<code>One More Chair</code>｜晚餐多加一把椅子 </h3>
+<p><code>Alex invites Leo to dinner with friends. Leo arrives just as a server moves an extra chair to the table.</code></p>
+<p><code>“Glad you could make it,” Alex says.</code></p>
+<p><code>One of the guests, Nina, is studying the menu.</code></p>
+<p><code>“I have a peanut allergy,” she tells the server. “Could you check whether this dish contains peanuts, and whether there's a risk of cross-contact?”</code></p>
+<p><code>The server goes to ask the kitchen instead of guessing. Leo notices how clearly Nina explains what she needs.</code></p>
+<p><code>When it's his turn, he asks what comes with the fish.</code></p>
+<p><code>“Potatoes and vegetables.”</code></p>
+<p><code>“I'll have that, please.”</code></p>
+<p><code>Over dinner, someone asks how long he's been living in London.</code></p>
+<p><code>“About three months. Long enough to find the supermarket, not long enough to stop checking the weather every hour.”</code></p>
+<p><code>Later, Alex suggests another drink.</code></p>
+<p><code>“I'll pass this time, thanks. I've got an early start tomorrow.”</code></p>
+<p><code>They ask for the bill and check whether they can pay separately.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Glad you could make it.</code></td>
+<td>很高兴你能来；<code>make it</code> 在这里指成功到场。</td>
+</tr>
+<tr>
+<td><code>contains peanuts / cross-contact</code></td>
+<td>含花生／过敏原交叉接触。</td>
+</tr>
+<tr>
+<td><code>What does it come with?</code></td>
+<td>它配什么？</td>
+</tr>
+<tr>
+<td><code>I’ll pass this time, thanks.</code></td>
+<td>这次就不了，谢谢。礼貌拒绝邀请或提议。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>语用</strong>：明确过敏情况与表达口味偏好不同。素食、少辣或不喜欢某种食材，都不能代替具体的过敏说明。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>说</strong>：接受一次邀请，再礼貌拒绝续场。<strong>写</strong>：第二天发一条感谢消息。</p>
+<p><strong>参考表达</strong>：<code>Thanks for inviting me. I had a lovely evening. It was great to meet your friends—let’s do it again sometime.</code></p>
+</details>
+<p><a id="ep21"></a></p>
+<h3 id="21an-empty-pocket空了的口袋">21｜<code>An Empty Pocket</code>｜空了的口袋 </h3>
+<p><code>At the station, Leo reaches for his wallet. His pocket is empty.</code></p>
+<p><code>He checks his bag twice, then remembers taking the wallet out at the café. The café hasn't found it. Neither has the station's lost property office.</code></p>
+<p><code>“Could I leave my contact details?” he asks.</code></p>
+<p><code>On his phone, he freezes the bank card through the bank's app. Later, he contacts the police to ask how to report the loss.</code></p>
+<p><code>“Where did you last see it?”</code></p>
+<p><code>“At the café near the station, around three. It's a dark brown wallet with my bank card and ID inside.”</code></p>
+<p><code>“Do you think it was stolen?”</code></p>
+<p><code>“I'm not sure. I only know it's missing.”</code></p>
+<p><code>He writes down the report reference. Alex calls while he's walking home.</code></p>
+<p><code>“Rough day?”</code></p>
+<p><code>“Yes. But I've reported it and contacted the bank. I think that's everything I can do tonight.”</code></p>
+<p><code>“Come over. I've made too much pasta.”</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lost property / lost and found</code></td>
+<td>失物招领；前者常见于英式英语。</td>
+</tr>
+<tr>
+<td><code>freeze a card</code></td>
+<td>临时冻结卡片；具体操作以银行提供的功能为准。</td>
+</tr>
+<tr>
+<td><code>lost / missing / stolen</code></td>
+<td>遗失的／下落不明的／被盗的，不能混用事实判断。</td>
+</tr>
+<tr>
+<td><code>report reference</code></td>
+<td>报失或报案的参考编号。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>表达</strong>：说出最后见到的地点、时间、物品特征和联系方式。不能确定是否被盗时，直接说 <code>I’m not sure</code>。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>说</strong>：描述遗失物品，避免把不确定的经过说成事实。</p>
+<p><strong>参考表达</strong>：<code>I’d like to report a missing wallet. I last saw it near the station at about three. It’s dark brown, with a bank card and my ID inside.</code></p>
+</details>
+<p><a id="ep22"></a></p>
+<h3 id="22the-flight-after-this-one赶不上的转机">22｜<code>The Flight After This One</code>｜赶不上的转机 </h3>
+<p><code>The departure screen changes for the third time. Leo calculates the connection again. The numbers no longer work.</code></p>
+<p><code>At the airline desk, he shows his itinerary.</code></p>
+<p><code>“My first flight is delayed, and I'm worried I'll miss my connection. What options do I have?”</code></p>
+<p><code>The agent searches. “There's a later flight tonight with seats available.”</code></p>
+<p><code>“Could you check whether you can rebook me on that? Would there be an extra charge for my booking?”</code></p>
+<p><code>She checks the ticket conditions before confirming the change.</code></p>
+<p><code>“Will my checked bag be transferred to the new flight, or do I need to collect it?”</code></p>
+<p><code>The agent explains the arrangement and prints the updated details. Leo checks the destination, date, and departure time.</code></p>
+<p><code>He sends a message to Daniel: “My connection has changed. I'll arrive tomorrow morning instead. I'll join the afternoon meeting if I get in on time.”</code></p>
+<p><code>Then he finds a seat near the new gate and finally buys some dinner.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>itinerary / connection</code></td>
+<td>行程单／衔接的航班或转机。</td>
+</tr>
+<tr>
+<td><code>rebook me on a later flight</code></td>
+<td>为我改订更晚的一班航班。</td>
+</tr>
+<tr>
+<td><code>ticket conditions / extra charge</code></td>
+<td>机票适用条件／额外费用。</td>
+</tr>
+<tr>
+<td><code>updated details</code></td>
+<td>更新后的信息。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>使用提醒</strong>：原稿把航空公司原因与免费改签直接挂钩；这里改成询问具体订票条件，也逐项确认行李安排。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>说</strong>：按“问题→可选方案→费用→行李”询问。<strong>写</strong>：通知接机人时间有变。</p>
+<p><strong>参考表达</strong>：<code>My flight has been delayed, and I’ve been rebooked. Please don’t leave for the airport yet. I’ll send you the updated arrival time once it’s confirmed.</code></p>
+</details>
+<p><a id="ep23"></a></p>
+<h3 id="23before-i-decide做决定之前">23｜<code>Before I Decide</code>｜做决定之前 </h3>
+<p><code>A renewal email arrives while Leo is packing a jacket for return. The jacket is fine, but the sleeves are too short.</code></p>
+<p><code>He starts with the easier task. On the shop's return form, he selects “Doesn't fit” and checks the instructions.</code></p>
+<p><code>At the drop-off point, the assistant scans the label.</code></p>
+<p><code>“Could I have proof of postage?” Leo asks.</code></p>
+<p><code>Back home, he reads the landlord's email properly. The lease ends next month. The proposed rent is higher.</code></p>
+<p><code>“Thanks for sending this,” he writes. “Before I decide, could you send me the full renewal terms? I'd also like to confirm whether the notice period would change.”</code></p>
+<p><code>He stops himself from adding “That should be fine.” He hasn't decided yet.</code></p>
+<p><code>On his desk are two documents: one recording a return, the other inviting a commitment. This time, he knows which one needs a longer look.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>doesn’t fit</code></td>
+<td>尺寸或版型不合身，不表示商品损坏。</td>
+</tr>
+<tr>
+<td><code>proof of postage</code></td>
+<td>寄件凭证；<code>postage</code> 也可指邮资。</td>
+</tr>
+<tr>
+<td><code>renewal terms / proposed rent</code></td>
+<td>续租条款／拟议的新租金。</td>
+</tr>
+<tr>
+<td><code>Before I decide, …</code></td>
+<td>在决定之前……；避免无意中表示接受。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>阅读</strong>：退货看期限、条件、邮费与退款方式；续约看起止日期、租金、费用和通知条款。本文不设定通用退货期限。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>写</strong>：请求书面条款，同时明确尚未决定。</p>
+<p><strong>参考表达</strong>：<code>Could you send me the full renewal terms, including the rent, fees, and notice period? I’ll review them before confirming whether I’d like to renew.</code></p>
+</details>
+<p><a id="ep24"></a></p>
+<h3 id="24the-new-person一年以后">24｜<code>The New Person</code>｜一年以后 </h3>
+<p><code>A new engineer joins the team on Monday. At lunch, she quietly asks Leo whether every meeting feels this fast.</code></p>
+<p><code>“Some still do,” he says.</code></p>
+<p><code>“But you always know what to say.”</code></p>
+<p><code>Leo laughs. “Usually I know what I need to ask.”</code></p>
+<p><code>That afternoon, she watches him present a release update.</code></p>
+<p><code>“The changes are merged, and the planned checks are complete. One minor issue remains, but it doesn't block this release. Daniel will monitor the rollout; I'll follow up on the remaining issue.”</code></p>
+<p><code>Someone asks about a number Leo hasn't checked.</code></p>
+<p><code>“I don't have that figure with me. I'll confirm it after the meeting.”</code></p>
+<p><code>No dramatic pause. No apology that lasts longer than the answer.</code></p>
+<p><code>On his way home, Alex messages him about dinner. Leo records a short voice reply, puts his phone away, and walks past the supermarket without checking the map.</code></p>
+<p><code>He still learns new words. Now they have somewhere to go.</code></p>
+<details>
+<summary>展开：表达、听辨与使用提醒</summary>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>planned checks are complete</code></td>
+<td>计划内的检查已完成；不要把它扩大成没有任何风险。</td>
+</tr>
+<tr>
+<td><code>monitor the rollout</code></td>
+<td>监控逐步发布的过程。</td>
+</tr>
+<tr>
+<td><code>the remaining issue</code></td>
+<td>剩余的问题。</td>
+</tr>
+<tr>
+<td><code>I don’t have that figure with me.</code></td>
+<td>我现在手头没有那个数字。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>回顾</strong>：<code>Leo</code> 的变化是能抓住目标、问清信息、表达不确定性，并交代下一步。所有场景都可以复用这些能力。</p>
+</details>
+<details>
+<summary>展开：开口／动笔任务与参考</summary>
+<p><strong>综合任务</strong>：录制一分钟工作更新，再写一条包含状态、风险、负责人和下一步的消息。</p>
+<p><strong>参考表达</strong>：<code>The changes are ready for release. One minor issue remains; it won’t block the rollout. Daniel will monitor the release, and I’ll update the ticket with a plan for the remaining issue.</code></p>
+</details>
+<p><a id="vocabulary"></a></p>
+<h2 id="四-双栏场景词库">四、双栏场景词库 </h2>
+<blockquote>
+<p><code>n.</code> 名词；<code>v.</code> 动词；<code>adj.</code> 形容词；<code>adv.</code> 副词。</p>
+</blockquote>
+<h3 id="a1主动表达通用动词与沟通动作"><code>A1</code>｜主动表达：通用动词与沟通动作 </h3>
+<table>
+<thead>
+<tr>
+<th>英文词语／常用搭配</th>
+<th>中文释义与使用提醒</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>check the details</code></td>
+<td>核对细节；<code>check</code> 不总等于测试。</td>
+</tr>
+<tr>
+<td><code>confirm the date</code></td>
+<td>确认日期；<code>confirm</code> 是把不确定信息确认下来。</td>
+</tr>
+<tr>
+<td><code>clarify the requirement</code></td>
+<td>澄清需求，让含糊的信息变明确。</td>
+</tr>
+<tr>
+<td><code>explain the problem to someone</code></td>
+<td>向某人解释问题；用 <code>explain something to someone</code>。</td>
+</tr>
+<tr>
+<td><code>describe what happened</code></td>
+<td>描述发生了什么，侧重事实与过程。</td>
+</tr>
+<tr>
+<td><code>mean / What do you mean by …?</code></td>
+<td><code>v.</code> 意味着／你说的……是什么意思？</td>
+</tr>
+<tr>
+<td><code>suggest doing something</code></td>
+<td>建议做某事；如 <code>suggest using a simpler approach</code>（建议采用更简单的方法）。</td>
+</tr>
+<tr>
+<td><code>recommend a restaurant</code></td>
+<td>推荐一家餐厅；<code>recommend doing something</code> 表示建议做某事。</td>
+</tr>
+<tr>
+<td><code>decide / make a decision</code></td>
+<td><code>v.</code> 决定／作出决定。</td>
+</tr>
+<tr>
+<td><code>agree on a plan</code></td>
+<td>就计划达成一致；<code>agree with someone</code> 表示赞同某人。</td>
+</tr>
+<tr>
+<td><code>prefer A to B</code></td>
+<td>比起 <code>B</code> 更喜欢 <code>A</code>；<code>prefer to do</code> 表示更愿意做。</td>
+</tr>
+<tr>
+<td><code>expect / estimate</code></td>
+<td><code>v.</code> 预期／估算；<code>an estimate</code> 是一份估算或预估值。</td>
+</tr>
+<tr>
+<td><code>assume / an assumption</code></td>
+<td><code>v.</code> 假设／<code>n.</code> 假设；说明尚未验证的前提。</td>
+</tr>
+<tr>
+<td><code>notice / realize</code></td>
+<td><code>v.</code> 留意到／意识到；如 <code>notice an error</code>（发现一个错误）。</td>
+</tr>
+<tr>
+<td><code>provide more details</code></td>
+<td>提供更多细节；<code>provide someone with something</code>（向某人提供某物）。</td>
+</tr>
+<tr>
+<td><code>request access</code></td>
+<td>请求访问权限；<code>request</code> 作动词时通常直接接宾语。</td>
+</tr>
+<tr>
+<td><code>respond to a message</code></td>
+<td>回复消息；<code>response</code> 是名词“回复、响应”。</td>
+</tr>
+<tr>
+<td><code>follow up on a request</code></td>
+<td>跟进一个请求；<code>a follow-up message</code> 是后续消息。</td>
+</tr>
+<tr>
+<td><code>look into an issue</code></td>
+<td>调查一个问题。</td>
+</tr>
+<tr>
+<td><code>figure out how it works</code></td>
+<td>弄清它如何运作，强调理解过程。</td>
+</tr>
+<tr>
+<td><code>find out what happened</code></td>
+<td>查明发生了什么，强调获得信息。</td>
+</tr>
+<tr>
+<td><code>get back to someone</code></td>
+<td>之后回复某人；最好补充回复时限。</td>
+</tr>
+<tr>
+<td><code>handle / deal with a problem</code></td>
+<td>处理问题；<code>handle</code> 后直接接宾语。</td>
+</tr>
+<tr>
+<td><code>depend on / It depends on …</code></td>
+<td>取决于／这取决于……。</td>
+</tr>
+<tr>
+<td><code>seem / It seems to be …</code></td>
+<td><code>v.</code> 似乎／它看起来是……；表明尚未完全确定。</td>
+</tr>
+<tr>
+<td><code>manage to do something</code></td>
+<td>设法做成某事；<code>manage a team</code> 才是管理团队。</td>
+</tr>
+<tr>
+<td><code>work / It isn’t working.</code></td>
+<td><code>v.</code> 起作用、运行／它不能正常工作。</td>
+</tr>
+<tr>
+<td><code>run / run a command</code></td>
+<td><code>v.</code> 运行／运行一条命令；也可指经营、跑步。</td>
+</tr>
+<tr>
+<td><code>keep someone updated</code></td>
+<td>持续向某人同步进展。</td>
+</tr>
+<tr>
+<td><code>reach out to someone</code></td>
+<td>联系某人；<code>contact someone</code> 更直接简洁。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a2主动表达项目-会议与协作"><code>A2</code>｜主动表达：项目、会议与协作 </h3>
+<table>
+<thead>
+<tr>
+<th>英文词语／常用搭配</th>
+<th>中文释义与使用提醒</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>requirement / meet the requirements</code></td>
+<td><code>n.</code> 需求、要求／满足要求。</td>
+</tr>
+<tr>
+<td><code>scope / out of scope</code></td>
+<td><code>n.</code> 范围／不在本次范围内。</td>
+</tr>
+<tr>
+<td><code>priority / prioritize tasks</code></td>
+<td><code>n.</code> 优先级／给任务排优先级。</td>
+</tr>
+<tr>
+<td><code>deadline / meet a deadline</code></td>
+<td><code>n.</code> 截止时间／按期完成。</td>
+</tr>
+<tr>
+<td><code>schedule / reschedule a meeting</code></td>
+<td><code>n./v.</code> 日程、安排／改期会议。</td>
+</tr>
+<tr>
+<td><code>agenda / meeting notes</code></td>
+<td>议程／会议记录。</td>
+</tr>
+<tr>
+<td><code>progress / make progress</code></td>
+<td><code>n.</code> 进展／取得进展；<code>progress</code> 通常不可数。</td>
+</tr>
+<tr>
+<td><code>status update</code></td>
+<td>状态更新，说明当前做到哪里。</td>
+</tr>
+<tr>
+<td><code>context / background</code></td>
+<td>上下文／背景；联系具体问题补足信息。</td>
+</tr>
+<tr>
+<td><code>dependency / depend on another team</code></td>
+<td>依赖项或依赖关系／依赖另一个团队。</td>
+</tr>
+<tr>
+<td><code>blocker / be blocked by …</code></td>
+<td>阻塞项／被……阻塞。</td>
+</tr>
+<tr>
+<td><code>owner / assign an owner</code></td>
+<td>负责人／指定负责人；在任务语境下不是“物主”。</td>
+</tr>
+<tr>
+<td><code>action item / next step</code></td>
+<td>待办事项／下一步行动。</td>
+</tr>
+<tr>
+<td><code>deliverable</code></td>
+<td><code>n.</code> 交付物；如报告、功能或设计稿。</td>
+</tr>
+<tr>
+<td><code>approach / alternative</code></td>
+<td><code>n.</code> 方法、方案／<code>n./adj.</code> 替代方案、可替代的。</td>
+</tr>
+<tr>
+<td><code>trade-off / make a trade-off</code></td>
+<td><code>n.</code> 取舍／作出取舍。</td>
+</tr>
+<tr>
+<td><code>risk / mitigate a risk</code></td>
+<td><code>n.</code> 风险／降低风险。</td>
+</tr>
+<tr>
+<td><code>concern / raise a concern</code></td>
+<td><code>n.</code> 担忧／提出担忧。</td>
+</tr>
+<tr>
+<td><code>feedback / give feedback on …</code></td>
+<td><code>n.</code> 反馈／就……给反馈；通常不说 <code>feedbacks</code>。</td>
+</tr>
+<tr>
+<td><code>align on the scope</code></td>
+<td>就范围取得共识；也可以直接说 <code>agree on the scope</code>。</td>
+</tr>
+<tr>
+<td><code>review / approve a change</code></td>
+<td><code>v.</code> 审查／批准改动；读过不一定等于批准。</td>
+</tr>
+<tr>
+<td><code>clarification / ask for clarification</code></td>
+<td><code>n.</code> 澄清、说明／请求进一步说明。</td>
+</tr>
+<tr>
+<td><code>handover / hand over a task</code></td>
+<td><code>n.</code> 交接／移交任务，动词用两词形式。</td>
+</tr>
+<tr>
+<td><code>time zone / local time</code></td>
+<td>时区／当地时间。</td>
+</tr>
+<tr>
+<td><code>be on mute / unmute yourself</code></td>
+<td>处于静音状态／取消自己的静音。</td>
+</tr>
+<tr>
+<td><code>share your screen</code></td>
+<td>共享屏幕。</td>
+</tr>
+<tr>
+<td><code>Your audio is cutting out.</code></td>
+<td>你的声音时断时续。</td>
+</tr>
+<tr>
+<td><code>take a day off / annual leave</code></td>
+<td>请一天假／年假。</td>
+</tr>
+<tr>
+<td><code>cover for a colleague</code></td>
+<td>在同事不在时顶替其工作。</td>
+</tr>
+<tr>
+<td><code>performance review</code></td>
+<td>绩效评估；<code>performance</code> 在此指工作表现。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a3主动表达开发-排查与发布"><code>A3</code>｜主动表达：开发、排查与发布 </h3>
+<table>
+<thead>
+<tr>
+<th>英文词语／常用搭配</th>
+<th>中文释义与使用提醒</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>development environment</code></td>
+<td>开发环境。</td>
+</tr>
+<tr>
+<td><code>staging / production</code></td>
+<td>预发布环境／生产环境；具体命名随团队约定。</td>
+</tr>
+<tr>
+<td><code>frontend / backend</code></td>
+<td>前端／后端。</td>
+</tr>
+<tr>
+<td><code>repository / branch</code></td>
+<td>代码仓库／分支。</td>
+</tr>
+<tr>
+<td><code>commit / merge changes</code></td>
+<td><code>n./v.</code> 提交／合并改动。</td>
+</tr>
+<tr>
+<td><code>pull request (PR) / code review</code></td>
+<td>合并请求的一种形式／代码审查。</td>
+</tr>
+<tr>
+<td><code>reproduce a bug</code></td>
+<td>复现一个缺陷。</td>
+</tr>
+<tr>
+<td><code>steps to reproduce</code></td>
+<td>复现步骤；在缺陷报告中常见。</td>
+</tr>
+<tr>
+<td><code>expected / actual behavior</code></td>
+<td>预期行为／实际行为。</td>
+</tr>
+<tr>
+<td><code>intermittent / consistently</code></td>
+<td><code>adj.</code> 间歇发生的／<code>adv.</code> 每次都一致地；用于说明复现规律。</td>
+</tr>
+<tr>
+<td><code>root cause / symptom</code></td>
+<td>根因／症状、表面现象。</td>
+</tr>
+<tr>
+<td><code>logs / stack trace</code></td>
+<td>日志／堆栈跟踪信息。</td>
+</tr>
+<tr>
+<td><code>debug / investigate</code></td>
+<td><code>v.</code> 调试／调查。</td>
+</tr>
+<tr>
+<td><code>exception / error handling</code></td>
+<td>异常／错误处理。</td>
+</tr>
+<tr>
+<td><code>workaround / permanent fix</code></td>
+<td>临时规避方法／长期修复方案。</td>
+</tr>
+<tr>
+<td><code>regression / regression check</code></td>
+<td>回归问题，即原来正常的行为变坏／回归检查。</td>
+</tr>
+<tr>
+<td><code>edge case / boundary condition</code></td>
+<td>边界情况／边界条件。</td>
+</tr>
+<tr>
+<td><code>validate input / validation</code></td>
+<td>验证输入是否合法或符合规则／验证、校验。</td>
+</tr>
+<tr>
+<td><code>authentication / authenticate a user</code></td>
+<td>身份认证／验证用户身份。</td>
+</tr>
+<tr>
+<td><code>authorization / grant access</code></td>
+<td>授权／授予访问权限。</td>
+</tr>
+<tr>
+<td><code>permission / credentials</code></td>
+<td>权限、许可／登录凭证或资质证明，依语境确定。</td>
+</tr>
+<tr>
+<td><code>configuration / configure a service</code></td>
+<td>配置／配置一个服务。</td>
+</tr>
+<tr>
+<td><code>endpoint / request / response</code></td>
+<td>接口端点／请求／响应。</td>
+</tr>
+<tr>
+<td><code>query / index</code></td>
+<td><code>n./v.</code> 查询／<code>n.</code> 索引。</td>
+</tr>
+<tr>
+<td><code>timeout / retry a request</code></td>
+<td><code>n.</code> 超时／重试请求；<code>time out</code> 是动词短语。</td>
+</tr>
+<tr>
+<td><code>latency / throughput</code></td>
+<td>延迟／吞吐量。</td>
+</tr>
+<tr>
+<td><code>cache / invalidate the cache</code></td>
+<td>缓存／使缓存失效。</td>
+</tr>
+<tr>
+<td><code>compatible with / backward compatibility</code></td>
+<td>与……兼容／向后兼容性。</td>
+</tr>
+<tr>
+<td><code>integrate / integration</code></td>
+<td><code>v.</code> 集成／<code>n.</code> 集成。</td>
+</tr>
+<tr>
+<td><code>migrate / database migration</code></td>
+<td><code>v.</code> 迁移／数据库迁移。</td>
+</tr>
+<tr>
+<td><code>deploy / deployment</code></td>
+<td><code>v.</code> 部署／<code>n.</code> 部署。</td>
+</tr>
+<tr>
+<td><code>release / rollout</code></td>
+<td><code>n./v.</code> 发布／<code>n.</code> 推出、逐步发布。</td>
+</tr>
+<tr>
+<td><code>roll back / rollback</code></td>
+<td><code>v.</code> 回滚／<code>n.</code> 回滚。</td>
+</tr>
+<tr>
+<td><code>monitor / alert</code></td>
+<td><code>v.</code> 监控／<code>n.</code> 告警；<code>alert</code> 也可作动词。</td>
+</tr>
+<tr>
+<td><code>error rate / request volume</code></td>
+<td>错误率／请求量。</td>
+</tr>
+<tr>
+<td><code>incident / outage</code></td>
+<td>事件，运维语境常指故障事件／服务中断。</td>
+</tr>
+<tr>
+<td><code>recover / restore the service</code></td>
+<td><code>v.</code> 恢复／使服务恢复。</td>
+</tr>
+<tr>
+<td><code>data loss / data integrity</code></td>
+<td>数据丢失／数据完整性。</td>
+</tr>
+<tr>
+<td><code>back up / backup</code></td>
+<td><code>v.</code> 备份／<code>n.</code> 备份；<code>a backup copy</code>（一份备份副本）。</td>
+</tr>
+<tr>
+<td><code>stable / reliable / available</code></td>
+<td><code>adj.</code> 稳定的／可靠的／可用的，描述不同方面。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a4主动表达机场-住宿与交通"><code>A4</code>｜主动表达：机场、住宿与交通 </h3>
+<table>
+<thead>
+<tr>
+<th>英文词语／常用搭配</th>
+<th>中文释义与使用提醒</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>passport / visa</code></td>
+<td>护照／签证。</td>
+</tr>
+<tr>
+<td><code>itinerary / booking confirmation</code></td>
+<td>行程单／预订确认信息。</td>
+</tr>
+<tr>
+<td><code>check in / check-in desk</code></td>
+<td>办理值机或入住／值机柜台；作修饰语时常加连字符。</td>
+</tr>
+<tr>
+<td><code>boarding pass / board a plane</code></td>
+<td>登机牌／登机。</td>
+</tr>
+<tr>
+<td><code>departure / arrival</code></td>
+<td>出发／到达；<code>departure time</code> 是出发时间。</td>
+</tr>
+<tr>
+<td><code>terminal / gate / platform</code></td>
+<td>航站楼／登机口／站台。</td>
+</tr>
+<tr>
+<td><code>security check / customs</code></td>
+<td>安全检查／海关；二者不是同一个环节。</td>
+</tr>
+<tr>
+<td><code>checked baggage / carry-on bag</code></td>
+<td>托运行李／随身行李包。</td>
+</tr>
+<tr>
+<td><code>luggage / suitcase / backpack</code></td>
+<td>行李，通常不可数／行李箱／背包。</td>
+</tr>
+<tr>
+<td><code>connection / connecting flight</code></td>
+<td>转机衔接／衔接航班。</td>
+</tr>
+<tr>
+<td><code>nonstop flight / direct flight</code></td>
+<td>不经停航班／直达航班；航空语境中 <code>direct</code> 不保证不经停。</td>
+</tr>
+<tr>
+<td><code>transfer / change trains</code></td>
+<td>转乘、转移／换乘火车。</td>
+</tr>
+<tr>
+<td><code>delay / be delayed</code></td>
+<td><code>n./v.</code> 延误／被延误。</td>
+</tr>
+<tr>
+<td><code>cancel / cancellation</code></td>
+<td><code>v.</code> 取消／<code>n.</code> 取消。</td>
+</tr>
+<tr>
+<td><code>rebook / an extra charge</code></td>
+<td>重新预订或改订／一笔额外费用。</td>
+</tr>
+<tr>
+<td><code>baggage claim / collect a bag</code></td>
+<td>行李提取区／领取行李。</td>
+</tr>
+<tr>
+<td><code>reservation / under the name …</code></td>
+<td>预订／以……的名字。</td>
+</tr>
+<tr>
+<td><code>reception / front desk</code></td>
+<td>接待处／前台。</td>
+</tr>
+<tr>
+<td><code>check out / late check-out</code></td>
+<td>退房／延迟退房。</td>
+</tr>
+<tr>
+<td><code>availability / subject to availability</code></td>
+<td>可用情况／以实际空余情况为准。</td>
+</tr>
+<tr>
+<td><code>included / complimentary</code></td>
+<td>已包含的／免费提供的；<code>included</code> 不一定表示完全免费。</td>
+</tr>
+<tr>
+<td><code>room key / key card</code></td>
+<td>房间钥匙／房卡。</td>
+</tr>
+<tr>
+<td><code>air conditioning / air conditioner</code></td>
+<td>空调系统或制冷／空调设备。</td>
+</tr>
+<tr>
+<td><code>fare / ticket</code></td>
+<td>车费、票价／车票或机票。</td>
+</tr>
+<tr>
+<td><code>return ticket / one-way ticket</code></td>
+<td>往返票，英式常用／单程票。</td>
+</tr>
+<tr>
+<td><code>timetable / route / destination</code></td>
+<td>时刻表／路线／目的地。</td>
+</tr>
+<tr>
+<td><code>get on / get off / miss a stop</code></td>
+<td>上车／下车／坐过站。</td>
+</tr>
+<tr>
+<td><code>get in a taxi / get out of a taxi</code></td>
+<td>上出租车／下出租车。</td>
+</tr>
+<tr>
+<td><code>pick me up / drop me off</code></td>
+<td>来接我／送我到某处并让我下车。</td>
+</tr>
+<tr>
+<td><code>straight ahead / at the corner</code></td>
+<td>一直向前／在拐角处。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a5主动表达点餐-饮食与结账"><code>A5</code>｜主动表达：点餐、饮食与结账 </h3>
+<table>
+<thead>
+<tr>
+<th>英文词语／常用搭配</th>
+<th>中文释义与使用提醒</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a table for two / a reservation</code></td>
+<td>两人桌／预订。</td>
+</tr>
+<tr>
+<td><code>menu / order a dish</code></td>
+<td>菜单／点一道菜。</td>
+</tr>
+<tr>
+<td><code>starter / main course / dessert</code></td>
+<td>前菜／主菜／甜点。</td>
+</tr>
+<tr>
+<td><code>side dish / portion</code></td>
+<td>配菜／一份食物的量。</td>
+</tr>
+<tr>
+<td><code>ingredient / contain</code></td>
+<td><code>n.</code> 配料／<code>v.</code> 含有。</td>
+</tr>
+<tr>
+<td><code>allergy / be allergic to …</code></td>
+<td><code>n.</code> 过敏／对……过敏。</td>
+</tr>
+<tr>
+<td><code>vegetarian / vegan</code></td>
+<td>素食者或素食的／纯素食者或纯素食的。</td>
+</tr>
+<tr>
+<td><code>spicy / mild</code></td>
+<td>辣的／味道温和的、不太辣的；不是固定的辣度标准。</td>
+</tr>
+<tr>
+<td><code>still water / sparkling water</code></td>
+<td>无气水／气泡水。</td>
+</tr>
+<tr>
+<td><code>tap water / bottled water</code></td>
+<td>自来水／瓶装水。</td>
+</tr>
+<tr>
+<td><code>eat in / takeaway</code></td>
+<td>堂食／外带，英式常用。</td>
+</tr>
+<tr>
+<td><code>bill / check</code></td>
+<td>餐费账单／餐费账单，美式常用。</td>
+</tr>
+<tr>
+<td><code>service charge / tip</code></td>
+<td>服务费／小费；询问账单是否已含服务费。</td>
+</tr>
+<tr>
+<td><code>pay separately / split the bill</code></td>
+<td>分别付款／分摊账单；<code>split</code> 不一定自动表示各付各的菜钱。</td>
+</tr>
+<tr>
+<td><code>receipt / Could I have a receipt?</code></td>
+<td>收据、小票／可以给我收据吗？</td>
+</tr>
+<tr>
+<td><code>by card / in cash</code></td>
+<td>用卡支付／用现金支付。</td>
+</tr>
+<tr>
+<td><code>contactless payment</code></td>
+<td>非接触式支付，例如挥卡。</td>
+</tr>
+<tr>
+<td><code>recommend / What do you recommend?</code></td>
+<td>推荐／你推荐什么？</td>
+</tr>
+<tr>
+<td><code>come with / Does it come with rice?</code></td>
+<td>配有／它配米饭吗？</td>
+</tr>
+<tr>
+<td><code>without / Could I have it without onions?</code></td>
+<td>不含／可以不加洋葱吗？</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a6主动表达租房-维修与数字生活"><code>A6</code>｜主动表达：租房、维修与数字生活 </h3>
+<table>
+<thead>
+<tr>
+<th>英文词语／常用搭配</th>
+<th>中文释义与使用提醒</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>flat / apartment / studio</code></td>
+<td>公寓，英式／公寓，美式／通常为起居与卧室合一的单间公寓。</td>
+</tr>
+<tr>
+<td><code>landlord / tenant / letting agent</code></td>
+<td>房东／租客／房屋出租中介。</td>
+</tr>
+<tr>
+<td><code>viewing / arrange a viewing</code></td>
+<td><code>n.</code> 看房／预约看房。</td>
+</tr>
+<tr>
+<td><code>rent / deposit / lease</code></td>
+<td>租金或租用／押金／租约。</td>
+</tr>
+<tr>
+<td><code>furnished / furniture</code></td>
+<td>带家具的／家具，通常不可数。</td>
+</tr>
+<tr>
+<td><code>utilities / utility bill</code></td>
+<td>水电燃气等服务或费用／公用事业账单。</td>
+</tr>
+<tr>
+<td><code>move in / move out</code></td>
+<td>搬入／搬出。</td>
+</tr>
+<tr>
+<td><code>notice period / renew the lease</code></td>
+<td>提前通知期限／续租。</td>
+</tr>
+<tr>
+<td><code>maintenance / repair</code></td>
+<td>维护、保养／修理；<code>a repair</code> 指一项修理工作。</td>
+</tr>
+<tr>
+<td><code>leak / pipe / sink</code></td>
+<td>漏水处或泄漏／管道／水槽。</td>
+</tr>
+<tr>
+<td><code>plumber / electrician / technician</code></td>
+<td>管道维修工／电工／技术人员。</td>
+</tr>
+<tr>
+<td><code>heating / hot water</code></td>
+<td>供暖／热水。</td>
+</tr>
+<tr>
+<td><code>broken / damaged / replace</code></td>
+<td>坏了的／受损的／更换。</td>
+</tr>
+<tr>
+<td><code>noise / noisy / quiet</code></td>
+<td><code>n.</code> 噪声／<code>adj.</code> 吵闹的／<code>adj.</code> 安静的。</td>
+</tr>
+<tr>
+<td><code>neighborhood / neighbor</code></td>
+<td>街区、附近地区／邻居。</td>
+</tr>
+<tr>
+<td><code>SIM card / prepaid plan</code></td>
+<td><code>SIM</code> 卡／预付费套餐。</td>
+</tr>
+<tr>
+<td><code>mobile data / roaming</code></td>
+<td>移动数据流量／漫游。</td>
+</tr>
+<tr>
+<td><code>signal / Wi-Fi connection</code></td>
+<td>信号／<code>Wi-Fi</code> 连接。</td>
+</tr>
+<tr>
+<td><code>router / restart / reset</code></td>
+<td>路由器／重启／重置；<code>reset</code> 可能改变设置，与 <code>restart</code> 不同。</td>
+</tr>
+<tr>
+<td><code>log in / login details</code></td>
+<td>登录，动词／登录信息，<code>login</code> 用作名词或修饰语。</td>
+</tr>
+<tr>
+<td><code>sign up / subscription</code></td>
+<td>注册／订阅。</td>
+</tr>
+<tr>
+<td><code>verification code / two-factor authentication</code></td>
+<td>验证码／双因素认证。</td>
+</tr>
+<tr>
+<td><code>settings / notification / privacy</code></td>
+<td>设置／通知／隐私。</td>
+</tr>
+<tr>
+<td><code>download / upload / attachment</code></td>
+<td>下载／上传／附件。</td>
+</tr>
+<tr>
+<td><code>storage / battery / charger</code></td>
+<td>存储空间／电池／充电器。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a7主动表达购物-快递-银行与办事"><code>A7</code>｜主动表达：购物、快递、银行与办事 </h3>
+<table>
+<thead>
+<tr>
+<th>英文词语／常用搭配</th>
+<th>中文释义与使用提醒</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>in stock / out of stock</code></td>
+<td>有现货／缺货。</td>
+</tr>
+<tr>
+<td><code>size / fit / try on</code></td>
+<td>尺码／合身／试穿；<code>try it on</code>（试穿它）。</td>
+</tr>
+<tr>
+<td><code>return an item / exchange an item</code></td>
+<td>退回商品／换货。</td>
+</tr>
+<tr>
+<td><code>refund / replacement / warranty</code></td>
+<td>退款／替换品／保修或质保。</td>
+</tr>
+<tr>
+<td><code>original payment method</code></td>
+<td>原支付方式。</td>
+</tr>
+<tr>
+<td><code>business day / calendar day</code></td>
+<td>工作日／自然日；明确期限使用哪种单位。</td>
+</tr>
+<tr>
+<td><code>parcel / package / delivery</code></td>
+<td>包裹，英式／包裹，美式常用／配送或送达。</td>
+</tr>
+<tr>
+<td><code>tracking number / track a parcel</code></td>
+<td>物流追踪号／追踪包裹。</td>
+</tr>
+<tr>
+<td><code>sender / recipient</code></td>
+<td>寄件人／收件人；付款场景 <code>recipient</code> 也指收款人。</td>
+</tr>
+<tr>
+<td><code>pickup point / collect a parcel</code></td>
+<td>自提点／领取包裹。</td>
+</tr>
+<tr>
+<td><code>return label / proof of postage</code></td>
+<td>退货运单标签／寄件凭证。</td>
+</tr>
+<tr>
+<td><code>bank account / open an account</code></td>
+<td>银行账户／开户。</td>
+</tr>
+<tr>
+<td><code>balance / minimum balance</code></td>
+<td>余额／最低余额。</td>
+</tr>
+<tr>
+<td><code>debit card / credit card</code></td>
+<td>借记卡／信用卡。</td>
+</tr>
+<tr>
+<td><code>deposit money / withdraw cash</code></td>
+<td>存钱／取现金；<code>withdrawal</code> 是名词。</td>
+</tr>
+<tr>
+<td><code>transfer money / bank transfer</code></td>
+<td>转账／银行转账。</td>
+</tr>
+<tr>
+<td><code>transaction / merchant / statement</code></td>
+<td>交易／商户／对账单。</td>
+</tr>
+<tr>
+<td><code>fee / charge / exchange rate</code></td>
+<td>费用／收费项目或收费／汇率。</td>
+</tr>
+<tr>
+<td><code>invoice / expense claim</code></td>
+<td>发票或付款通知单，依语境／费用报销申请。</td>
+</tr>
+<tr>
+<td><code>proof of address / identification (ID)</code></td>
+<td>地址证明／身份证明。</td>
+</tr>
+<tr>
+<td><code>application form / fill in a form</code></td>
+<td>申请表／填写表格；美式也常用 <code>fill out</code>。</td>
+</tr>
+<tr>
+<td><code>apply for a permit / submit an application</code></td>
+<td>申请许可证／提交申请。</td>
+</tr>
+<tr>
+<td><code>approve / reject / pending</code></td>
+<td>批准／拒绝／待处理的。</td>
+</tr>
+<tr>
+<td><code>valid / expire / renewal</code></td>
+<td>有效的／到期／续期。</td>
+</tr>
+<tr>
+<td><code>signature / sign a document</code></td>
+<td>签名，名词／签署文件。</td>
+</tr>
+<tr>
+<td><code>original / copy / certified copy</code></td>
+<td>原件／副本／经认证的副本。</td>
+</tr>
+<tr>
+<td><code>appointment / counter / queue</code></td>
+<td>预约／柜台／队伍，英式常用。</td>
+</tr>
+<tr>
+<td><code>embassy / consulate</code></td>
+<td>大使馆／领事馆。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a8主动表达就医-求助与社交"><code>A8</code>｜主动表达：就医、求助与社交 </h3>
+<table>
+<thead>
+<tr>
+<th>英文词语／常用搭配</th>
+<th>中文释义与使用提醒</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>clinic / hospital / pharmacy</code></td>
+<td>诊所／医院／药房。</td>
+</tr>
+<tr>
+<td><code>symptom / cough / fever</code></td>
+<td>症状／咳嗽／发烧。</td>
+</tr>
+<tr>
+<td><code>pain / sore throat / feel dizzy</code></td>
+<td>疼痛／咽喉痛／感到头晕。</td>
+</tr>
+<tr>
+<td><code>prescription / medication / side effect</code></td>
+<td>处方／药物／副作用。</td>
+</tr>
+<tr>
+<td><code>take with food / instructions</code></td>
+<td>随餐服用／说明、指示；用法需向专业人员确认。</td>
+</tr>
+<tr>
+<td><code>emergency / ambulance</code></td>
+<td>紧急情况／救护车。</td>
+</tr>
+<tr>
+<td><code>I need help. / Please call an ambulance.</code></td>
+<td>我需要帮助。／请叫救护车。</td>
+</tr>
+<tr>
+<td><code>location / nearby / immediately</code></td>
+<td>位置／附近的或在附近／立即。</td>
+</tr>
+<tr>
+<td><code>fire exit / fire alarm / first aid</code></td>
+<td>消防出口／火警警报／急救。</td>
+</tr>
+<tr>
+<td><code>lost / stolen / missing</code></td>
+<td>遗失的／被盗的／下落不明的。</td>
+</tr>
+<tr>
+<td><code>report a loss / describe an item</code></td>
+<td>报告遗失／描述物品。</td>
+</tr>
+<tr>
+<td><code>insurance / insurance claim</code></td>
+<td>保险／保险理赔申请。</td>
+</tr>
+<tr>
+<td><code>introduce yourself / join us</code></td>
+<td>自我介绍／加入我们一起活动。</td>
+</tr>
+<tr>
+<td><code>invite / invitation / accept an invitation</code></td>
+<td>邀请，动词／邀请，名词／接受邀请。</td>
+</tr>
+<tr>
+<td><code>get used to … / be used to …</code></td>
+<td>逐渐习惯……／已经习惯……；后面可接名词或 <code>doing</code>。</td>
+</tr>
+<tr>
+<td><code>keep in touch / catch up</code></td>
+<td>保持联系／聊聊近况、叙旧；<code>catch up</code> 也可指赶上进度。</td>
+</tr>
+<tr>
+<td><code>make it / I can’t make it tonight.</code></td>
+<td>成功到场／我今晚去不了。</td>
+</tr>
+<tr>
+<td><code>reschedule / Maybe another time.</code></td>
+<td>改期／也许改天吧。</td>
+</tr>
+<tr>
+<td><code>partner / colleague / acquaintance</code></td>
+<td>伴侣或合作伙伴／同事／认识但未必熟悉的人。</td>
+</tr>
+<tr>
+<td><code>What do you do for work?</code></td>
+<td>你从事什么工作？</td>
+</tr>
+<tr>
+<td><code>How long have you been living here?</code></td>
+<td>你在这里住多久了？</td>
+</tr>
+<tr>
+<td><code>Help yourself.</code></td>
+<td>请自便、请随意取用；常用于招待食物。</td>
+</tr>
+<tr>
+<td><code>That’s kind of you.</code></td>
+<td>你真好；回应别人的帮助或邀请。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="b1查阅扩展家居与随身用品"><code>B1</code>｜查阅扩展：家居与随身用品 </h3>
+<table>
+<thead>
+<tr>
+<th>英文词语／常用搭配</th>
+<th>中文释义与使用提醒</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>living room / bedroom / bathroom / kitchen</code></td>
+<td>客厅／卧室／浴室或卫生间／厨房。</td>
+</tr>
+<tr>
+<td><code>floor / wall / ceiling</code></td>
+<td>楼层或地板／墙／天花板。</td>
+</tr>
+<tr>
+<td><code>door / window / entrance / exit</code></td>
+<td>门／窗／入口／出口。</td>
+</tr>
+<tr>
+<td><code>key / lock / spare key</code></td>
+<td>钥匙／锁／备用钥匙。</td>
+</tr>
+<tr>
+<td><code>sofa / shelf / drawer / wardrobe</code></td>
+<td>沙发／架子／抽屉／衣柜。</td>
+</tr>
+<tr>
+<td><code>bed sheet / blanket / pillow / towel</code></td>
+<td>床单／毯子／枕头／毛巾。</td>
+</tr>
+<tr>
+<td><code>lamp / light bulb / socket</code></td>
+<td>灯／灯泡／插座。</td>
+</tr>
+<tr>
+<td><code>washing machine / dryer / laundry detergent</code></td>
+<td>洗衣机／烘干机／洗衣液或洗衣粉。</td>
+</tr>
+<tr>
+<td><code>fridge / freezer / microwave / oven</code></td>
+<td>冰箱／冷冻柜或冷冻室／微波炉／烤箱。</td>
+</tr>
+<tr>
+<td><code>tap / shower / toilet</code></td>
+<td>水龙头，英式／淋浴／马桶或厕所。</td>
+</tr>
+<tr>
+<td><code>rubbish / trash / recycling</code></td>
+<td>垃圾，英式／垃圾，美式／回收处理。</td>
+</tr>
+<tr>
+<td><code>toothbrush / toothpaste / toilet paper</code></td>
+<td>牙刷／牙膏／卫生纸。</td>
+</tr>
+<tr>
+<td><code>shampoo / conditioner / soap / sunscreen</code></td>
+<td>洗发水／护发素／肥皂／防晒霜。</td>
+</tr>
+<tr>
+<td><code>shirt / T-shirt / jacket / coat</code></td>
+<td>衬衫／<code>T</code> 恤／夹克／外套、大衣。</td>
+</tr>
+<tr>
+<td><code>trousers / jeans / shorts / skirt / dress</code></td>
+<td>长裤，英式／牛仔裤／短裤／裙子／连衣裙。</td>
+</tr>
+<tr>
+<td><code>sweater / socks / shoes / trainers</code></td>
+<td>毛衣／袜子／鞋／运动鞋，英式。</td>
+</tr>
+<tr>
+<td><code>tight / loose / changing room</code></td>
+<td>紧的／宽松的／试衣间。</td>
+</tr>
+<tr>
+<td><code>umbrella / sunglasses / travel adapter</code></td>
+<td>雨伞／太阳镜／旅行转换插头。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="b2查阅扩展食物-烹饪与超市"><code>B2</code>｜查阅扩展：食物、烹饪与超市 </h3>
+<table>
+<thead>
+<tr>
+<th>英文词语／常用搭配</th>
+<th>中文释义与使用提醒</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>breakfast / lunch / dinner / snack</code></td>
+<td>早餐／午餐／晚餐／零食、加餐。</td>
+</tr>
+<tr>
+<td><code>rice / noodles / bread / pasta</code></td>
+<td>米饭／面条，常用复数／面包／意大利面。</td>
+</tr>
+<tr>
+<td><code>beef / pork / chicken / fish</code></td>
+<td>牛肉／猪肉／鸡肉／鱼肉；<code>chicken</code> 也可指鸡。</td>
+</tr>
+<tr>
+<td><code>eggs / milk / cheese / butter</code></td>
+<td>鸡蛋／牛奶／奶酪／黄油。</td>
+</tr>
+<tr>
+<td><code>vegetables / fruit / potatoes / onions</code></td>
+<td>蔬菜／水果／土豆／洋葱。</td>
+</tr>
+<tr>
+<td><code>salt / sugar / pepper / cooking oil</code></td>
+<td>盐／糖／胡椒／食用油。</td>
+</tr>
+<tr>
+<td><code>sauce / soup / salad / sandwich</code></td>
+<td>酱汁／汤／沙拉／三明治。</td>
+</tr>
+<tr>
+<td><code>boil / fry / bake / grill</code></td>
+<td>煮／煎、炸／烘焙／烧烤、炙烤。</td>
+</tr>
+<tr>
+<td><code>fresh / frozen / raw / cooked</code></td>
+<td>新鲜的／冷冻的／生的／熟的。</td>
+</tr>
+<tr>
+<td><code>sweet / sour / bitter / salty</code></td>
+<td>甜的／酸的／苦的／咸的。</td>
+</tr>
+<tr>
+<td><code>plate / bowl / cup / glass</code></td>
+<td>盘子／碗／杯子／玻璃杯。</td>
+</tr>
+<tr>
+<td><code>fork / knife / spoon / chopsticks</code></td>
+<td>叉／刀／勺／筷子。</td>
+</tr>
+<tr>
+<td><code>aisle / basket / shopping trolley</code></td>
+<td>货架通道／购物篮／购物车，英式。</td>
+</tr>
+<tr>
+<td><code>checkout / cashier / self-checkout</code></td>
+<td>结账处／收银员／自助结账处。</td>
+</tr>
+<tr>
+<td><code>price / discount / on sale / total</code></td>
+<td>价格／折扣／促销中／总额。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="b3查阅扩展情绪-天气与学习"><code>B3</code>｜查阅扩展：情绪、天气与学习 </h3>
+<table>
+<thead>
+<tr>
+<th>英文词语／常用搭配</th>
+<th>中文释义与使用提醒</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>nervous / anxious / worried</code></td>
+<td>紧张的／焦虑的／担心的。</td>
+</tr>
+<tr>
+<td><code>confused / confident / uncertain</code></td>
+<td>困惑的／有信心的／不确定的。</td>
+</tr>
+<tr>
+<td><code>tired / sleepy / stressed / relaxed</code></td>
+<td>累的／困的／压力大的／放松的。</td>
+</tr>
+<tr>
+<td><code>comfortable / convenient</code></td>
+<td>舒适的／方便的；<code>a convenient time</code>（方便的时间）。</td>
+</tr>
+<tr>
+<td><code>interested / interesting</code></td>
+<td>感兴趣的／有趣的；<code>I’m interested</code>（我感兴趣）。</td>
+</tr>
+<tr>
+<td><code>bored / boring / excited / exciting</code></td>
+<td>感到无聊的／令人无聊的／兴奋的／令人兴奋的。</td>
+</tr>
+<tr>
+<td><code>patient / polite / helpful / disappointed</code></td>
+<td>有耐心的／礼貌的／乐于助人的／失望的。</td>
+</tr>
+<tr>
+<td><code>forecast / temperature / humid</code></td>
+<td>天气预报／温度／潮湿闷热的。</td>
+</tr>
+<tr>
+<td><code>sunny / cloudy / windy / rainy</code></td>
+<td>晴朗的／多云的／多风的／下雨的。</td>
+</tr>
+<tr>
+<td><code>storm / slippery / wet / dry</code></td>
+<td>暴风雨／湿滑的／湿的／干燥的。</td>
+</tr>
+<tr>
+<td><code>spring / summer / autumn / winter</code></td>
+<td>春／夏／秋，英式／冬。</td>
+</tr>
+<tr>
+<td><code>pronunciation / stress / syllable</code></td>
+<td>发音／重音／音节；<code>stress</code> 也可指压力。</td>
+</tr>
+<tr>
+<td><code>subtitle / transcript / caption</code></td>
+<td>字幕／文字转写稿／字幕或说明文字。</td>
+</tr>
+<tr>
+<td><code>look up a word / take notes</code></td>
+<td>查词／做笔记。</td>
+</tr>
+<tr>
+<td><code>paraphrase / summarize / retell</code></td>
+<td>换一种说法／概括／复述。</td>
+</tr>
+<tr>
+<td><code>practice / review / make a mistake</code></td>
+<td>练习／复习／犯错。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="b4查阅扩展值得成组学习的词形"><code>B4</code>｜查阅扩展：值得成组学习的词形 </h3>
+<table>
+<thead>
+<tr>
+<th>英文词语／常用搭配</th>
+<th>中文释义与使用提醒</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>act → action → active → activate</code></td>
+<td>行动 → 行动或操作 → 活跃的、启用的 → 激活。</td>
+</tr>
+<tr>
+<td><code>connect → connection → disconnect → reconnect</code></td>
+<td>连接 → 连接 → 断开 → 重新连接。</td>
+</tr>
+<tr>
+<td><code>develop → developer → development</code></td>
+<td>开发 → 开发者 → 开发、发展。</td>
+</tr>
+<tr>
+<td><code>operate → operation → operator</code></td>
+<td>操作、运作 → 操作、业务运作 → 操作员、运算符。</td>
+</tr>
+<tr>
+<td><code>communicate → communication</code></td>
+<td>沟通 → 沟通、通信。</td>
+</tr>
+<tr>
+<td><code>respond → response → responsive</code></td>
+<td>回应 → 响应 → 反应迅速的；<code>responsive layout</code> 指响应式布局。</td>
+</tr>
+<tr>
+<td><code>responsible → responsibility</code></td>
+<td>负责的 → 责任；<code>be responsible for</code>（负责……）。</td>
+</tr>
+<tr>
+<td><code>confirm → confirmation / decide → decision</code></td>
+<td>确认 → 确认信息；决定 → 决定，名词。</td>
+</tr>
+<tr>
+<td><code>describe → description / explain → explanation</code></td>
+<td>描述 → 描述，名词；解释 → 解释，名词。</td>
+</tr>
+<tr>
+<td><code>configure → configuration → configurable</code></td>
+<td>配置 → 配置，名词 → 可配置的。</td>
+</tr>
+<tr>
+<td><code>valid → validate → validation → invalid</code></td>
+<td>有效的 → 校验 → 校验，名词 → 无效的。</td>
+</tr>
+<tr>
+<td><code>fail → failure / recover → recovery</code></td>
+<td>失败 → 失败、故障；恢复 → 恢复，名词。</td>
+</tr>
+<tr>
+<td><code>compatible → compatibility → incompatible</code></td>
+<td>兼容的 → 兼容性 → 不兼容的。</td>
+</tr>
+<tr>
+<td><code>optimize → optimization / perform → performance</code></td>
+<td>优化 → 优化，名词；执行、表现 → 性能、表现。</td>
+</tr>
+<tr>
+<td><code>book → booking → rebook / cancel → cancellation</code></td>
+<td>预订 → 预订，名词 → 改订；取消 → 取消，名词。</td>
+</tr>
+<tr>
+<td><code>pay → payment → prepaid / charge → surcharge</code></td>
+<td>支付 → 付款 → 预付的；收费 → 附加费。</td>
+</tr>
+<tr>
+<td><code>apply → application → applicant</code></td>
+<td>申请 → 申请、应用程序 → 申请人。</td>
+</tr>
+<tr>
+<td><code>expire → expiry / renew → renewal</code></td>
+<td>到期 → 到期，名词；续期 → 续期，名词。</td>
+</tr>
+<tr>
+<td><code>arrive → arrival / depart → departure</code></td>
+<td>到达 → 到达，名词；离开 → 出发，名词。</td>
+</tr>
+<tr>
+<td><code>subscribe → subscription / deliver → delivery</code></td>
+<td>订阅 → 订阅，名词；递送 → 配送，名词。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="b5生活旅行扩展设施-账单与服务"><code>B5</code>｜生活旅行扩展：设施、账单与服务 </h3>
+<table>
+<thead>
+<tr>
+<th>英文词语／常用搭配</th>
+<th>中文释义与使用提醒</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>adapter plug / extension lead / power strip</code></td>
+<td>转换插头／延长线／插线板。</td>
+</tr>
+<tr>
+<td><code>fuse box / circuit breaker / power cut</code></td>
+<td>保险丝盒／断路器／停电，英式常见。</td>
+</tr>
+<tr>
+<td><code>blocked drain / loose handle / faulty switch</code></td>
+<td>堵塞的下水道／松动的把手／有故障的开关。</td>
+</tr>
+<tr>
+<td><code>mould on the wall / damp ceiling / ventilation</code></td>
+<td>墙上的霉斑／潮湿的天花板／通风；霉菌美式拼写为 <code>mold</code>。</td>
+</tr>
+<tr>
+<td><code>meter reading / outstanding balance / billing period</code></td>
+<td>表计读数／未结余额／计费周期。</td>
+</tr>
+<tr>
+<td><code>security deposit / tenancy agreement / inventory checklist</code></td>
+<td>租房押金／租赁协议／入住物品清单。</td>
+</tr>
+<tr>
+<td><code>non-refundable booking / cancellation deadline / flexible fare</code></td>
+<td>不可退款的预订／取消截止时间／允许一定变更的票价类型，条件以条款为准。</td>
+</tr>
+<tr>
+<td><code>aisle seat / overhead locker / baggage allowance</code></td>
+<td>靠过道座位／座位上方行李舱／行李限额。</td>
+</tr>
+<tr>
+<td><code>boarding announcement / final call / gate closure</code></td>
+<td>登机广播／最后登机通知／登机口关闭。</td>
+</tr>
+<tr>
+<td><code>border control / purpose of visit / length of stay</code></td>
+<td>边境检查／到访目的／停留时长。</td>
+</tr>
+<tr>
+<td><code>pedestrian crossing / pavement / traffic lights</code></td>
+<td>人行横道／人行道，英式／交通信号灯。</td>
+</tr>
+<tr>
+<td><code>replacement bus / rail disruption / alternative route</code></td>
+<td>替代接驳巴士／铁路运行中断／替代路线。</td>
+</tr>
+<tr>
+<td><code>carriage / seat reservation / luggage rack</code></td>
+<td>火车车厢／座位预订／行李架。</td>
+</tr>
+<tr>
+<td><code>currency conversion / cash withdrawal / spending limit</code></td>
+<td>货币换算／现金取款／消费限额。</td>
+</tr>
+<tr>
+<td><code>direct debit / standing order / recurring payment</code></td>
+<td>授权收款方扣款／账户持有人设定的定期定额转账，英国银行常用／周期性付款。</td>
+</tr>
+<tr>
+<td><code>itemized bill / duplicate receipt / proof of purchase</code></td>
+<td>逐项列明的账单／补开的或重复打印的收据／购买凭证。</td>
+</tr>
+<tr>
+<td><code>return window / return postage / store credit</code></td>
+<td>可退货期限／退货邮费／商店购物额度，不等于现金退款。</td>
+</tr>
+<tr>
+<td><code>loyalty card / promotional code / membership renewal</code></td>
+<td>会员积分卡／优惠码／会员续期。</td>
+</tr>
+<tr>
+<td><code>portion size / dressing on the side / leftovers</code></td>
+<td>份量大小／酱汁另放／剩饭剩菜。</td>
+</tr>
+<tr>
+<td><code>use-by date / best-before date / sealed packaging</code></td>
+<td>食用截止日期／最佳食用期／密封包装；前两者含义不同，应看商品标注。</td>
+</tr>
+<tr>
+<td><code>fully charged / low battery / charging cable</code></td>
+<td>电量充满的／电量低／充电线。</td>
+</tr>
+<tr>
+<td><code>automatic renewal / cancellation notice / cooling-off period</code></td>
+<td>自动续订／取消通知／冷静期；是否适用及期限以具体规则为准。</td>
+</tr>
+<tr>
+<td><code>voicemail greeting / missed call / poor reception</code></td>
+<td>语音信箱问候语／未接来电／信号接收不佳。</td>
+</tr>
+<tr>
+<td><code>scenic route / admission fee / guided tour</code></td>
+<td>风景较好的路线／门票或入场费／导览游。</td>
+</tr>
+<tr>
+<td><code>make a complaint / request compensation / reach an agreement</code></td>
+<td>提出投诉／请求赔偿或补偿／达成协议。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="b6工程扩展实现-性能与发布"><code>B6</code>｜工程扩展：实现、性能与发布 </h3>
+<table>
+<thead>
+<tr>
+<th>英文词语／常用搭配</th>
+<th>中文释义与使用提醒</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>source code / executable file / build artifact</code></td>
+<td>源代码／可执行文件／构建产物。</td>
+</tr>
+<tr>
+<td><code>compile a module / resolve a symbol / linker error</code></td>
+<td>编译模块／解析符号／链接器错误。</td>
+</tr>
+<tr>
+<td><code>compiler warning / syntax error / runtime exception</code></td>
+<td>编译器警告／语法错误／运行时异常。</td>
+</tr>
+<tr>
+<td><code>function signature / return value / optional argument</code></td>
+<td>函数签名／返回值／可选参数。</td>
+</tr>
+<tr>
+<td><code>mutable state / immutable object / shared resource</code></td>
+<td>可变状态／不可变对象／共享资源。</td>
+</tr>
+<tr>
+<td><code>thread safety / race condition / deadlock</code></td>
+<td>线程安全／竞态条件／死锁。</td>
+</tr>
+<tr>
+<td><code>asynchronous execution / callback / cancellation token</code></td>
+<td>异步执行／回调／取消令牌。</td>
+</tr>
+<tr>
+<td><code>queue capacity / batch processing / parallel execution</code></td>
+<td>队列容量／批量处理／并行执行。</td>
+</tr>
+<tr>
+<td><code>memory leak / heap allocation / garbage collection</code></td>
+<td>内存泄漏／堆内存分配／垃圾回收。</td>
+</tr>
+<tr>
+<td><code>CPU utilization / memory footprint / disk usage</code></td>
+<td>处理器利用率／内存占用／磁盘使用量。</td>
+</tr>
+<tr>
+<td><code>network bandwidth / packet loss / connection pool</code></td>
+<td>网络带宽／丢包／连接池。</td>
+</tr>
+<tr>
+<td><code>load balancer / health probe / traffic routing</code></td>
+<td>负载均衡器／健康探针／流量路由。</td>
+</tr>
+<tr>
+<td><code>rate limit / throttling / exponential backoff</code></td>
+<td>速率限制／限流／指数退避。</td>
+</tr>
+<tr>
+<td><code>request payload / response header / status code</code></td>
+<td>请求载荷／响应头／状态码。</td>
+</tr>
+<tr>
+<td><code>serialize an object / parse a response / encode a string</code></td>
+<td>序列化对象／解析响应／编码字符串。</td>
+</tr>
+<tr>
+<td><code>schema change / nullable column / primary key</code></td>
+<td>数据结构定义变更／可空列／主键。</td>
+</tr>
+<tr>
+<td><code>duplicate entry / unique constraint / transaction boundary</code></td>
+<td>重复记录／唯一性约束／事务边界。</td>
+</tr>
+<tr>
+<td><code>pagination / page size / cursor position</code></td>
+<td>分页／每页数量／游标位置。</td>
+</tr>
+<tr>
+<td><code>cache hit / cache miss / expiration time</code></td>
+<td>缓存命中／缓存未命中／过期时间。</td>
+</tr>
+<tr>
+<td><code>encrypt sensitive data / redact personal information</code></td>
+<td>加密敏感数据／遮盖或移除个人信息。</td>
+</tr>
+<tr>
+<td><code>credential rotation / secret management / audit trail</code></td>
+<td>凭证轮换／密钥等机密信息的管理／审计轨迹。</td>
+</tr>
+<tr>
+<td><code>feature flag / gradual rollout / kill switch</code></td>
+<td>功能开关／逐步发布／用于快速关闭功能的开关。</td>
+</tr>
+<tr>
+<td><code>unit test / integration test / end-to-end test</code></td>
+<td>单元测试／集成测试／端到端测试。</td>
+</tr>
+<tr>
+<td><code>flaky test / test fixture / assertion failure</code></td>
+<td>结果不稳定的测试／测试夹具或固定准备条件／断言失败。</td>
+</tr>
+<tr>
+<td><code>coverage report / acceptance criteria / release candidate</code></td>
+<td>覆盖率报告／验收标准／候选发布版本。</td>
+</tr>
+<tr>
+<td><code>benchmark result / performance bottleneck / profiling tool</code></td>
+<td>基准测试结果／性能瓶颈／性能分析工具。</td>
+</tr>
+<tr>
+<td><code>technical debt / legacy system / deprecated method</code></td>
+<td>技术债务／遗留系统／已弃用但未必已移除的方法。</td>
+</tr>
+<tr>
+<td><code>refactor a component / extract an interface / remove duplication</code></td>
+<td>重构组件／提取接口／消除重复。</td>
+</tr>
+<tr>
+<td><code>rebase a branch / squash commits / resolve conflicts</code></td>
+<td>变基分支／压缩多个提交／解决冲突。</td>
+</tr>
+<tr>
+<td><code>cherry-pick a commit / revert a commit / staged changes</code></td>
+<td>拣选一个提交／创建反向改动以撤销提交／已暂存改动。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="b7协作扩展方案-估时与复盘"><code>B7</code>｜协作扩展：方案、估时与复盘 </h3>
+<table>
+<thead>
+<tr>
+<th>英文词语／常用搭配</th>
+<th>中文释义与使用提醒</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>reproducible example / minimal patch / upstream dependency</code></td>
+<td>可复现示例／最小补丁／上游依赖。</td>
+</tr>
+<tr>
+<td><code>architecture diagram / sequence diagram / design proposal</code></td>
+<td>架构图／时序图／设计提案。</td>
+</tr>
+<tr>
+<td><code>proof of concept / feasibility study / implementation effort</code></td>
+<td>概念验证／可行性研究／实现所需投入。</td>
+</tr>
+<tr>
+<td><code>resource constraint / operational overhead / maintenance burden</code></td>
+<td>资源限制／运维额外开销／维护负担。</td>
+</tr>
+<tr>
+<td><code>stakeholder / decision maker / subject-matter expert</code></td>
+<td>利益相关方／决策者／领域专家。</td>
+</tr>
+<tr>
+<td><code>rough estimate / confidence level / contingency buffer</code></td>
+<td>粗略估算／把握程度／应急余量。</td>
+</tr>
+<tr>
+<td><code>raise an objection / challenge an assumption / justify a choice</code></td>
+<td>提出异议／质疑假设／说明选择的理由。</td>
+</tr>
+<tr>
+<td><code>prioritize urgent work / postpone a milestone / negotiate scope</code></td>
+<td>优先处理紧急工作／推迟里程碑／协商范围。</td>
+</tr>
+<tr>
+<td><code>retrospective / lessons learned / preventive action</code></td>
+<td>回顾会议／经验教训／预防措施。</td>
+</tr>
+<tr>
+<td><code>ownership transfer / escalation path / resolution summary</code></td>
+<td>职责移交／升级处理路径／解决过程与结果摘要。</td>
+</tr>
+</tbody>
+</table>
+<p><a id="precision"></a></p>
+<h2 id="五-把认识变成用对">五、把“认识”变成“用对” </h2>
+<h3 id="1-先记搭配再记中文单义">1. 先记搭配，再记中文单义 </h3>
+<table>
+<thead>
+<tr>
+<th>英文搭配</th>
+<th>中文与应用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>customer service / public services</code></td>
+<td>客户服务／公共服务。</td>
+</tr>
+<tr>
+<td><code>bank account / user account</code></td>
+<td>银行账户／用户账号。</td>
+</tr>
+<tr>
+<td><code>home address / email address / IP address</code></td>
+<td>家庭住址／电子邮箱地址／<code>IP</code> 地址。</td>
+</tr>
+<tr>
+<td><code>make an appointment / cancel an appointment</code></td>
+<td>预约／取消预约。</td>
+</tr>
+<tr>
+<td><code>submit an application / application status</code></td>
+<td>提交申请／申请状态。</td>
+</tr>
+<tr>
+<td><code>make a payment / payment method</code></td>
+<td>付款／支付方式。</td>
+</tr>
+<tr>
+<td><code>supporting documents / attach a document</code></td>
+<td>证明材料／附上一份文件。</td>
+</tr>
+<tr>
+<td><code>contact information / additional information</code></td>
+<td>联系信息／补充信息。</td>
+</tr>
+<tr>
+<td><code>technical support / contact support</code></td>
+<td>技术支持／联系客服或支持团队。</td>
+</tr>
+<tr>
+<td><code>access request / request an extension</code></td>
+<td>权限申请／请求延期。</td>
+</tr>
+<tr>
+<td><code>known issue / temporary solution</code></td>
+<td>已知问题／临时解决方案。</td>
+</tr>
+<tr>
+<td><code>meeting agenda / schedule a meeting</code></td>
+<td>会议议程／安排会议。</td>
+</tr>
+<tr>
+<td><code>training session / hands-on experience</code></td>
+<td>培训课或培训活动／实践经验。</td>
+</tr>
+<tr>
+<td><code>travel insurance / insurance policy</code></td>
+<td>旅行保险／保险单或保险合同。</td>
+</tr>
+<tr>
+<td><code>public transport / delivery address</code></td>
+<td>公共交通／配送地址。</td>
+</tr>
+<tr>
+<td><code>repair work / maintenance request</code></td>
+<td>维修工作／维护申请或报修请求。</td>
+</tr>
+<tr>
+<td><code>local community / language barrier</code></td>
+<td>当地社区／语言障碍。</td>
+</tr>
+<tr>
+<td><code>system requirements / security update</code></td>
+<td>系统要求／安全更新。</td>
+</tr>
+<tr>
+<td><code>annual leave / work from home</code></td>
+<td>年假／居家办公。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-容易混淆的意思和句型">2. 容易混淆的意思和句型 </h3>
+<table>
+<thead>
+<tr>
+<th>英文表达或对比</th>
+<th>中文辨析</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>authentication / authorization</code></td>
+<td>认证回答“你是谁”，授权回答“你能做什么”。</td>
+</tr>
+<tr>
+<td><code>authority / permission</code></td>
+<td><code>authority</code> 可指职权、权威或主管机构；<code>permission</code> 更常用于具体许可、权限。</td>
+</tr>
+<tr>
+<td><code>available / accessible</code></td>
+<td><code>available</code>：有空、可用、有货；<code>accessible</code>：可以进入、访问或便于使用，具体看语境。</td>
+</tr>
+<tr>
+<td><code>booked / fully booked</code></td>
+<td><code>booked</code>：已被预订；<code>fully booked</code>：已经订满。</td>
+</tr>
+<tr>
+<td><code>direct / nonstop</code></td>
+<td><code>direct</code> 不在所有交通语境中都表示“不经停”；想确认航班不经停用 <code>nonstop</code>。</td>
+</tr>
+<tr>
+<td><code>issue / problem / incident</code></td>
+<td><code>issue</code> 可指问题或议题；<code>problem</code> 指困难、故障；<code>incident</code> 指具体发生的事件。</td>
+</tr>
+<tr>
+<td><code>resolve an issue / fix a bug</code></td>
+<td>解决问题／修复缺陷。解决用户问题可能采用临时措施，未必已修好缺陷。</td>
+</tr>
+<tr>
+<td><code>by Friday / on Friday / until Friday</code></td>
+<td>周五前或最迟周五／在周五／一直到周五；精确截止时间另行说明。</td>
+</tr>
+<tr>
+<td><code>in two hours / within two hours</code></td>
+<td>两小时后／两小时以内。</td>
+</tr>
+<tr>
+<td><code>a fifteen-minute delay / delayed by fifteen minutes</code></td>
+<td>十五分钟的延误／延误了十五分钟；作前置修饰语时 <code>minute</code> 不加 <code>s</code>。</td>
+</tr>
+<tr>
+<td><code>since Monday / for three days</code></td>
+<td>从周一以来／持续三天；前者接起点，后者接时长。</td>
+</tr>
+<tr>
+<td><code>information / advice / feedback / luggage</code></td>
+<td>通常不可数，不直接加 <code>s</code>；<code>some advice</code>（一些建议），<code>a piece of luggage</code>（一件行李）。</td>
+</tr>
+<tr>
+<td><code>explain it to me / discuss the issue</code></td>
+<td>向我解释它／讨论这个问题；避免 <code>explain me it</code>、<code>discuss about the issue</code>。</td>
+</tr>
+<tr>
+<td><code>suggest doing / suggest that we do</code></td>
+<td>建议做……／建议我们做……；避免 <code>suggest me to do</code>。</td>
+</tr>
+<tr>
+<td><code>say something / tell someone something</code></td>
+<td>说某事／告诉某人某事；<code>Could you tell me</code> …?（你能告诉我……吗？）</td>
+</tr>
+<tr>
+<td><code>hear / listen to</code></td>
+<td>听到／主动听；<code>I can hear you</code>（我能听见你），<code>listen to the recording</code>（听录音）。</td>
+</tr>
+<tr>
+<td><code>borrow / lend</code></td>
+<td>借入／借出；<code>Can I borrow your charger?</code>（我能借你的充电器吗？）</td>
+</tr>
+<tr>
+<td><code>cost / spend / take</code></td>
+<td>物品花费金额／人花费钱或时间／事情耗费时间。<code>It took an hour</code>（花了一小时）。</td>
+</tr>
+<tr>
+<td><code>interested in / interesting</code></td>
+<td>对……感兴趣／有趣的；<code>I’m interesting</code> 会变成“我是个有趣的人”。</td>
+</tr>
+<tr>
+<td><code>on board / onboard / onboarding</code></td>
+<td>在交通工具上、加入或支持／使新员工或用户熟悉流程／入职或上手引导。</td>
+</tr>
+<tr>
+<td><code>log in / log out / hang up / try on</code></td>
+<td>登录／退出登录／挂电话／试穿；这些动词短语不写成 <code>login</code>、<code>logout</code>、<code>hang-up</code>、<code>try-on</code>。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-清楚又自然的语气">3. 清楚又自然的语气 </h3>
+<table>
+<thead>
+<tr>
+<th>英文表达</th>
+<th>中文与语气</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Could you review this when you have a moment?</code></td>
+<td>有空时可以看一下吗？适合不紧急的请求。</td>
+</tr>
+<tr>
+<td><code>Could you review this by 3 p.m. London time? It’s needed for today’s release.</code></td>
+<td>可以在伦敦时间下午三点前审查吗？今天发布要用。请求里交代时限和原因。</td>
+</tr>
+<tr>
+<td><code>I’m not sure that covers the offline case.</code></td>
+<td>我不确定这是否覆盖离线场景。用具体担忧表达异议。</td>
+</tr>
+<tr>
+<td><code>I see your point. Another option would be …</code></td>
+<td>我明白你的考虑。另一个选项是……。</td>
+</tr>
+<tr>
+<td><code>I can do A today. B would need to wait until tomorrow.</code></td>
+<td>我今天能做 <code>A</code>，<code>B</code> 要等到明天。用于说明能力边界。</td>
+</tr>
+<tr>
+<td><code>I haven’t confirmed that yet. I’ll check …</code></td>
+<td>我还没确认。我会检查……。承认未知并给出行动。</td>
+</tr>
+<tr>
+<td><code>It works locally, but I haven’t reproduced the production issue yet.</code></td>
+<td>本地能运行，但我还没有复现生产问题。补足 <code>“It works on my machine”</code> 缺失的信息。</td>
+</tr>
+<tr>
+<td><code>Thanks for flagging that.</code></td>
+<td>谢谢你指出这个问题。适合回应风险提醒。</td>
+</tr>
+</tbody>
+</table>
+<p>不需要每句话都加 <code>sorry</code>。请求一次帮助可以说 <code>please</code>，得到帮助后说 <code>thanks</code>。语气既取决于词，也取决于时机、上下文和表达的具体程度。</p>
+<h3 id="4-英美用词能认两种先稳定使用一种">4. 英美用词：能认两种，先稳定使用一种 </h3>
+<p>故事以英国场景为主，词库兼顾常见美式表达。下列对应只针对注明的日常含义，不代表每个词在所有语境中完全等价。</p>
+<table>
+<thead>
+<tr>
+<th>英文：英国常用 / 美国常用</th>
+<th>中文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>flat / apartment</code></td>
+<td>公寓。</td>
+</tr>
+<tr>
+<td><code>lift / elevator</code></td>
+<td>电梯。</td>
+</tr>
+<tr>
+<td><code>queue / line</code></td>
+<td>排队的队伍。</td>
+</tr>
+<tr>
+<td><code>holiday / vacation</code></td>
+<td>假期；<code>holiday</code> 在美式里也常指节日。</td>
+</tr>
+<tr>
+<td><code>takeaway / takeout</code></td>
+<td>外带食物。</td>
+</tr>
+<tr>
+<td><code>bill / check</code></td>
+<td>餐馆账单。</td>
+</tr>
+<tr>
+<td><code>return ticket / round-trip ticket</code></td>
+<td>往返票。</td>
+</tr>
+<tr>
+<td><code>single ticket / one-way ticket</code></td>
+<td>单程票。</td>
+</tr>
+<tr>
+<td><code>railway station / train station</code></td>
+<td>火车站；<code>train station</code> 在英国也使用。</td>
+</tr>
+<tr>
+<td><code>city centre / downtown</code></td>
+<td>市中心。</td>
+</tr>
+<tr>
+<td><code>postcode / ZIP code</code></td>
+<td>邮政编码，后者特指美国邮政编码体系。</td>
+</tr>
+<tr>
+<td><code>tap / faucet</code></td>
+<td>水龙头。</td>
+</tr>
+<tr>
+<td><code>trousers / pants</code></td>
+<td>长裤；<code>pants</code> 在英国还常指内裤。</td>
+</tr>
+<tr>
+<td><code>trainers / sneakers</code></td>
+<td>运动鞋。</td>
+</tr>
+<tr>
+<td><code>autumn / fall</code></td>
+<td>秋天。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="5-构词辅助理解不靠拆字猜定词义">5. 构词：辅助理解，不靠拆字猜定词义 </h3>
+<table>
+<thead>
+<tr>
+<th>英文结构与例子</th>
+<th>中文与记忆边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>re-：retry / rebuild / reconnect</code></td>
+<td>再次：重试／重建／重新连接。不要把所有 <code>re</code> 开头的词都理解成“再次”。</td>
+</tr>
+<tr>
+<td><code>un-：unavailable / unclear</code></td>
+<td>否定：不可用的／不清楚的。</td>
+</tr>
+<tr>
+<td><code>dis-：disconnect / disagree</code></td>
+<td>断开连接／不同意。</td>
+</tr>
+<tr>
+<td><code>pre-：prepay / pre-release</code></td>
+<td>预先付款／发布前的。</td>
+</tr>
+<tr>
+<td><code>inter-：international / interdependent</code></td>
+<td>国际的／相互依赖的。<code>internal</code> 是“内部的”，不应归作 <code>inter-</code> 的例子。</td>
+</tr>
+<tr>
+<td><code>sub-：subsystem / subfolder</code></td>
+<td>子系统／子文件夹。</td>
+</tr>
+<tr>
+<td><code>-er：developer / employer</code></td>
+<td>开发者／雇主；<code>employee</code> 是雇员。</td>
+</tr>
+<tr>
+<td><code>-tion：validation / configuration</code></td>
+<td>校验／配置；用于识别常见名词形式，拼写不能机械套用。</td>
+</tr>
+<tr>
+<td><code>-able：readable / configurable</code></td>
+<td>可读的／可配置的。</td>
+</tr>
+<tr>
+<td><code>-ity：availability / compatibility</code></td>
+<td>可用性／兼容性；词形会变化。</td>
+</tr>
+</tbody>
+</table>
+<p><code>serve / service</code>（服务）和 <code>reserve / reservation</code>（预留、预订）分别记；<code>depart / departure</code>（离开、出发）和 <code>department</code>（部门）分别记。词形像、中文联想相近，不足以推导现代含义。需要查词时，优先核对词性、搭配和例句。</p>
+<p><a id="practice"></a></p>
+<h2 id="六-听辨-口语与阅读练习">六、听辨、口语与阅读练习 </h2>
+<h3 id="1-听辨数字-时间与条件">1. 听辨：数字、时间与条件 </h3>
+<table>
+<thead>
+<tr>
+<th>英文例子</th>
+<th>中文与训练重点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>thirteen / thirty; fifteen / fifty; eighteen / eighty</code></td>
+<td>十三／三十；十五／五十；十八／八十。结合重音与上下文判断，关键数字务必复述确认。</td>
+</tr>
+<tr>
+<td><code>B / D / P / T; M / N</code></td>
+<td>拼姓名和编号时容易混淆；可说 <code>B as in Bravo</code>（<code>Bravo</code> 的首字母 <code>B</code>）。</td>
+</tr>
+<tr>
+<td><code>sixteen forty / four forty p.m.</code></td>
+<td>16:40／下午 4:40；这是同一时刻的两种读法。</td>
+</tr>
+<tr>
+<td><code>three point five / three hundred and fifty</code></td>
+<td>3.5／350；注意小数点和数量级。</td>
+</tr>
+<tr>
+<td><code>thirteen pounds fifty</code></td>
+<td>13.50 英镑；在价格语境下常省略 <code>pence</code>（便士）。</td>
+</tr>
+<tr>
+<td><code>can / can’t; do / don’t; has / hasn’t</code></td>
+<td>能／不能；做／不做；已经／尚未等对比。没听清否定时，直接确认意思。</td>
+</tr>
+<tr>
+<td><code>only / already / yet / still</code></td>
+<td>仅仅／已经／还、尚未／仍然；会改变范围和状态。</td>
+</tr>
+<tr>
+<td><code>before / after / by / until</code></td>
+<td>在……之前／之后／不晚于／一直到。</td>
+</tr>
+<tr>
+<td><code>if / unless / as long as</code></td>
+<td>如果／除非／只要；听清成立条件。</td>
+</tr>
+<tr>
+<td><code>5 June / June 5</code></td>
+<td>6 月 5 日；跨地区书写尽量写月份名称，避免 05/06 的歧义。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>意群练习</strong>：<code>Could you check / whether this ticket is valid / for the next train?</code>（可以确认这张票能否坐下一班车吗？）斜杠表示按意义分组，不要求每处明显停顿。重读 <code>ticket</code>、<code>valid</code>、<code>next train</code> 等承载信息的部分。</p>
+<details>
+<summary>展开：数字与条件信息听辨练习</summary>
+<p>请朗读工具或练习伙伴读下面三句；自己暂时不看，记录“原安排、变化、条件”。若自己已经看过，可把数字替换后再练。</p>
+<ol>
+<li><code>Your train was due at ten thirty. It’s now expected at ten forty-five, from platform four.</code></li>
+<li><code>We can release on Monday if the endpoint is ready by Wednesday.</code></li>
+<li><code>The room costs one hundred and thirty pounds per night. Breakfast isn’t included.</code></li>
+</ol>
+<p><strong>核对</strong>：① 原定 10:30，预计 10:45，4 号站台。② 周一发布的前提是接口最迟周三就绪。③ 每晚 130 英镑，不含早餐。</p>
+<p><strong>口头确认示例</strong>：<code>So breakfast costs extra, right?</code>（所以早餐需要另付费，对吗？）</p>
+</details>
+<h3 id="2-口语应对变化">2. 口语：应对变化 </h3>
+<table>
+<thead>
+<tr>
+<th>英文应变表达</th>
+<th>中文与适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>If that isn’t available, what else can I try?</code></td>
+<td>如果没有这个选项，我还可以试什么？</td>
+</tr>
+<tr>
+<td><code>Would Tuesday work instead?</code></td>
+<td>改为周二可以吗？</td>
+</tr>
+<tr>
+<td><code>Let me put it another way.</code></td>
+<td>我换一种说法。</td>
+</tr>
+<tr>
+<td><code>It’s the part that checks whether the input is valid.</code></td>
+<td>它就是检查输入是否有效的那一部分；忘记 <code>validation</code> 时用解释代替。</td>
+</tr>
+<tr>
+<td><code>I’m not asking to cancel it. I’d like to change the date.</code></td>
+<td>我不是要取消，而是想改日期；纠正对方的具体误解。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-阅读工单与预订确认单">3. 阅读：工单与预订确认单 </h3>
+<details>
+<summary>展开：阅读练习一——工作工单</summary>
+<blockquote>
+<p><code>Export filtered records to a single spreadsheet. Exclude archived records. The endpoint is expected to be ready by Wednesday. Target release: Monday, subject to integration checks. Owner: Leo.</code></p>
+</blockquote>
+<p><strong>问题</strong>：导出哪些记录？不包含什么？周一是否已经无条件确定？谁负责？</p>
+<p><strong>参考答案</strong>：导出筛选后的记录，存入一个电子表格文件；排除归档记录；周一是目标日期，取决于集成检查，接口预计周三前就绪；<code>Leo</code> 负责。</p>
+<p><strong>值得学的表达</strong>：<code>exclude</code>（排除）、<code>expected to</code>（预计会）、<code>subject to</code>（取决于／受……条件限制）。</p>
+</details>
+<details>
+<summary>展开：阅读练习二——虚构的酒店确认单</summary>
+<blockquote>
+<p><code>Check-in: from 15:00. Check-out: by 11:00. Breakfast is not included. For this booking, cancellation is free until 18:00 local time on 12 May. After that, a one-night charge applies.</code></p>
+</blockquote>
+<p><strong>问题</strong>：什么时候能入住？什么时候前要退房？早餐包含吗？免费取消的完整截止时间是什么？</p>
+<p><strong>参考答案</strong>：15:00 起入住；11:00 前退房；不含早餐；5 月 12 日当地时间 18:00 前可免费取消；之后收取一晚费用。这是该虚构预订的条款，不代表其他酒店。</p>
+<p><strong>追问示例</strong>：<code>Could you confirm whether breakfast can be added and how much it costs?</code>（可以确认能否加早餐，以及价格是多少吗？）</p>
+</details>
+<p><a id="writing"></a></p>
+<h2 id="七-可以直接替换的写作模板">七、可以直接替换的写作模板 </h2>
+<blockquote>
+<p>方括号内替换为实际要写的信息。</p>
+</blockquote>
+<h3 id="1-站会或异步进展做了什么-接下来做什么-卡在哪里">1. 站会或异步进展：做了什么、接下来做什么、卡在哪里 </h3>
+<p><code>Yesterday, I [completed / investigated …].</code></p>
+<p><code>Today, I’m working on [task].</code></p>
+<p><code>I’m blocked by [dependency].</code> <code>Could [person/team] help with [specific request]?</code></p>
+<p><code>I’ll send the next update by [time and time zone].</code></p>
+<p>没有阻塞时把第三句换为 <code>No blockers at the moment.</code>（目前没有阻塞）。不要为填模板编造困难。</p>
+<h3 id="2-求助消息提供足够背景提出具体请求">2. 求助消息：提供足够背景，提出具体请求 </h3>
+<p><code>Hi [name], I’m trying to [goal], but [problem].</code></p>
+<p><code>I’ve already tried [steps], and [result].</code></p>
+<p><code>Could you help me check [specific question]?</code></p>
+<p><code>Relevant details: [ticket / safe excerpt / screenshot].</code></p>
+<p>对应中文：我想完成什么；遇到什么；已经尝试什么；希望你帮忙确认哪一点。结尾放真正相关的信息。</p>
+<h3 id="3-缺陷报告预期与实际分开">3. 缺陷报告：预期与实际分开 </h3>
+<p><code>Title: [Symptom] when [condition]</code></p>
+<p><code>Environment: [version, device, environment]</code></p>
+<p><code>Steps to reproduce:</code></p>
+<ol>
+<li>
+<p><code>[Step]</code></p>
+</li>
+<li>
+<p><code>[Step]</code></p>
+</li>
+</ol>
+<p><code>Expected: [Expected behavior]</code></p>
+<p><code>Actual: [Observed behavior]</code></p>
+<p><code>Frequency: [How often it happens]</code></p>
+<p><code>Impact: [Who or what is affected]</code></p>
+<p><code>Evidence: [Relevant logs or recording]</code></p>
+<p>对应中文：标题、环境、复现步骤、预期、实际、频率、影响、证据。根因没有确认就不写成结论。</p>
+<h3 id="4-review-请求与回复告诉对方重点看哪里">4. <code>Review</code> 请求与回复：告诉对方重点看哪里 </h3>
+<p><code>Hi [name], could you review [PR/link] by [time]?</code></p>
+<p><code>It changes [behavior] to address [problem].</code></p>
+<p><code>Please focus on [risk or design question].</code></p>
+<p><code>I’ve checked [validation performed].</code></p>
+<p>回复示例：<code>Thanks for the suggestion. I’ve updated [part]. Could you take another look?</code>（谢谢建议。我已更新相关部分，可以再看一下吗？）</p>
+<h3 id="5-会后确认范围-负责人和日期">5. 会后确认：范围、负责人和日期 </h3>
+<p><code>Thanks, everyone.</code> <code>Here’s my understanding of the decision:</code></p>
+<ul>
+<li>
+<p><code>Scope: [included work].</code> <code>[Excluded work] is out of scope for this version.</code></p>
+</li>
+<li>
+<p><code>Owner: [name].</code></p>
+</li>
+<li>
+<p><code>Next step: [action], due [date/time/time zone].</code></p>
+</li>
+<li>
+<p><code>Open question: [question], to be confirmed by [name/date].</code></p>
+</li>
+</ul>
+<p><code>Please let me know if I’ve missed or misunderstood anything.</code></p>
+<p>最后一句表示“如有遗漏或误解，请告诉我”；不是以沉默自动替代正式审批。</p>
+<h3 id="6-故障更新与交接事实-措施-待查事项">6. 故障更新与交接：事实、措施、待查事项 </h3>
+<p><code>Current impact: [affected users or behavior].</code></p>
+<p><code>Confirmed so far: [facts].</code></p>
+<p><code>Current action: [mitigation / investigation].</code></p>
+<p><code>Still checking: [unknowns].</code></p>
+<p><code>Next update: [time/time zone], from [owner].</code></p>
+<p>恢复后仍有跟进项时补一句：<code>The service is stable now. [Name] will follow up on [remaining task] by [date].</code>（服务目前稳定；某人将在指定日期前跟进剩余任务。）</p>
+<h3 id="7-改期与请假带上可选时间或交接">7. 改期与请假：带上可选时间或交接 </h3>
+<p><code>Hi [name], could we move our meeting from [old time] to [new time/time zone]?</code></p>
+<p><code>I’m unavailable at the original time because [brief reason, if needed].</code></p>
+<p><code>If that doesn’t work, I’m also available [alternative].</code></p>
+<p><code>I’d like to take [date] off.</code></p>
+<p><code>I’ll complete [task] beforehand and leave handover notes for [person].</code></p>
+<p><code>[Person] has agreed to cover urgent questions while I’m away.</code></p>
+<p>只有确实和同事商量好代班时，才写 <code>has agreed</code>（已同意）。</p>
+<h3 id="8-酒店-租房与退货订单信息加明确要求">8. 酒店、租房与退货：订单信息加明确要求 </h3>
+<p><code>Subject: [Issue/request] — booking [reference]</code></p>
+<p><code>Hello,</code></p>
+<p><code>I’m contacting you about [booking/order/property].</code></p>
+<p><code>[Describe the issue and when it occurred.]</code></p>
+<p><code>Could you please [specific action]?</code></p>
+<p><code>Please confirm [cost/timing/next step].</code></p>
+<p><code>Thank you,</code></p>
+<p><code>[Name]</code></p>
+<p>可替换的请求：<code>arrange a repair</code>（安排维修）、<code>confirm the updated arrival date</code>（确认新的到达日期）、<code>explain the return process</code>（说明退货流程）。</p>
+<h3 id="9-社交邀请与婉拒简单-具体-自然">9. 社交邀请与婉拒：简单、具体、自然 </h3>
+<p><code>Hi [name], would you like to grab coffee on [day]?</code></p>
+<p><code>I’m free after [time].</code> <code>There’s a café near [place] we could try.</code></p>
+<p><code>Thanks for inviting me.</code> <code>I can’t make it on [day], but I’d love to join another time.</code></p>
+<p><code>Would [alternative] work for you?</code></p>
+<p>如果并不想另约，不必提出替代时间；感谢邀请并说明这次无法参加即可。</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  </body></html>
