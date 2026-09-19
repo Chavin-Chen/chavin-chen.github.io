@@ -1,1 +1,16 @@
 .DS_Store
+node_modules/
+dist/
+# 私密资料可存放在本地工作区，但不得提交或发布。
+/.project/
+Chavins-Resume.md
+*.pem
+*.key
+*.p12
+*.pfx
+.env
+.env.*
+*.grant.txt
+vault/
+private/
+secrets/
