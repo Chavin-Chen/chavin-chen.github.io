@@ -1,3 +1,4 @@
+import { setupInteractions } from './interactions.js';
 import { verifyGrant, decryptContent, shortCodeAddress, unwrapGrant, MAX_BYTES } from './crypto.js';
 
 const form = document.querySelector('#access-form');
@@ -7,6 +8,7 @@ const message = document.querySelector('#access-message');
 const access = document.querySelector('#access');
 const portfolio = document.querySelector('#portfolio');
 const container = document.querySelector('#portfolio-content');
+const { isComposing } = setupInteractions(document);
 const urls = new Set();
 let expires = 0;
 let expiryTimer;
@@ -139,6 +141,7 @@ async function fetchBytes(url, limit, signal, cache = 'no-store') {
 }
 form.addEventListener('submit', async event => {
   event.preventDefault();
+  if (isComposing() || unlock.disabled) return;
   if (!crypto?.subtle) { announce('请通过 HTTPS 网站或 localhost 打开页面，当前环境无法使用加密功能。', true); return; }
   let token = input.value.trim();
   const current = ++operation;
@@ -190,14 +193,14 @@ document.querySelectorAll('a[href="#access"]').forEach(link => {
 document.addEventListener('visibilitychange', () => { if (!document.hidden) watchExpiry(); });
 window.addEventListener('pagehide', () => lock());
 window.addEventListener('pageshow', watchExpiry);
-// 片段不作为 HTTP 请求参数发送；读取后立即从地址栏移除，仍需主动点击解锁。
+// 片段不作为 HTTP 请求参数发送；读取后立即从地址栏移除，仍需主动提交解锁。
 function readAccessFragment() {
   if (!location.hash.startsWith('#access=')) return;
   const token = location.hash.slice(8, 4104);
   history.replaceState(null, '', location.pathname + location.search);
   lock();
   input.value = token;
-  announce('已填入授权码，点击“解锁项目”即可查看。');
+  announce('已填入授权码，按回车或点击“解锁项目”即可查看。');
   access.scrollIntoView();
 }
 window.addEventListener('hashchange', readAccessFragment);

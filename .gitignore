@@ -14,3 +14,6 @@ Chavins-Resume.md
 vault/
 private/
 secrets/
+
+# 本地预览快照，不参与发布。
+/.preview/
