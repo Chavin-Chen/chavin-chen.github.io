@@ -58,3 +58,20 @@ h2,h3,.project-summary,.focus-card p,.strengths li,.project-body p,.project-body
 /* 字标宽度由 Chavin 决定，副标题在同一宽度内均匀排布。 */
 .brand-wordmark{display:inline-grid;grid-template-columns:max-content}
 .brand-wordmark .brand-caption{width:0;min-width:100%;letter-spacing:0;text-align:justify;text-align-last:justify;white-space:nowrap}
+
+/* 手机叠卡收紧尺寸与偏移，上下为装饰文案保留独立空间。 */
+@media(max-width:640px){
+  .hero-art{height:280px}
+  .hero-art .layer{width:188px;height:172px;margin-left:-94px;margin-top:-86px;padding:14px;font-size:8px}
+  .hero-art .layer-back{transform:translate(20px,-16px) rotate(10deg)}
+  .hero-art .layer-middle{transform:translate(7px,-5px) rotate(4deg)}
+  .hero-art .layer-front{transform:translate(-12px,12px) rotate(-5deg)}
+  .hero-art .layer-front strong{font-size:20px;margin-top:8px}
+  .hero-art .layer-bottom{margin-top:12px;padding-top:6px;font-size:7px}
+  .hero-art .layer-bottom>span:last-child{font-size:18px}
+  .hero-art .art-label{top:4px}
+  .hero-art .art-footnote{bottom:4px}
+}
+
+/* 解锁后用标题承接焦点供读屏定位，不显示非交互标题的焦点边框。 */
+#portfolio-title:focus{outline:none}
