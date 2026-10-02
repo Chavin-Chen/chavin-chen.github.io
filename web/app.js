@@ -1,5 +1,5 @@
-import { setupInteractions } from './interactions.js';
-import { verifyGrant, decryptContent, shortCodeAddress, unwrapGrant, MAX_BYTES } from './crypto.js';
+import { setupInteractions } from './interactions.js?v=e4fc21dfa5c3834c';
+import { verifyGrant, decryptContent, shortCodeAddress, unwrapGrant, MAX_BYTES } from './crypto.js?v=535278c2f036bf31';
 
 const form = document.querySelector('#access-form');
 const input = document.querySelector('#access-code');

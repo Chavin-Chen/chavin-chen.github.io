@@ -2,7 +2,7 @@
 node_modules/
 dist/
 # 私密资料可存放在本地工作区，但不得提交或发布。
-/.resume/
+/.resume
 Chavins-Resume.md
 *.pem
 *.key
