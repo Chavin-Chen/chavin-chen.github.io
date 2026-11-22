@@ -1,97 +1,10 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,viewport-fit=cover"
-    />
-    <meta name="theme-color" content="#102d48" />
-    <title>护理三基 · 练习室</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="wrap mast">
-        <div class="brand">
-          <b class="cross" aria-hidden="true">✚</b>护理三基 <i></i
-          ><small id="modeTitle">练习室</small>
-        </div>
-        <div class="actions">
-          <button id="homeButton" class="outline" hidden>首页</button>
-          <button id="catalog" class="outline" hidden>
-            <span aria-hidden="true">☷</span> 目录
-          </button>
-        </div>
-      </div>
-    </header>
-    <main class="wrap" id="home">
-      <div class="heading">
-        <div>
-          <div class="eyebrow">护理三基 / 自主学习</div>
-          <h1>选择学习模式</h1>
-        </div>
-        <div class="saved" id="saved"></div>
-      </div>
-      <div class="layout">
-        <aside>
-          <section class="progress">
-            <div class="small">练习进度</div>
-            <div class="fraction">
-              <strong id="done">0</strong><span id="total"></span>
-            </div>
-            <progress id="bar" max="100" value="0"></progress>
-            <div class="progressmeta">
-              <span>已作答</span><b id="percent">0%</b>
-            </div>
-          </section>
-          <nav id="modes">
-            <button data-mode="practice">
-              <span class="icon">✎</span>做题模式</button
-            ><button data-mode="study">
-              <span class="icon">▤</span>背题模式</button
-            ><button data-mode="wrong">
-              <span class="icon">▧</span>错题集 <b id="wrongCount">0</b>
-            </button>
-          </nav>
-        </aside>
-      </div>
-      <div id="homeError"></div>
-    </main>
-    <main id="session" class="wrap" hidden>
-      <article>
-        <div class="toolbar">
-          <button id="prev">上一题</button>
-          <label id="autoLabel"
-            ><input id="autoNext" type="checkbox" checked />答对自动切题</label
-          >
-          <button id="next" class="primary">下一题</button>
-        </div>
-        <div id="bookline"></div>
-        <div id="question" aria-live="polite">正在载入题目…</div>
-      </article>
-    </main>
-    <dialog id="drawer">
-      <div class="dhead">
-        <h2>题目目录</h2>
-        <button id="close" aria-label="关闭目录">×</button>
-      </div>
-      <form id="search">
-        <input
-          aria-label="搜索题干或选项，或输入总题号"
-          id="term"
-          type="search"
-          placeholder="搜索题干、选项或总题号"
-        /><button class="primary">查找</button>
-      </form>
-      <label class="bookfilter">题库<select id="books"></select></label>
-      <div id="indexInfo"></div>
-      <div id="rows"></div>
-      <div class="controls">
-        <button id="indexPrev">上一页</button
-        ><button id="indexNext">下一页</button>
-      </div>
-    </dialog>
-    <script src="app.js" defer></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>护理三基练习室</title>
+  <script>location.replace("../nurse3test.html" + location.search + location.hash);</script>
+  <noscript><meta http-equiv="refresh" content="0;url=../nurse3test.html"></noscript>
+</head>
+<body><a href="../nurse3test.html">打开护理三基练习室</a></body>
 </html>
